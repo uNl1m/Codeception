@@ -19,6 +19,13 @@ class LoginPopUp
 	public static $imgAvatar = "img.avatar";
 }
 
+class ForgotPopUp
+{
+	public static $passwordLink = '//*[@id="forgot-password"]';
+	public static $emailField = '//*[@id="email"]';
+	public static $resetButton = '//*[@id="resetPasswordButton"]';
+}
+
 
 
 ?>
