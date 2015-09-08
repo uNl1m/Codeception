@@ -1,0 +1,6 @@
+class_name: ApiGuy
+modules:
+   enabled:
+       - REST:
+           depends: PhpBrowser
+           url: 'http://45.55.59.173/api'

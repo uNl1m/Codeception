@@ -1,0 +1,9 @@
+class_name: WebGuy
+modules:
+    enabled:
+        - WebDriver
+    config:
+        WebDriver:
+            url: 'http://muzza.life'
+            browser: 'chrome'
+            window_size: 'maximize'
