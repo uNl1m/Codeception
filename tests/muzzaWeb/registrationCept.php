@@ -7,19 +7,19 @@ $I->see('Registration');
 $I->see('Login');
 $I->see('Genre');
 $I->see('Stations');
-$I->click('#popup-registration');
+$I->click(Registration::$registrationlink);
 $I->waitForText('Sign Up');
 $I->see('Sign Up');
-$I->seeElement('#username');
-$I->seeElement('#email');
-$I->seeElement('#password');
-$I->seeElement('#password_confirmation');
-$I->seeElement('#registrationButton');
-$I->fillField('#username',$username);
-$I->fillField('#email', $email);
-$I->fillField('#password', $pass);
-$I->fillField('#password_confirmation',$pass_conf);
-$I->click('#registrationButton');
+$I->seeElement(Registration::$username);
+$I->seeElement(Registration::$emailField);
+$I->seeElement(Registration::$passwordField);
+$I->seeElement(Registration::$confirmPasswordField);
+$I->seeElement(Registration::$registrationButton);
+$I->fillField(Registration::$username,$username);
+$I->fillField(Registration::$emailField, $email);
+$I->fillField(Registration::$passwordField, $pass);
+$I->fillField(Registration::$confirmPasswordField,$pass_conf);
+$I->click(Registration::$registrationButton);
 
 
 

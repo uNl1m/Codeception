@@ -26,6 +26,15 @@ class ForgotPopUp
 	public static $resetButton = '//*[@id="resetPasswordButton"]';
 }
 
+class Registration
+{
+	public static $registrationlink = '#popup-registration';
+	public static $usernameField = '#username';
+	public static $emailField = '#email';
+	public static $passwordField = '#password';
+	public static $confirmPasswordField = '#password_confirmation';
+	public static $registrationButton = '#registrationButton';
+}
 
 
 ?>
