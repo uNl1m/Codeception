@@ -7,10 +7,11 @@ $I->getFavoriteStation();
 //$st1 = $I->grabDataFromResponseByJsonPath('$..data[0].station_id'); #[] выбор массива
 //$stat1 = serialize($st1);
 //$favorite_station = substr("$stat1",14,-3);
-$st2 = $I->grabDataFromResponseByJsonPath('$..data[2].name'); #[] выбор массива
-$stat2 = serialize($st2);
+$I->getStationName();
+// $st2 = $I->grabDataFromResponseByJsonPath('$..data[2].name'); #[] выбор массива
+// $stat2 = serialize($st2);
 
-$search_station = substr($stat2,14, strpos($stat2, ' '));
-$I->debugSection('FavoriteStation', $st2);
+// $search_station = substr($stat2,14, strpos($stat2, ' '));
+// // $I->debugSection('FavoriteStation', $st2);
 $I->seeResponseCodeIs(200);
 ?>

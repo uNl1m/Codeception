@@ -13,32 +13,32 @@ class Auth extends \Codeception\Module
 
 
 
-    public function _before($t)
-    {
-        $I = $this->getModule('REST');
-        $I->haveHttpHeader('Content-Type', 'application/json');
-        if ($this->token) {
-            $this->debugSection('Token', $this->token);
-            $I->amBearerAuthenticated($this->token);
-            return;
-        }
-        $I->sendPOST("/auth/login", [
-            'email' => Auth::email,
-            'password' => Auth::password,
-        ]);
-
-        $I->seeResponseCodeIs(200);
-        $I->seeResponseIsJson();
-
-        $tok = $I->grabDataFromResponseByJsonPath('$..token');
-        $t = serialize($tok);
-        $token = substr("$t",15,-2);
-
-        $a = file_put_contents(codecept_output_dir('token.json'),$tok);
-        $this->debugSection('New Token', $tok);
-        $I->amBearerAuthenticated($token);
-        $this->token = $token;
-    }
+//    public function _before($t)
+//    {
+//        $I = $this->getModule('REST');
+//        $I->haveHttpHeader('Content-Type', 'application/json');
+//        if ($this->token) {
+//            $this->debugSection('Token', $this->token);
+//            $I->amBearerAuthenticated($this->token);
+//            return;
+//        }
+//        $I->sendPOST("/auth/login", [
+//            'email' => Auth::email,
+//            'password' => Auth::password,
+//        ]);
+//
+//        $I->seeResponseCodeIs(200);
+//        $I->seeResponseIsJson();
+//
+//        $tok = $I->grabDataFromResponseByJsonPath('$..token');
+//        $t = serialize($tok);
+//        $token = substr("$t",15,-2);
+//
+//        $a = file_put_contents(codecept_output_dir('token.json'),$tok);
+//        $this->debugSection('New Token', $tok);
+//        $I->amBearerAuthenticated($token);
+//        $this->token = $token;
+//    }
     public function getToken()
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
@@ -104,7 +104,13 @@ class Auth extends \Codeception\Module
         $track = str_replace(" ","%20",$current_track);
         $song_url = str_replace("-","+",$track);
         $this->debugSection('Song URL', $song_url);
+        $s = file_put_contents(codecept_output_dir('song_url.json'),$song_url);
         return $song_url;
+    }
+    function takeSongURL()
+    {
+        $song_URL = file_get_contents(codecept_output_dir('song_url.json'));
+        return $song_URL;
     }
 
     function getStation()
@@ -123,15 +129,56 @@ class Auth extends \Codeception\Module
 
     function getFavoriteStation()
     {
-        $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id'); #[] выбор массива
+        $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..shoutcast_station_id'); #[] выбор массива
         $stat1 = serialize($st1);
         $favorite_station = substr("$stat1",14,-3);
         $this->debugSection('FavoriteStation', $st1);
         $f = file_put_contents(codecept_output_dir('Fstation.json'),$st1);
     }
+    function takeFavoriteStation()
+    {
+        $favorite_station = file_get_contents(codecept_output_dir('Fstation.json'));
+        return $favorite_station;
+    }
 
+    function getStationName()
+    {
+        $st2 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..name'); #[] выбор массива
+        $stat2 = serialize($st2);
+        $search_station = substr($stat2,14, strpos($stat2, ' '));
+        $this->debugSection('Favorite Station Name', $st2);
+        $n = file_put_contents(codecept_output_dir('stationName.json'),$st2);
+    }
+    function takeStationName()
+    {
+        $search_station = file_get_contents(codecept_output_dir('stationName.json'));
+        return $search_station;
+    }
 
+    function getFavoriteTrackID()
+    {
+        $f_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..id');
+        $fav_tr = serialize($f_tr);
+        $favorite_track = substr("$fav_tr",14,-3);
+        $this->debugSection('FavoriteStation', $f_tr);
+        $f = file_put_contents(codecept_output_dir('favoriteTrackID.json'),$f_tr);
+    }
+    function takeFavoriteTrackID()
+    {
+        $favorite_track = file_get_contents(codecept_output_dir('stationName.json'));
+        return $favorite_track;
+    }
 
+    function getItunesUrl()
+    {
+        $i = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..song_url');
+        $this->debugSection('Itunes URL', $i);
+    }
+    function getTestStationName()
+    {
+        $st_id = $this->getModule('REST')->grabDataFromResponseByJsonPath('$.data');
+        $this->debugSection('Station Name', $st_id);
+    }
 
 
 
