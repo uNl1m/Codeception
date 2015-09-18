@@ -2,11 +2,9 @@
 $I = new ApiGuy($scenario);
 $I->wantTo('GET current Track');
 $I->haveHttpHeader('Content-Type', 'application/json');
-include 'getRandomStationCept.php';
+$I->sendGET('/station/random/');
+$station_id = $I->getStationId();
 $I->sendGET('/stream/track?stationId='.$station_id);
-$c_tr = $I->grabDataFromResponseByJsonPath('$..data.currentTrack');
-$cur_tr = serialize($c_tr);
-$current_track = substr("$cur_tr",15,-3);
-$track = str_replace(" ","%20",$current_track);
-$song_url = str_replace("-","+",$track);
+$current_track = $I->getCurrentTrack();
+$song_url = $I -> getSongUrl();
 $I->seeResponseCodeIs(200);

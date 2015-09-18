@@ -1,6 +1,10 @@
 class_name: ApiGuy
 modules:
    enabled:
-       - REST:
+       - REST
+       - \Helper\Auth
+   config:
+       REST:
            depends: PhpBrowser
-           url: 'http://45.55.59.173/api'
+           url: 'http://muzza.life/api'
+           part: Json

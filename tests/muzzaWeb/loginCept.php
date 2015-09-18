@@ -16,6 +16,6 @@
 	$I->click(LoginPopUp::$loginButton);
 	$I->waitForText($username);
 	$I->wait(3);
- 
+ ///
  
 ?>

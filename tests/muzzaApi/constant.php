@@ -19,6 +19,4 @@ $genreSlug = 'electronic';
 
 
 
-
-
 ?>

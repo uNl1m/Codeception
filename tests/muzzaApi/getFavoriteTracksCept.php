@@ -2,8 +2,7 @@
 $I = new ApiGuy($scenario);
 $I->wantTo('GET Favorite Tracks');
 $I->haveHttpHeader('Content-Type', 'application/json');
-include 'loginCept.php';
-$I->amBearerAuthenticated ($token);
+
 $I->sendGET('/favorite/track');
 $f_tr = $I->grabDataFromResponseByJsonPath('$.data[0].id');
 $fav_tr = serialize($f_tr);
