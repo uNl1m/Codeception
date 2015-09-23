@@ -1,6 +1,6 @@
 <?php
 
-for ($station_id = 1 ; $station_id < 22120; $station_id++) {
+for ($station_id = 1984 ; $station_id < 22120; $station_id++) {
     $I = new ApiGuy($scenario);
     $I->wantTo('Test current track');
 //$station_id = file_get_contents(codecept_output_dir('st_id.json'));
