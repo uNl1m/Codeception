@@ -13,32 +13,32 @@ class Auth extends \Codeception\Module
 
 
 
-//    public function _before($t)
-//    {
-//        $I = $this->getModule('REST');
-//        $I->haveHttpHeader('Content-Type', 'application/json');
-//        if ($this->token) {
-//            $this->debugSection('Token', $this->token);
-//            $I->amBearerAuthenticated($this->token);
-//            return;
-//        }
-//        $I->sendPOST("/auth/login", [
-//            'email' => Auth::email,
-//            'password' => Auth::password,
-//        ]);
-//
-//        $I->seeResponseCodeIs(200);
-//        $I->seeResponseIsJson();
-//
-//        $tok = $I->grabDataFromResponseByJsonPath('$..token');
-//        $t = serialize($tok);
-//        $token = substr("$t",15,-2);
-//
-//        $a = file_put_contents(codecept_output_dir('token.json'),$tok);
-//        $this->debugSection('New Token', $tok);
-//        $I->amBearerAuthenticated($token);
-//        $this->token = $token;
-//    }
+   // public function _before($t)
+   // {
+   //     $I = $this->getModule('REST');
+   //     $I->haveHttpHeader('Content-Type', 'application/json');
+   //     if ($this->token) {
+   //         $this->debugSection('Token', $this->token);
+   //         $I->amBearerAuthenticated($this->token);
+   //         return;
+   //     }
+   //     $I->sendPOST("/auth/login", [
+   //         'email' => Auth::email,
+   //         'password' => Auth::password,
+   //     ]);
+
+       $I->seeResponseCodeIs(200);
+       $I->seeResponseIsJson();
+
+       $tok = $I->grabDataFromResponseByJsonPath('$..token');
+       $t = serialize($tok);
+       $token = substr("$t",15,-2);
+
+       $a = file_put_contents(codecept_output_dir('token.json'),$tok);
+       $this->debugSection('New Token', $tok);
+       $I->amBearerAuthenticated($token);
+       $this->token = $token;
+   }
     public function getToken()
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
