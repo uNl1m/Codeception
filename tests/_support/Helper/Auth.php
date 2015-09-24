@@ -151,10 +151,14 @@ class Auth extends \Codeception\Module
         $this->getModule('REST')->amBearerAuthenticated($token);
         $this->getModule('REST')->sendGET('/favorite/station');
         $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..shoutcast_station_id'); #[] выбор массива
-        $stat1 = serialize($st1);
-        $favorite_station = substr("$stat1",14,-3);
-        $this->debugSection('FavoriteStation', $st1);
-        $f = file_put_contents(codecept_output_dir('Fstation.json'),$st1);
+        // $stat1 = serialize($st1);
+        // $favorite_station = substr("$stat1",14,-3);
+        // $st2 = $this->getModule('REST')->grabResponse();
+        // $s = json_decode($st2)[1]->id;
+        $ss_id=$st1[0];
+        $this->debugSection('FavoriteStation', $ss_id);
+        return $ss_id;
+        // $f = file_put_contents(codecept_output_dir('Fstation.json'),$st1[0]);
     }
     function takeFavoriteStation()
     {
