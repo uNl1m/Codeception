@@ -5,40 +5,53 @@ namespace Helper;
 
 class Auth extends \Codeception\Module
 {
-    const email = 'a@techgroup.me';
+    const username = 'QA tester';
+    const email = 'a@freeletter.me';
     const password = '12345678';
+    const confirm_password = '12345678';
     const station_name = 'alternative';
 
     protected $token;
 
 
 
-//    public function _before($t)
-//    {
-//        $I = $this->getModule('REST');
-//        $I->haveHttpHeader('Content-Type', 'application/json');
-//        if ($this->token) {
-//            $this->debugSection('Token', $this->token);
-//            $I->amBearerAuthenticated($this->token);
-//            return;
-//        }
-//        $I->sendPOST("/auth/login", [
-//            'email' => Auth::email,
-//            'password' => Auth::password,
-//        ]);
+//   public function _before($t)
+//   {
+//       $I = $this->getModule('REST');
+//       $I->haveHttpHeader('Content-Type', 'application/json');
+//       if ($this->token) {
+//           $this->debugSection('Token', $this->token);
+//           $I->amBearerAuthenticated($this->token);
+//           return;
+//       }
+//       $I->sendPOST("/auth/login", [
+//           'email' => Auth::email,
+//           'password' => Auth::password,
+//       ]);
 //
-//        $I->seeResponseCodeIs(200);
-//        $I->seeResponseIsJson();
+//       $I->seeResponseCodeIs(200);
+//       $I->seeResponseIsJson();
 //
-//        $tok = $I->grabDataFromResponseByJsonPath('$..token');
-//        $t = serialize($tok);
-//        $token = substr("$t",15,-2);
+//       $tok = $I->grabDataFromResponseByJsonPath('$..token');
+//       $t = serialize($tok);
+//       $token = substr("$t",15,-2);
 //
-//        $a = file_put_contents(codecept_output_dir('token.json'),$tok);
-//        $this->debugSection('New Token', $tok);
-//        $I->amBearerAuthenticated($token);
-//        $this->token = $token;
-//    }
+//       $a = file_put_contents(codecept_output_dir('token.json'),$tok);
+//       $this->debugSection('New Token', $tok);
+//       $I->amBearerAuthenticated($token);
+//       $this->token = $token;
+//   }
+    function login()
+    {
+
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $this->getModule('REST')->sendPOST("/auth/login", ['email' => Auth::email,'password' => Auth::password]);
+        $token = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..token');
+        $this->debugSection('Token', $token);
+        $a = file_put_contents(codecept_output_dir('token.json'),$token);
+        return $token;
+
+    }
     public function getToken()
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
@@ -51,6 +64,7 @@ class Auth extends \Codeception\Module
 
     function getSlug()
     {
+        $this->getModule('REST')->sendGET('/station/random/');
         $sl = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..slug');
  //       $s = serialize($sl);
 //        $slug = substr("$s",6,-2);
@@ -67,6 +81,7 @@ class Auth extends \Codeception\Module
 
     function getStationId()
     {
+        $this->getModule('REST')->sendGET('/station/random/');
         $st_id = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..id');
         $stat_id = serialize($st_id[0]);
         $station_id = substr("$stat_id",5,-2);
@@ -82,6 +97,7 @@ class Auth extends \Codeception\Module
     }
     function getCurrentTrack()
     {
+//        $this->getModule('REST')->sendGET('/stream/track?stationId=3');
         $c_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..currentTrack');
         $cur_tr = serialize($c_tr);
         $current_track = substr("$cur_tr",15,-3);
@@ -97,6 +113,7 @@ class Auth extends \Codeception\Module
     }
     function getSongUrl()
     {
+//        $this->getModule('REST')->sendGET('/stream/track?stationId=3');
         $c_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..data.currentTrack');
         $cur_tr = serialize($c_tr);
         $current_track = substr("$cur_tr",15,-3);
@@ -115,6 +132,7 @@ class Auth extends \Codeception\Module
 
     function getStation()
     {
+
         $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id');
         $stat = serialize($st);
         $station = substr("$stat",14,-3);
@@ -129,6 +147,9 @@ class Auth extends \Codeception\Module
 
     function getFavoriteStation()
     {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendGET('/favorite/station');
         $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..shoutcast_station_id'); #[] выбор массива
         $stat1 = serialize($st1);
         $favorite_station = substr("$stat1",14,-3);
@@ -179,7 +200,12 @@ class Auth extends \Codeception\Module
         $st_id = $this->getModule('REST')->grabDataFromResponseByJsonPath('$.data');
         $this->debugSection('Station Name', $st_id);
     }
-
+    function addFavoriteStation()
+    {
+        $I = $this->getModule('REST');
+        $I->haveHttpHeader('Content-Type', 'application/json');
+        $I->sendPOST('/favorite/station', array('station_id' => $station));
+    }
 
 
 }
