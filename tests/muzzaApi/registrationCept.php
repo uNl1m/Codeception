@@ -1,10 +1,11 @@
 <?php
-use \Helper\Auth;
-
+//use \Helper\Auth;
+//
 $I = new ApiGuy($scenario);
 $I->wantTo('create a user via API');
 $I->haveHttpHeader('Content-Type', 'application/json');
-$I->sendPOST('/auth/registration', array('username' => Auth::username, 'email' => Auth::email, 'password' => Auth::password, 'password_confirmation' => Auth::password));
-$I->seeResponseIsJson();
+$I->registration();
+//$I->sendPOST('/auth/registration', array('username' => Auth::username, 'email' => Auth::email, 'password' => Auth::password, 'password_confirmation' => Auth::password));
+//$I->seeResponseIsJson();
 $I->seeResponseCodeIs(200);
-?>
+//?>

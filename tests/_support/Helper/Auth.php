@@ -3,6 +3,7 @@ namespace Helper;
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I
 
+
 class Auth extends \Codeception\Module
 {
     const username = 'QA tester';
@@ -10,9 +11,18 @@ class Auth extends \Codeception\Module
     const password = '12345678';
     const confirm_password = '12345678';
     const station_name = 'alternative';
+    //------------reg----------------//
+    const reg_username = 'QA tester1';
+    const reg_email = 'd@freeletter.me';
+    const reg_password = '12345678';
+    const reg_confirm_password = '12345678';
+    const genreSlug = 'electronic';
+    //----------profile--------------//
+    const new_username = 'QA tester2';
+    const new_password = '123456789';
+
 
     protected $token;
-
 
 
 //   public function _before($t)
@@ -45,18 +55,28 @@ class Auth extends \Codeception\Module
     {
 
         $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
-        $this->getModule('REST')->sendPOST("/auth/login", ['email' => Auth::email,'password' => Auth::password]);
+        $this->getModule('REST')->sendPOST("/auth/login", ['email' => Auth::email, 'password' => Auth::password]);
         $token = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..token');
         $this->debugSection('Token', $token);
-        $a = file_put_contents(codecept_output_dir('token.json'),$token);
+        $a = file_put_contents(codecept_output_dir('token.json'), $token);
         return $token;
 
     }
+
     public function getToken()
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
         return $token;
     }
+
+    function logout()
+    {
+        $token = $this->getToken();
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendPOST('/auth/logout');
+    }
+
     function cleanToken()
     {
         $this->token = null;
@@ -66,64 +86,81 @@ class Auth extends \Codeception\Module
     {
         $this->getModule('REST')->sendGET('/station/random/');
         $sl = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..slug');
- //       $s = serialize($sl);
+//        $s = serialize($sl);
 //        $slug = substr("$s",6,-2);
         $this->debugSection('Slug', $sl);
-        $s = file_put_contents(codecept_output_dir('slug.json'),$sl);
+        $s = file_put_contents(codecept_output_dir('slug.json'), $sl);
         return $sl;
 
     }
+
     function takeSlug()
     {
         $slug = file_get_contents(codecept_output_dir('slug.json'));
         return $slug;
     }
 
+    function getRandomStation()
+    {
+        $this->getModule('REST')->sendGET('/station/random/');
+    }
+
     function getStationId()
     {
         $this->getModule('REST')->sendGET('/station/random/');
         $st_id = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..id');
-        $stat_id = serialize($st_id[0]);
-        $station_id = substr("$stat_id",5,-2);
+//        $stat_id = serialize($st_id[0]);
+//        $station_id = substr("$stat_id",5,-2);
+
         $this->debugSection('Station ID', $st_id);
-        $st = $s = file_put_contents(codecept_output_dir('station_id.json'),$st_id);
-        return $station_id;
+//        $st = $s = file_put_contents(codecept_output_dir('station_id.json'), $st_id);
+        return $st_id;
 
     }
+
     function takeStationId()
     {
         $station_id = file_get_contents(codecept_output_dir('station_id.json'));
         return $station_id;
     }
+
     function getCurrentTrack()
     {
-//        $this->getModule('REST')->sendGET('/stream/track?stationId=3');
+//        $this->getStationId();
+//        $station_id = $this->takeStationId();
+        $this->getModule('REST')->sendGET('/stream/track?stationId=4');
         $c_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..currentTrack');
         $cur_tr = serialize($c_tr);
-        $current_track = substr("$cur_tr",15,-3);
-        $this->debugSection('Current track', $c_tr);
-        $c = file_put_contents(codecept_output_dir('currentTrack.json'),$c_tr);
+        $current_track = substr("$cur_tr", 15, -3);
+        $this->debugSection('Current track', $current_track);
+//        $c = file_put_contents(codecept_output_dir('currentTrack.json'), $c_tr);
         return $current_track;
 
     }
+
     function takeCurrentTrack()
     {
         $current_track = file_get_contents(codecept_output_dir('currentTrack.json'));
         return $current_track;
     }
+
     function getSongUrl()
     {
-//        $this->getModule('REST')->sendGET('/stream/track?stationId=3');
+        $this->getModule('REST')->sendGET('/stream/track?stationId=3');
+//        $this->getStationId();
+//        $station_id = $this->takeStationId();
+//        $this->getModule('REST')->sendGET('/stream/track?stationId=' . $station_id);
         $c_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..data.currentTrack');
         $cur_tr = serialize($c_tr);
-        $current_track = substr("$cur_tr",15,-3);
+        $current_track = substr("$cur_tr", 15, -3);
 //        $this->debugSection('Current track', $current_track);
-        $track = str_replace(" ","%20",$current_track);
-        $song_url = str_replace("-","+",$track);
+        $track = str_replace(" ", "%20", $current_track);
+        $song_url = str_replace("-", "+", $track);
         $this->debugSection('Song URL', $song_url);
-        $s = file_put_contents(codecept_output_dir('song_url.json'),$song_url);
+//        $s = file_put_contents(codecept_output_dir('song_url.json'), $song_url);
         return $song_url;
     }
+
     function takeSongURL()
     {
         $song_URL = file_get_contents(codecept_output_dir('song_url.json'));
@@ -133,86 +170,295 @@ class Auth extends \Codeception\Module
     function getStation()
     {
 
+        $this->getModule('REST')->sendGET('/station/search/' . Auth::station_name);
         $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id');
         $stat = serialize($st);
-        $station = substr("$stat",14,-3);
+        $station = substr("$stat", 14, -3);
         $this->debugSection('Station', $st);
-        $s = file_put_contents(codecept_output_dir('station.json'),$st[1]);
+//        $s = file_put_contents(codecept_output_dir('station.json'), $st[1]);
     }
+
     function takeStation()
     {
         $station = file_get_contents(codecept_output_dir('station.json'));
         return $station;
     }
 
-    function getFavoriteStation()
+    function getFavoriteStationId($id)
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
         $this->getModule('REST')->amBearerAuthenticated($token);
         $this->getModule('REST')->sendGET('/favorite/station');
         $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..shoutcast_station_id'); #[] выбор массива
-        // $stat1 = serialize($st1);
-        // $favorite_station = substr("$stat1",14,-3);
-        // $st2 = $this->getModule('REST')->grabResponse();
-        // $s = json_decode($st2)[1]->id;
-        $ss_id=$st1[0];
-        $this->debugSection('FavoriteStation', $ss_id);
+
+        $ss_id = $st1[$id];
+        $this->debugSection('FavoriteStation ID', $st1);
+
+//         $f = file_put_contents(codecept_output_dir('Fstation.json'),$ss_id);
         return $ss_id;
-        // $f = file_put_contents(codecept_output_dir('Fstation.json'),$st1[0]);
-    }
-    function takeFavoriteStation()
-    {
-        $favorite_station = file_get_contents(codecept_output_dir('Fstation.json'));
-        return $favorite_station;
     }
 
-    function getStationName()
-    {
-        $st2 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..name'); #[] выбор массива
-        $stat2 = serialize($st2);
-        $search_station = substr($stat2,14, strpos($stat2, ' '));
-        $this->debugSection('Favorite Station Name', $st2);
-        $n = file_put_contents(codecept_output_dir('stationName.json'),$st2);
-    }
-    function takeStationName()
-    {
-        $search_station = file_get_contents(codecept_output_dir('stationName.json'));
-        return $search_station;
-    }
 
-    function getFavoriteTrackID()
+
+    function getFavoriteTrackID($id)
     {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendGET('/favorite/track');
         $f_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..id');
-        $fav_tr = serialize($f_tr);
-        $favorite_track = substr("$fav_tr",14,-3);
+        $f_tr_id = $f_tr[$id];
         $this->debugSection('FavoriteStation', $f_tr);
-        $f = file_put_contents(codecept_output_dir('favoriteTrackID.json'),$f_tr);
+//        $f = file_put_contents(codecept_output_dir('favoriteTrackID.json'), $f_tr);
+        return $f_tr_id;
     }
+
     function takeFavoriteTrackID()
     {
-        $favorite_track = file_get_contents(codecept_output_dir('stationName.json'));
+        $favorite_track = file_get_contents(codecept_output_dir('favoriteTrackID.json'));
         return $favorite_track;
     }
 
     function getItunesUrl()
     {
+        $song_url = $this->getSongUrl();
+        $this->getModule('REST')->sendGET('/itunes/search/' . $song_url);
         $i = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..song_url');
         $this->debugSection('Itunes URL', $i);
     }
+
     function getTestStationName()
     {
         $st_id = $this->getModule('REST')->grabDataFromResponseByJsonPath('$.data');
         $this->debugSection('Station Name', $st_id);
     }
+
     function addFavoriteStation()
     {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
         $I = $this->getModule('REST');
         $I->haveHttpHeader('Content-Type', 'application/json');
-        $I->sendPOST('/favorite/station', array('station_id' => $station));
+        $station = $this->takeStation();
+        $I->sendPOST('/favorite/station', ['station_id' => $station]);
+    }
+
+    function getStationDetailsBySlug()
+    {
+
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $slug = $this->getSlug();
+        $this->getModule('REST')->sendGET('/station/details', ['stationSlug' => $slug]);
+
+    }
+
+    function addFavoriteTrack()
+    {
+
+        $current_track = $this->getCurrentTrack();
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendPOST('/favorite/track', array('track_name' => $current_track));
+    }
+
+    function getBanner()
+    {
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $this->getModule('REST')->sendGET('/banner?address=193.108.249.33');
+    }
+
+    function getFavoriteTracks($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendGET('/favorite/track');
+        $s_tr = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..track_name');
+        $st = $s_tr[$id];
+        $track_name = substr($st, 0, strrpos($st, ' '));
+        $this->debugSection('Favorite Tracks', $s_tr);
+        return $track_name;
+    }
+
+    function getFavoriteStations($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendGET('/favorite/station');
+        $st2 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..name'); #[] выбор массива
+        $ss = $st2[$id];
+        $station_name = substr($ss, 0, strrpos($ss, ' '));
+        $this->debugSection('Favorite Station Name', $st2);
+        return $station_name;
+
+    }
+
+    function getMainAndSecondGenres()
+    {
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $this->getModule('REST')->sendGET('/genre');
+
+    }
+
+    function showProfile()
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendGET('/user/profile');
+    }
+
+    function registration()
+    {
+        $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
+        $this->getModule('REST')->sendPOST('/auth/registration', array('username' => Auth::reg_username,
+                                                                        'email' => Auth::reg_email,
+                                                                        'password' => Auth::reg_password,
+                                                                        'password_confirmation' => Auth::reg_password));
+        $this->getModule('REST')->seeResponseIsJson();
+    }
+
+    function searchFavoriteStationByName($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $search_station = $this->getFavoriteStations($id);
+        $this->getModule('REST')->sendGET('/favorite/station/' . $search_station);
+    }
+
+    function searchFavoriteTrackByName($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $search_track = $this->getFavoriteTracks($id);
+        $this->getModule('REST')->sendGET('/favorite/track/' . $search_track);
+    }
+
+    function getStationByGenreSlug()
+    {
+        $this->getModule('REST')->sendGET('/station/' . Auth::genreSlug);
+    }
+
+    function getStationByName()
+    {
+        $this->getModule('REST')->sendGET('/station/search/' . Auth::station_name);
+    }
+
+    function resendActivateCode()
+    {
+        $this->getModule('REST')->sendPUT('/auth/activate', array('email' => Auth::reg_email));
+    }
+
+    function resetPassword()
+    {
+        $this->getModule('REST')->sendPUT('/auth/reset-password', array('email' => 'b@freeletter.me'));
+    }
+
+    function removeFavoriteStation($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $shoutcast_station_id = $this->getFavoriteStationId($id);
+//        $shoutcast_station_id = file_get_contents(codecept_output_dir('Fstation.json'));
+        $this->getModule('REST')->sendDELETE('/favorite/station', ["station_id" => "$shoutcast_station_id"]);
+    }
+
+    function removeFavoriteTrack($id)
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $favorite_track = $this->getFavoriteTrackID($id);
+        $this->debugSection('Remove Favorite Track', $favorite_track);
+        $this->getModule('REST')->sendDELETE('/favorite/track', ["id" => "$favorite_track"]);
+    }
+
+    function updateProfile()
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendPUT('/user/profile', ['username' => Auth::new_username]);
+    }
+
+    function changePassword()
+    {
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => Auth::password,
+            'new_password' => Auth::new_password,
+            'new_password_confirm' => Auth::new_password]);
+        $token = file_get_contents(codecept_output_dir('token.json'));
+        $this->getModule('REST')->amBearerAuthenticated($token);
+        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => Auth::new_password,
+            'new_password' => Auth::password,
+            'new_password_confirm' => Auth::password]);
+    }
+
+    function checkTempMailForgotPassword()
+    {
+//        $this ->resetPassword();
+
+        $email = 'd@freeletter.me';
+        $mail = md5($email);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/php/');
+        $html = $this->getModule('REST')->grabResponse();
+        preg_match('~<a(.*)href="([^"]+)"(.*?)>~',$html,$link);
+        $code = substr($link[0],47, -18);
+        $this->debugSection('code', $code);
+        file_put_contents(codecept_output_dir('link.json'), $code);
+
+        return $code;
+    }
+    function checkTempMailActivateUser()
+    {
+        $email = Auth::reg_email;
+        $mail = md5($email);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/php/');
+        $html = $this->getModule('REST')->grabResponse();
+        preg_match('~<a(.*)href="([^"]+)"(.*?)>~',$html,$link);
+        $code = substr($link[0],9, -18);
+        $this->debugSection('code', $code);
+        file_put_contents(codecept_output_dir('activate.json'), $code);
+        return $code;
+    }
+    function removeLastEmail()
+    {
+        $email = Auth::reg_email;
+        $mail = md5($email);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/json/');
+        $del_letterID = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..mail_id');
+        $del = $del_letterID[0];
+        $this->debugSection('Id', $del);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/delete/id/'.$del.'/');
+
+    }
+    function resetPasswordConfirmAction()
+    {
+
+        $code = $this ->checkTempMailForgotPassword();
+        $this->getModule('REST')->sendGET('/auth/reset-password/'.$code);
+        $reminderCode = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..reminderCode');
+        $this->debugSection('Reminder code', $reminderCode);
+        $reminderCode = file_put_contents(codecept_output_dir('reminderCode.json'),$reminderCode);
+        $userId = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..userId');
+        $this->debugSection('User ID', $userId);
+        $userId = file_put_contents(codecept_output_dir('userId.json'),$userId);
+
+    }
+    function resetPasswordConfirm()
+    {
+        $reminderCode = file_get_contents(codecept_output_dir('reminderCode.json'));
+        $userId = file_get_contents(codecept_output_dir('userId.json'));
+        $this->getModule('REST')->sendPUT('/auth/reset-password/confirm', ['reminderCode'=>"$reminderCode",
+                                                                        'userId'=>"$userId",
+                                                                        'password'=>Auth::password,
+                                                                        'password_confirmation'=>Auth::password]);
+    }
+    function activateUser()
+    {
+        $activateUrl = file_get_contents(codecept_output_dir('activate.json'));
+        $this->getModule('REST')->sendGET($activateUrl);
     }
 
 
-}
 
+
+}
 
 
