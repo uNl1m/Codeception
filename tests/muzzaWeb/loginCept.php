@@ -1,21 +1,21 @@
 <?php 
 
 	$I = new WebGuy($scenario);
-	include 'constant.php';
 	$I->wantTo('Login to muzza.life');
-	$I->amOnPage(LoginPopUp::$URL);
-	$I->click(LoginPopUp::$loginPopup);
-	$I->waitForText(LoginPopUp::$createAccountLink);
-	$I->see(LoginPopUp::$createAccountLink);
-	$I->see(LoginPopUp::$createAccountLink);
-	$I->seeElement(LoginPopUp::$emailField);
-	$I->seeElement(LoginPopUp::$passwordField);
-	$I->seeElement(LoginPopUp::$loginButton);
-	$I->fillField(LoginPopUp::$emailField,$email);
-	$I->fillField(LoginPopUp::$passwordField,$pass);
-	$I->click(LoginPopUp::$loginButton);
-	$I->waitForText($username);
-	$I->wait(3);
- ///
+	$I->login();
+//	$I->amOnPage('/');
+//	$I->click('//*[@id="popup-login"]');
+//	$I->waitForText('Create account');
+//	$I->see('Create account');
+////	$I->see(LoginPopUp::$createAccountLink);
+//	$I->seeElement('#email');
+//	$I->seeElement("#password");
+//	$I->seeElement("#loginButton");
+//	$I->fillField('#email', "b@freeletter.me");
+//	$I->fillField("#password", 12345678);
+//	$I->click("#loginButton");
+//	$I->waitForText('QA TEST');
+//	$I->wait(3);
+// ///
  
 ?>

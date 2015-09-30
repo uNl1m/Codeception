@@ -1,9 +1,17 @@
 class_name: WebGuy
 modules:
     enabled:
-        - WebDriver
-    config:
-        WebDriver:
+        - WebDriver:
             url: 'http://muzza.life'
             browser: 'chrome'
             window_size: 'maximize'
+        - REST:
+            depends: PhpBrowser
+            url: 'http://muzza.life/api'
+        - \Helper\ApiHelper
+
+
+
+
+
+

@@ -71,6 +71,7 @@ class tCest
 //        $I->checkTempMailActivateUser();
 //        $I->activateUser();
         $I->removeLastEmail();
+//        $I->getTopStations();
         $I->seeResponseCodeIs(200);
     }
 
