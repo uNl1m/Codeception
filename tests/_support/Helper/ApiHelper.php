@@ -2,7 +2,7 @@
 namespace Helper;
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I
-use WebGuy;
+use Page\MuzzaWeb\UserData;
 class ApiHelper extends \Codeception\Module
 {
     const username = 'QA tester';
@@ -54,7 +54,7 @@ class ApiHelper extends \Codeception\Module
     {
 
         $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
-        $this->getModule('REST')->sendPOST("/auth/login", ['email' => ApiHelper::email, 'password' => ApiHelper::password]);
+        $this->getModule('REST')->sendPOST("/auth/login", ['email' => UserData::$email, 'password' => UserData::$password]);
         $token = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..token');
         $this->debugSection('Token', $token);
         $a = file_put_contents(codecept_output_dir('token.json'), $token);
@@ -424,6 +424,7 @@ class ApiHelper extends \Codeception\Module
         file_put_contents(codecept_output_dir('activate.json'), $code);
 //        file_put_contents(codecept_output_dir('activateWeb.json'), $codeWeb);
         return $code;
+
     }
     function removeLastEmail()
     {
@@ -439,7 +440,7 @@ class ApiHelper extends \Codeception\Module
     }
     function removeLastEmail1()
     {
-        $email = WebGuy::$email;
+        $email = UserData::$email;
 //        $email = file_get_contents(codecept_output_dir('userEmail.txt'));
         $mail = md5($email);
         $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/json/');

@@ -1,34 +1,28 @@
 <?php
 use \WebGuy;
-use \Helper\ApiHelper;
-use \Step\MuzzaWeb\LoginWeb;
+use \Page\MuzzaWeb\LoginPopUp;
+use \Page\MuzzaWeb\UserData;
 
-class TCest
+class registrationActiveLoginCest
 {
-    public function _before(WebGuy $I)
-    {
 
-
-    }
-    public function before(\Helper\ApiHelper $I)
-    {
-//        $I->checkTempMailActivateUser();
-    }
-    public function registr(WebGuy $I)
+    public function uniqueEmail(\Step\MuzzaWeb\UniqueEmail $I)
     {
         $I->uniqueEmail();
+    }
+    public function registration(\Step\MuzzaWeb\Registration $I)
+    {
         $I->registration();
         $I->wait(3);
     }
 
-    public function after(\Helper\ApiHelper $I)
+    public function checkTempMailActivateUser(\Helper\ApiHelper $I)
     {
-//        $I->login();
         $I->checkTempMailActivateUser();
 
     }
 
-    // tests
+
     public function tryToTest(WebGuy $I)
     {
         $url = file_get_contents(codecept_output_dir('activate.json'));
@@ -41,9 +35,9 @@ class TCest
         $I->seeElement('#password');
         $I->seeElement('#loginButton');
         $email = file_get_contents(codecept_output_dir('userEmail.txt'));
-        $I->fillField(Login::$emailField, $email);
-        $I->fillField(Login::$passwordField, WebGuy::$pass);
-        $I->click(Login::$loginButton);
+        $I->fillField(LoginPopUp::$emailField, $email);
+        $I->fillField(LoginPopUp::$passwordField, UserData::$password);
+        $I->click(LoginPopUp::$loginButton);
         $I->wait(3);
     }
     public function cleanMail(\Helper\ApiHelper $I)
