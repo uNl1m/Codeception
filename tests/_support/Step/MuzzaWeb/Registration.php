@@ -1,5 +1,6 @@
 <?php
 namespace Step\MuzzaWeb;
+use Page\MuzzaWeb\LoginPopUp;
 use \Page\MuzzaWeb\MainPage;
 use \Page\MuzzaWeb\RegistrationPopUp;
 use \Page\MuzzaWeb\UserData;
@@ -22,6 +23,10 @@ class Registration extends \WebGuy
         $I->seeElement(RegistrationPopUp::$passwordField);
         $I->seeElement(RegistrationPopUp::$confirmPasswordField);
         $I->seeElement(RegistrationPopUp::$registrationButton);
+        $I->seeElement(LoginPopUp::$tw_button);
+        $I->seeElement(LoginPopUp::$vk_button);
+        $I->seeElement(LoginPopUp::$fb_button);
+        $I->seeElement(LoginPopUp::$gp_button);
         $I->fillField(RegistrationPopUp::$usernameField, UserData::$reg_username);
         $reg_email = file_get_contents(codecept_output_dir('userEmail.txt'));
         $I->fillField(RegistrationPopUp::$emailField, $reg_email);

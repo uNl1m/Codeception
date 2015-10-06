@@ -1,9 +1,9 @@
 <?php
 use \Helper\ApiHelper;
 
-use \Page\MuzzaWeb\LoginPopUp as Login ;
+use \Page\MuzzaWeb\LoginPopUp;
 use \Page\MuzzaWeb\MainPage;
-use \Step\MuzzaWeb\CheckMainPage;
+use \Page\MuzzaWeb\UserData;
 
 
 /**
@@ -25,16 +25,31 @@ class WebGuy extends \Codeception\Actor
 {
     use _generated\WebGuyActions;
 
-//    public static $username = 'QA tester1';
-//    public static $email = 'b@freeletter.me';
-//    public static $pass = '12345678';
-//    public static $pass_conf = '12345678';
-//    ///--------------registration----------------//
-//    public static $reg_username = 'QA tester';
-//    public static $reg_email;
-//    public static $mail = 'm';
-//    public static $reg_password = '12345678';
+    public function loginW()
+    {
+        if ($this->loadSessionSnapshot('login')) return;
 
+        $this->amOnPage(MainPage::$URL);
+        $this->click(MainPage::$loginPopup);
+        $this->waitForText(LoginPopUp::$createAccountLink);
+        $this->see(LoginPopUp::$createAccountLink);
+        $this->see(LoginPopUp::$createAccountLink);
+        $this->seeElement(LoginPopUp::$emailField);
+        $this->seeElement(LoginPopUp::$passwordField);
+        $this->seeElement(LoginPopUp::$loginButton);
+        $this->seeElement(LoginPopUp::$tw_button);
+        $this->seeElement(LoginPopUp::$vk_button);
+        $this->seeElement(LoginPopUp::$fb_button);
+        $this->seeElement(LoginPopUp::$gp_button);
+        $this->fillField(LoginPopUp::$emailField, UserData::$email);
+        $this->fillField(LoginPopUp::$passwordField, UserData::$password);
+        $this->click(LoginPopUp::$loginButton);
+        $userName = file_get_contents(codecept_output_dir('userName.txt'));
+        $this->waitForText($userName);
+        $this->seeElement(LoginPopUp::$userAvatar);
+        $this->see($userName, LoginPopUp::$userNameField);
+        $this->saveSessionSnapshot('login');
+    }
 //    public function checkMainPage()
 //    {
 //        $I = $this;

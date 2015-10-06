@@ -4,7 +4,7 @@ $I = new ApiGuy($scenario);
 $I->wantTo('Add current track to Favorite');
 $I->haveHttpHeader('Content-Type', 'application/json');
 
-$I->addFavoriteTrack();
+$I->addFavoriteTrack(1);
 
 ////$I->sendGET('/station/random/');
 ////$station_id = $I->getStationId();

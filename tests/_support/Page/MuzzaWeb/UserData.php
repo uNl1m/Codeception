@@ -16,5 +16,18 @@ class UserData
     ///-------------Social accounts-------//
     public static $tw_email = '@trinitytester';
     public static $tw_pass = '123456qwer';
+    public static $fb_email = 'qa.trinitytester@gmail.com';
+    public static $fb_pass = '123456qwer';
+    public static $vk_email = 'qa.trinitytester@gmail.com';
+    public static $vk_pass = '123456qwer';
+    public static $gp_email = 'qa.trinitytester@gmail.com';
+    public static $gp_pass = '123456qwer';
 
+
+
+    //----------------Search Data--------------//
+    public static $searchStation = 'idobi Radio';
+
+    //-----------------Profile Data-----------//
+    public static $changeName = 'QA tester';
 }

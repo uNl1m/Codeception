@@ -28,8 +28,8 @@ class CheckMainPage extends \WebGuy
         $I->seeElement(MainPage::$loginPopup);
         $I->seeElement(MainPage::$registrationLink);
         $I->seeElement(MainPage::$player_station_title);
-        $I->seeNumberOfElements('span.set-genre', 25);
-        $I->seeNumberOfElements('div.station-info', 15);
+        $I->seeNumberOfElements(MainPage::$genreList, 25);
+        $I->seeNumberOfElements(MainPage::$stationsList, 15);
         $I->executeJS('window.scrollTo(0,100);');
         $I->waitForElement(MainPage::$scrollDown);
         $I->click(MainPage::$scrollDown);

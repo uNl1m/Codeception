@@ -4,7 +4,7 @@
 
 class tCest
 {
-    public function _before($I)
+    public function before($I)
     {
 //        $I->getSlug();
 //        $I->seeResponseCodeIs(200);
@@ -70,18 +70,63 @@ class tCest
 //        $I->resetPasswordConfirm();
 //        $I->checkTempMailActivateUser();
 //        $I->activateUser();
-        $I->removeLastEmail();
+//        $I->removeLastEmail();
+        $I->removeLastEmail1();
 //        $I->getTopStations();
         $I->seeResponseCodeIs(200);
     }
 
 
-    public function _after($I)
-    {
-    }
+//    public function _after($I)
+//    {
+//    }
 
     // tests
-    public function tryToTest($I)
-    {
-    }
+//    public function addNStationsToFavorite($I)
+//    {
+//        $I->haveHttpHeader('Content-Type', 'application/json');
+//        $token = file_get_contents(codecept_output_dir('token.json'));
+//        $I->amBearerAuthenticated($token);
+//
+//        for ($i = 100 ; $i < 150; $i++) {
+//            $station = $I->getRandomStation();
+//
+////$I->addFavoriteStation();
+////$station = $I->takeStation();
+//            $I->sendPOST('/favorite/station', array('station_id' => $station));
+//            $I->seeResponseCodeIs(200);
+//        }
+//    }
+//    public function removeStaions($I)
+//    {
+//        $I->haveHttpHeader('Content-Type', 'application/json');
+//        $token = file_get_contents(codecept_output_dir('token.json'));
+//        $I->amBearerAuthenticated($token);
+//
+//        for ($i = 1 ; $i < 100; $i++) {
+//            $I->removeFavoriteStation(1);
+//            $I->seeResponseCodeIs(200);
+//        }
+//    }
+//    public function addNTracksToFavorite($I)
+//    {
+//        $I->haveHttpHeader('Content-Type', 'application/json');
+//        $token = file_get_contents(codecept_output_dir('token.json'));
+//        $I->amBearerAuthenticated($token);
+//        for ($i = 1; $i < 100; $i++) {
+//            $I->addFavoriteTrack($i);
+////            $I->seeResponseCodeIs(200);
+//        }
+//    }
+//    public function removeTrack($I)
+//    {
+//        $I->haveHttpHeader('Content-Type', 'application/json');
+//        $token = file_get_contents(codecept_output_dir('token.json'));
+//        $I->amBearerAuthenticated($token);
+//
+//        for ($i = 1 ; $i < 10; $i++) {
+//            $I->removeFavoriteTrack(1);
+//            $I->seeResponseCodeIs(200);
+//        }
+//    }
 }

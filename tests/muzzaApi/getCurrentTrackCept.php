@@ -2,7 +2,7 @@
 $I = new ApiGuy($scenario);
 $I->wantTo('GET current Track');
 $I->haveHttpHeader('Content-Type', 'application/json');
-$I->getCurrentTrack();
+$I->getCurrentTrack(1);
 //$I->sendGET('/station/random/');
 //$station_id = $I->getStationId();
 //$I->sendGET('/stream/track?stationId='.$station_id);

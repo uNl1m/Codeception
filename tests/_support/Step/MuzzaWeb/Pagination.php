@@ -9,7 +9,7 @@ class Pagination extends \WebGuy
         $I->executeJS('window.scrollTo(0,600);');
         $I->wait(1);
         $I->seeElement(MainPage::$smallHeader);
-        $I->seeNumberOfElements('div.station-info', 30);
+        $I->seeNumberOfElements(MainPage::$stationsList, 30);
         $I->waitForElement(MainPage::$scrollUp);
     }
 }

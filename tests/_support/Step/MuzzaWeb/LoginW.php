@@ -7,7 +7,7 @@ use \Page\MuzzaWeb\UserData;
 class Login extends \WebGuy
 {
 
-    public function login()
+    public function loginW()
     {
         if ($this->loadSessionSnapshot('login')) return;
 
@@ -19,11 +19,16 @@ class Login extends \WebGuy
         $this->seeElement(LoginPopUp::$emailField);
         $this->seeElement(LoginPopUp::$passwordField);
         $this->seeElement(LoginPopUp::$loginButton);
+        $this->seeElement(LoginPopUp::$tw_button);
+        $this->seeElement(LoginPopUp::$vk_button);
+        $this->seeElement(LoginPopUp::$fb_button);
+        $this->seeElement(LoginPopUp::$gp_button);
         $this->fillField(LoginPopUp::$emailField, UserData::$email);
         $this->fillField(LoginPopUp::$passwordField, UserData::$password);
         $this->click(LoginPopUp::$loginButton);
         $this->waitForText(UserData::$username);
         $this->seeElement(LoginPopUp::$userAvatar);
+        $this->see(UserData::$username, LoginPopUp::$userNameField);
         $this->saveSessionSnapshot('login');
     }
 }

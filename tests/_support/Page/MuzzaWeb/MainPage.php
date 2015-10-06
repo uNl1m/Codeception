@@ -9,6 +9,11 @@ class MainPage
     public static $play_button = 'button.jp-play';
     public static $next_button = 'li.next';
     public static $share_button = 'span.social-action-trigger.share';
+    public static $loginPopup = '//*[@id="popup-login"]';
+    public static $registrationLink = '#popup-registration';
+    public static $favoriteLink = 'a.muzza-rout.favorite';
+    public static $profileLink = '#popup-profile';
+    public static $player_station_title = 'div.jp-title';
     public static $share_fb = 'li.fb';
     public static $share_tw = 'li.tw';
     public static $share_gp = 'li.gp';
@@ -26,13 +31,12 @@ class MainPage
     public static $slider_pager_act = 'a.bx-pager-link';
 
     public static $search_field = '#search_input';
+    public static $search_button = '#search_button';
     public static $genre_title = 'h2.pull-left.genre-title';
     public static $stations_title = 'h2.pull-left.stations-title';
     public static $random_button = 'span.rand';
     public static $top20_button = 'span.top-20';
-    public static $loginPopup = '//*[@id="popup-login"]';
-    public static $registrationLink = '#popup-registration';
-    public static $player_station_title = 'div.jp-title';
+
     public static $scrollDown = 'span.move-top.down';
     public static $scrollUp = 'span.move-top.up';
     public static $alternativeGenre = '#tab-1';
@@ -66,5 +70,7 @@ class MainPage
     public static $smallHeader = 'header.small';
     public static $unplayed_station = 'a.station-link.unactive';
     public static $played_station = 'a.station-link.unactive.playing';
+    public static $stationsList = 'div.station-info';
+    public static $genreList = 'span.set-genre';
 
 }
