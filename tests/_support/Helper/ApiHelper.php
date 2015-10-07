@@ -35,8 +35,8 @@ class ApiHelper extends \Codeception\Module
 //           return;
 //       }
 //       $I->sendPOST("/auth/login", [
-//           'email' => Auth::email,
-//           'password' => Auth::password,
+//           'email' => UserData::email,
+//           'password' => UserData::password,
 //       ]);
 //
 //       $I->seeResponseCodeIs(200);
@@ -174,7 +174,7 @@ class ApiHelper extends \Codeception\Module
     function getStation()
     {
 
-        $this->getModule('REST')->sendGET('/station/search/' . ApiHelper::station_name);
+        $this->getModule('REST')->sendGET('/station/search/' . UserData::$station_name);
         $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id');
         $stat = serialize($st);
         $station = substr("$stat", 14, -3);
@@ -300,7 +300,15 @@ class ApiHelper extends \Codeception\Module
     function getMainAndSecondGenres()
     {
         $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
-        $this->getModule('REST')->sendGET('/genre');
+        $this->getModule('REST')->sendGET('/genre/');
+        $genres = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..name');
+        file_put_contents(codecept_output_dir('genres.json'),$genres);
+
+        $genre = $genres[6];
+//        $this->debugSection('Genres', $g);
+        $this->debugSection('Genre', $genre);
+        return $genre;
+
 
     }
 
@@ -316,9 +324,9 @@ class ApiHelper extends \Codeception\Module
         $reg_email = file_get_contents(codecept_output_dir('userEmail.txt'));
         $this->getModule('REST')->haveHttpHeader('Content-Type', 'application/json');
         $this->getModule('REST')->sendPOST('/auth/registration', array('username' => UserData::$reg_username,
-            'email' => $reg_email,
-            'password' => UserData::$reg_password,
-            'password_confirmation' => UserData::$reg_password));
+                                                                        'email' => $reg_email,
+                                                                        'password' => UserData::$reg_password,
+                                                                        'password_confirmation' => UserData::$reg_password));
         $this->getModule('REST')->seeResponseIsJson();
     }
 
@@ -340,22 +348,23 @@ class ApiHelper extends \Codeception\Module
 
     function getStationByGenreSlug()
     {
-        $this->getModule('REST')->sendGET('/station/' . ApiHelper::genreSlug);
+        $this->getModule('REST')->sendGET('/station/' . UserData::$genreSlug);
     }
 
     function getStationByName()
     {
-        $this->getModule('REST')->sendGET('/station/search/' . ApiHelper::station_name);
+        $this->getModule('REST')->sendGET('/station/search/' . UserData::$station_name);
     }
 
     function resendActivateCode()
     {
-        $this->getModule('REST')->sendPUT('/auth/activate', array('email' => ApiHelper::reg_email));
+        $reg_email = file_get_contents(codecept_output_dir('userEmail.txt'));
+        $this->getModule('REST')->sendPUT('/auth/activate', array('email' => $reg_email));
     }
 
     function resetPassword()
     {
-        $this->getModule('REST')->sendPUT('/auth/reset-password', array('email' => 'b@freeletter.me'));
+        $this->getModule('REST')->sendPUT('/auth/reset-password', array('email' => UserData::$email));
     }
 
     function removeFavoriteStation($id)
@@ -389,14 +398,14 @@ class ApiHelper extends \Codeception\Module
     {
         $token = file_get_contents(codecept_output_dir('token.json'));
         $this->getModule('REST')->amBearerAuthenticated($token);
-        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => ApiHelper::password,
-            'new_password' => ApiHelper::new_password,
-            'new_password_confirm' => ApiHelper::new_password]);
+        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => UserData::$password,
+                                                            'new_password' => UserData::$changePass,
+                                                            'new_password_confirm' => UserData::$changePass]);
         $token = file_get_contents(codecept_output_dir('token.json'));
         $this->getModule('REST')->amBearerAuthenticated($token);
-        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => ApiHelper::new_password,
-            'new_password' => ApiHelper::password,
-            'new_password_confirm' => ApiHelper::password]);
+        $this->getModule('REST')->sendPUT('/user/password', ['old_password' => UserData::$changePass,
+                                                            'new_password' => UserData::$password,
+                                                            'new_password_confirm' => UserData::$password]);
     }
 
     function checkTempMailForgotPassword()
@@ -476,8 +485,8 @@ class ApiHelper extends \Codeception\Module
         $userId = file_get_contents(codecept_output_dir('userId.json'));
         $this->getModule('REST')->sendPUT('/auth/reset-password/confirm', ['reminderCode'=>"$reminderCode",
             'userId'=>"$userId",
-            'password'=>ApiHelper::password,
-            'password_confirmation'=>ApiHelper::password]);
+            'password'=>UserData::$password,
+            'password_confirmation'=>UserData::$password]);
     }
     function activateUser()
     {

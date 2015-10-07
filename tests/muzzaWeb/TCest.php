@@ -39,13 +39,13 @@ class TCest
 
 //        $I->removeTrack(1);
     }
-//    public function socialLogin(\Step\MuzzaWeb\SocialLogin $I)
-//    {
-////        $I->twLogin();
-////        $I->vkLogin();
-////        $I->gpLogin();
-////        $I->fbLogin();
-//    }
+    public function socialLogin(\Step\MuzzaWeb\SocialLogin $I)
+    {
+//        $I->twLogin();
+//        $I->vkLogin();
+//        $I->gpLogin();
+//        $I->fbLogin();
+    }
 //    public function checkMailPage(WebGuy $I)
 //    {
 ////        $I->checkMainPage();
@@ -88,8 +88,19 @@ class TCest
 //    {
 ////        $I->removeLastEmail1();
 //    }
-    public function uniqueName(\Step\MuzzaWeb\UniqueUserName $I)
+//    public function uniqueName(\Step\MuzzaWeb\UniqueUserName $I)
+//    {
+//        $I->uniqueUserName();
+//    }
+    public function shareStation(\Step\MuzzaWeb\ShareStation $I)
     {
-        $I->uniqueUserName();
+//        $I->shareVk();
+    }
+    public function switchGenre(\Step\MuzzaWeb\Genres $I)
+    {
+//        $I->alternativeGenre();
+//        $I->bluesGenre();
+//        $I->classicGenre();
+//        $I->countryGenre();
     }
 }

@@ -1,4 +1,7 @@
 <?php
+/**
+ * @group login
+ */
 use \WebGuy;
 
 class addTrackToFavoriteCest
@@ -14,7 +17,7 @@ class addTrackToFavoriteCest
     // tests
     public function addFavoriteTrackByApi(WebGuy $I)
     {
-        $I->addFavoriteTrack(1);
+//        $I->addFavoriteTrack(1);
 
 
     }

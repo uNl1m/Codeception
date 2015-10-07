@@ -1,4 +1,7 @@
 <?php
+/**
+ * @group login
+ */
 use \WebGuy;
 
 class addStationToFavoriteCest

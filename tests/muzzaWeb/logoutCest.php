@@ -3,12 +3,12 @@ use \WebGuy;
 
 class logoutCest
 {
-    public function _before(\Step\MuzzaWeb\Login $I)
+    public function login (WebGuy $I)
     {
-        $I->login();
+        $I->loginW();
     }
 
-    public function _after(Step\MuzzaWeb\Logout $I)
+    public function logout(Step\MuzzaWeb\Logout $I)
     {
         $I->logout();
     }
@@ -18,3 +18,4 @@ class logoutCest
     {
     }
 }
+

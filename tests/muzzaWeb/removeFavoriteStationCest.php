@@ -20,7 +20,7 @@ class removeFavoriteStationCest
     }
     public function removeFavoriteStation (\Step\MuzzaWeb\RemoveFavoriteStation $U)
     {
-        $U->removeStation(0);
+        $U->removeStation(1);
         $U->wait(1);
     }
 }

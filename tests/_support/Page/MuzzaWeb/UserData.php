@@ -27,7 +27,10 @@ class UserData
 
     //----------------Search Data--------------//
     public static $searchStation = 'idobi Radio';
+    public static $genreSlug = 'alternative';
+    public static $station_name = 'blues';
 
     //-----------------Profile Data-----------//
     public static $changeName = 'QA tester';
+    public static $changePass = '123456789';
 }

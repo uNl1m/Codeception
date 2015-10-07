@@ -23,22 +23,9 @@ class registrationActiveLoginCest
     }
 
 
-    public function tryToTest(WebGuy $I)
+    public function loginAfterActivateUSer(\Step\MuzzaWeb\Registration $I)
     {
-        $url = file_get_contents(codecept_output_dir('activate.json'));
-        $I->amOnUrl($url);
-        $I->wait(5);
-        $I->waitForText('Create account');
-        $I->see('Create account');
-        $I->see('Forgot password?');
-        $I->seeElement('#email');
-        $I->seeElement('#password');
-        $I->seeElement('#loginButton');
-        $email = file_get_contents(codecept_output_dir('userEmail.txt'));
-        $I->fillField(LoginPopUp::$emailField, $email);
-        $I->fillField(LoginPopUp::$passwordField, UserData::$password);
-        $I->click(LoginPopUp::$loginButton);
-        $I->wait(3);
+        $I->loginAfterActivateUser();
     }
     public function cleanMail(\Helper\ApiHelper $I)
     {

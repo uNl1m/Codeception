@@ -26,7 +26,7 @@ class CheckSliders extends \WebGuy
 //        $I->seeElement(MainPage::$twagBox_banner);
         $I->click(MainPage::$twagBox_banner);
 //        $I->wait(2);
-        $I->seeCurrentUrlEquals('http://twagbox.com/');
+//        $I->seeCurrentUrlEquals('http://twagbox.com/');
 //
     }
 

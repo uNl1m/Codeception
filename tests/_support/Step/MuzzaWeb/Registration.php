@@ -12,10 +12,6 @@ class Registration extends \WebGuy
 
         $I = $this;
         $I->amOnPage ("/");
-        $I->see('Registration');
-        $I->see('Login');
-        $I->see('Genre');
-        $I->see('Stations');
         $I->click(MainPage::$registrationLink);
         $I->waitForText('Sign Up');
         $I->see('Sign Up');
@@ -35,5 +31,24 @@ class Registration extends \WebGuy
         $I->click(RegistrationPopUp::$registrationButton);
         $I->wait(2);
         $I->waitForText('Activation link was sent on your e-mail address');
+    }
+    public function loginAfterActivateUser()
+    {
+        $I = $this;
+        $url = file_get_contents(codecept_output_dir('activate.json'));
+        $I->amOnUrl($url);
+        $I->wait(5);
+        $I->waitForText('Create account');
+        $I->see('Create account');
+        $I->see('Forgot password?');
+        $I->seeElement('#email');
+        $I->seeElement('#password');
+        $I->seeElement('#loginButton');
+        $email = file_get_contents(codecept_output_dir('userEmail.txt'));
+        $I->fillField(LoginPopUp::$emailField, $email);
+        $I->fillField(LoginPopUp::$passwordField, UserData::$password);
+        $I->click(LoginPopUp::$loginButton);
+        $I->wait(3);
+
     }
 }

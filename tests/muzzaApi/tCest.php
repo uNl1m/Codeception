@@ -16,7 +16,7 @@ class tCest
 //        $I->seeResponseCodeIs(200);
 //        $I->login();
 //        $I->seeResponseCodeIs(200);
-//        $I->getFavoriteStations(2);
+//        $I->getFavoriteStations(0);
 //        $I->seeResponseCodeIs(200);
 //        $I->getFavoriteStationId(2);
 //        $I->seeResponseCodeIs(200);
@@ -71,9 +71,9 @@ class tCest
 //        $I->checkTempMailActivateUser();
 //        $I->activateUser();
 //        $I->removeLastEmail();
-        $I->removeLastEmail1();
+//        $I->removeLastEmail1();
 //        $I->getTopStations();
-        $I->seeResponseCodeIs(200);
+//        $I->seeResponseCodeIs(200);
     }
 
 

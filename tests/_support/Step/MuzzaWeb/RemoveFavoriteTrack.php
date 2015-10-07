@@ -8,7 +8,7 @@ class RemoveFavoriteTrack extends \WebGuy
     {
         $I = $this;
         $trackName = $I->getFavoriteTracks($id);
-        $I->pauseExecution();
+//        $I->pauseExecution();
         $id = $id+1;
         $I->click('//*[@id="favorite_tracks_container"]/div/div['.$id.']/li/div/div/span');
         $I->wait(2);

@@ -194,24 +194,24 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 23</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 24</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (0.3s)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (95.3s)</small></h1>
 
 
 
 	 <table border="0" style="width: 100%;">
 		<tr>
  <td>
-     <h3>MuzzaApi Tests</h3>
+     <h3>MuzzaWeb Tests</h3>
  </td>
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('1', this)">[+] Before (tCest::before) <span style="color: #34495e; font-size: 70%;">0.27s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('1', this)">[+] Before (TCest::before) <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -219,16 +219,2074 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
 
 
-      <tr>
-       <td class="stepName ">I remove last email1 <span style="color: #732E81"></span></td>
-      </tr>
 
-      <tr>
-       <td class="stepName ">I see response code is <span style="color: #732E81">200</span></td>
-      </tr>
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('2', this)">[+] Favorite page (TCest::favoritePage) <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+
 
 
          
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('3', this)">[+] Social login (TCest::socialLogin) <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('4', this)">[+] Share station (TCest::shareStation) <span style="color: #34495e; font-size: 70%;">0s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('5', this)">[+] Switch genre (TCest::switchGenre) <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('6', this)">[+] Login (addStationToFavoriteCest::login) <span style="color: #34495e; font-size: 70%;">9.6s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb58722db', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb58722db">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#email"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.tw"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"RIHNTQLC"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='User Avatar']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"RIHNTQLC","span.username"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I save session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('7', this)">[+] Add station to favorite (addStationToFavoriteCest::addStationToFavorite) <span style="color: #34495e; font-size: 70%;">5.83s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer7">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb5ee6153', this)">[+] I add station to favorite </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb5ee6153">
+          <tr>
+       <td class="stepName ">I get top stations <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.top-20"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[3]/div/div/span[3]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.muzza-rout.favorite"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I see in page source <span style="color: #732E81">"<span class="station-name">Fusin 90.1 FM - Grupo Pazos Radio</span>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Failed asserting that   <bold>/user/favorite</bold><br />
+--> <info><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><br />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><br />
+    <meta charset="utf-8" /><br />
+    <title>MuzzaLife</title><br />
+    <link href="http://muzza.life/images/front-end/muzza_favicon4.ico" rel="shortcut icon" /></info><br />
+<debug>[Content too long to display. See complete response in '_output' directory]</debug><br />
+--> contains "<span class="station-name">fusin 90.1 fm - grupo pazos radio</span>".
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('8', this)">[+] Add favorite track by api (addTrackToFavoriteCest::addFavoriteTrackByApi) <span style="color: #34495e; font-size: 70%;">0s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer8">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('9', this)">[+] Check added track (addTrackToFavoriteCest::checkAddedTrack) <span style="color: #34495e; font-size: 70%;">9.24s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer9">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb68eb70f', this)">[+] I add trackto favorite </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb68eb70f">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.muzza-rout.favorite"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"button.jp-play"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">6</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.social-action-trigger.like"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I reload page <span style="color: #732E81"></span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I get current track <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I see in page source <span style="color: #732E81">"<span class="station-name">Mayday Parade - Miserable At Best</span>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Failed asserting that   <bold>/user/favorite</bold><br />
+--> <info><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><br />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><br />
+    <meta charset="utf-8" /><br />
+    <title>MuzzaLife</title><br />
+    <link href="http://muzza.life/images/front-end/muzza_favicon4.ico" rel="shortcut icon" /></info><br />
+<debug>[Content too long to display. See complete response in '_output' directory]</debug><br />
+--> contains "<span class="station-name">mayday parade - miserable at best</span>".
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('10', this)">[+] Try to test (changePasswordCest::tryToTest) <span style="color: #34495e; font-size: 70%;">0s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer10">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('11', this)">[+] Login (changePasswordCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer11">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb693c0fa', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb693c0fa">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('12', this)">[+] Check profile elements (changePasswordCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer12">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb6b549ab', this)">[+] I check profile pop up </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb6b549ab">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-profile"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#inputImage"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#username"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in field <span style="color: #732E81">"#inputEmail","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingsAvatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('13', this)">[+] Change password1 (changePasswordCest::changePassword1) <span style="color: #34495e; font-size: 70%;">2.19s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer13">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb6d84f34', this)">[+] I change password1 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb6d84f34">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#old_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#old_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#new_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#new_password_confirm"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","123456789"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password_confirm","123456789"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('14', this)">[+] Change password2 (changePasswordCest::changePassword2) <span style="color: #34495e; font-size: 70%;">5.2s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer14">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb72d7e83', this)">[+] I change password2 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb72d7e83">
+          <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-profile"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#old_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#old_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#new_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#new_password_confirm"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","123456789"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password_confirm","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('15', this)">[+] Login (changeUserNameAndAvatarCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer15">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb733521e', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb733521e">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('16', this)">[+] Check profile elements (changeUserNameAndAvatarCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">0.69s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer16">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb748096c', this)">[+] I check profile pop up </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb748096c">
+          <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (1322, 91). Other element would receive the click: <div class="modal fade in" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 34 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('17', this)">[+] Unique user name (changeUserNameAndAvatarCest::uniqueUserName) <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer17">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('18', this)">[+] Change profile elements (changeUserNameAndAvatarCest::changeProfileElements) <span style="color: #34495e; font-size: 70%;">0.14s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer18">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb75259e1', this)">[+] I change user name and avatar </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb75259e1">
+          <tr>
+       <td class="stepName failedStep">I attach file <span style="color: #732E81">"#inputImage","image.jpg"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Field by name, label, CSS or XPath '#inputImage' was not found.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('19', this)">[+] Check player (checkPlayerCest::checkPlayer) <span style="color: #34495e; font-size: 70%;">15.94s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer19">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb854ccbe', this)">[+] I check player </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb854ccbe">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"button.jp-play"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">4</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"button.jp-play"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"li.next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"li.next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">4</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"li.prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"button.jp-mute "</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">4</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"button.jp-mute "</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('20', this)">[+] Login (checkProfileCest::login) <span style="color: #34495e; font-size: 70%;">0.04s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer20">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb859e828', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb859e828">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('21', this)">[+] Check profile elements (checkProfileCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">1.85s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer21">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb8791401', this)">[+] I check profile pop up </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb8791401">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-profile"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#inputImage"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#username"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in field <span style="color: #732E81">"#inputEmail","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#profileSettingsAvatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('22', this)">[+] Login (favoritePageCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer22">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb87d13c8', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb87d13c8">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('23', this)">[+] Favorite page (favoritePageCest::favoritePage) <span style="color: #34495e; font-size: 70%;">0.91s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer23">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb898aac9', this)">[+] I favorite page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb898aac9">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (1322, 91). Other element would receive the click: <div class="modal fade in" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 76 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('24', this)">[+] Forgot password (ForgotPasswordCest::forgotPassword) <span style="color: #34495e; font-size: 70%;">1.48s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer24">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb8bb36c1', this)">[+] I forgot password </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb8bb36c1">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Link or Button or CSS or XPath '#popup-login' was not found.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('25', this)">[+] Check temp mail (ForgotPasswordCest::checkTempMail) <span style="color: #34495e; font-size: 70%;">0.51s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer25">
+
+
+
+         <tr >
+    <td class="error">
+        Undefined offset: 0
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('26', this)">[+] Change forgot pass (ForgotPasswordCest::changeForgotPass) <span style="color: #34495e; font-size: 70%;">2.15s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer26">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb8f6c5a8', this)">[+] I change forgot password </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb8f6c5a8">
+          <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/reset-password/eyJpdiI6ImtRUjVXQkFpV3dxQ1wvZVFcLzBicmhzZz09IiwidmFsdWUiOiIzenlmb2Nkak55U0xmY0VpRk0xTFZ3PT0iLCJtYWMiOiJmN2U2ZTNhZjc2OWVhMzY5ZjBhOTBkNzdmNDg5ZGEwMDAyMmYwYjdkYzYyZGZlZmQ2MDc0YjMwNjc0MWMxZjAwIn0="</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"CHANGE PASSWORD","h2"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPassword","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPasswordConfirmation","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"#changePasswordButton"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (803, 666). Other element would receive the click: <div class="modal fade in" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 56 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('27', this)">[+] Delete last mail (ForgotPasswordCest::deleteLastMail) <span style="color: #34495e; font-size: 70%;">0.12s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer27">
+
+
+
+         <tr >
+    <td class="error">
+        Undefined offset: 0
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('28', this)">[+] Try to test (logoutCest::tryToTest) <span style="color: #34495e; font-size: 70%;">0s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer28">
+
+
+
+         <tr >
+    <td class="error">
+        Failed to inject dependencies in instance of 'logoutCest'. Class Step\MuzzaWeb\Login does not exist
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('29', this)">[+] Main page (mainPageCest::mainPage) <span style="color: #34495e; font-size: 70%;">2.23s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer29">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb9334794', this)">[+] I check main page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb9334794">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='Muzza.life']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"div.banners-container"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.buy"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.like"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"button.jp-play"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.rand"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#search_input"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.share"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-pager-link.active"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-pager-link"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.top-20"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"GENRE","h2.pull-left.genre-title"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"STATIONS","h2.pull-left.stations-title"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Failed asserting that an array is not empty.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('30', this)">[+] Check pagination (mainPageCest::checkPagination) <span style="color: #34495e; font-size: 70%;">1.15s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer30">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb947143c', this)">[+] I pagination </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb947143c">
+          <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,600);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"header.small"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see number of elements <span style="color: #732E81">"div.station-info",30</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"span.move-top.up"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('31', this)">[+] Top20 (mainPageCest::Top20) <span style="color: #34495e; font-size: 70%;">1.18s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer31">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb95ba3b0', this)">[+] I top20 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb95ba3b0">
+          <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,0);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.top-20"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see number of elements <span style="color: #732E81">"div.station-info",20</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('32', this)">[+] Random station (mainPageCest::randomStation) <span style="color: #34495e; font-size: 70%;">2.23s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer32">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb9816a95', this)">[+] I random station </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb9816a95">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.rand"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"h2.pull-left.stations-title"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,0);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"div.container-equalizer"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('33', this)">[+] Check sliders (mainPageCest::checkSliders) <span style="color: #34495e; font-size: 70%;">4.53s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer33">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb9d100ba', this)">[+] I check sliders </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb9d100ba">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"//img[@alt='Twagbox.com']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='Twagbox.com']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"Twagbox.com"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.bx-next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='LinkJam']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"LinkJam"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.bx-prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//img[@alt='Twagbox.com']"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('34', this)">[+] Unique email (registrationActiveLoginCest::uniqueEmail) <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer34">
+
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('35', this)">[+] Registration (registrationActiveLoginCest::registration) <span style="color: #34495e; font-size: 70%;">1.83s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer35">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bb9faac94', this)">[+] I registration </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bb9faac94">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Link or Button or CSS or XPath '#popup-registration' was not found.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('36', this)">[+] Check temp mail activate user (registrationActiveLoginCest::checkTempMailActivateUser) <span style="color: #34495e; font-size: 70%;">0.13s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer36">
+
+
+
+         <tr >
+    <td class="error">
+        Undefined offset: 0
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('37', this)">[+] Login after activate u ser (registrationActiveLoginCest::loginAfterActivateUSer) <span style="color: #34495e; font-size: 70%;">16.51s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer37">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb1a8cbd', this)">[+] I login after activate user </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb1a8cbd">
+          <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/activate/76/9VKhNU4j6hsmsfvbicvFmQ4VjHYBHa3U"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('38', this)">[+] Clean mail (registrationActiveLoginCest::cleanMail) <span style="color: #34495e; font-size: 70%;">0.11s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer38">
+
+
+
+         <tr >
+    <td class="error">
+        Undefined offset: 0
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('39', this)">[+] Login on favorite page (removeFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">0.94s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer39">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb4028d3', this)">[+] I go on favorite page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb4028d3">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (1322, 91). Other element would receive the click: <div class="modal fade in" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 78 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('40', this)">[+] Remove favorite station (removeFavoriteStationCest::removeFavoriteStation) <span style="color: #34495e; font-size: 70%;">0.35s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer40">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb4e4ff8', this)">[+] I remove station </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb4e4ff8">
+          <tr>
+       <td class="stepName failedStep">I get favorite stations <span style="color: #732E81">0</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Undefined offset: 0
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('41', this)">[+] Login on favorite page (removeFavoriteTrackCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">0.76s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer41">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb67b267', this)">[+] I go on favorite page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb67b267">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (1322, 91). Other element would receive the click: <div class="modal fade in" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 56 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('42', this)">[+] Remove favorite track (removeFavoriteTrackCest::removeFavoriteTrack) <span style="color: #34495e; font-size: 70%;">0.31s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer42">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb7519c5', this)">[+] I remove track </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb7519c5">
+          <tr>
+       <td class="stepName failedStep">I get favorite tracks <span style="color: #732E81">1</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Undefined offset: 1
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('43', this)">[+] Login on favorite page (searchFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">0.79s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer43">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb8c84a2', this)">[+] I go on favorite page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb8c84a2">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        unknown error: Element is not clickable at point (1322, 91). Other element would receive the click: <div class="modal fade" style="z-index: 1040; display: block; padding-right: 15px;">...</div><br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 26 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('44', this)">[+] Search favorite stations (searchFavoriteStationCest::searchFavoriteStations) <span style="color: #34495e; font-size: 70%;">0.32s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer44">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbb9aa418', this)">[+] I search favorite station </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbb9aa418">
+          <tr>
+       <td class="stepName failedStep">I get favorite stations <span style="color: #732E81">1</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Undefined offset: 1
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('45', this)">[+] Search favorite track (searchFavoriteTrackCest::searchFavoriteTrack) <span style="color: #34495e; font-size: 70%;">0.59s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer45">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbbb36a1f', this)">[+] I search favorite track </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbbb36a1f">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.muzza-rout.favorite"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I get favorite tracks <span style="color: #732E81">3</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Undefined offset: 3
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('46', this)">[+] Check my mail box (checkMailboxCept) <span style="color: #34495e; font-size: 70%;">3.25s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer46">
+
+
+      <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://temp-mail.ru/option/change"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"//*[@id="input_mail"]","b"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="postbut"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="click-to-refresh"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I click <span style="color: #732E81">"//*[@id="mails"]/tbody/tr/td[2]/a"</span></td>
+      </tr>
+
+
+         <tr >
+    <td class="error">
+        Link or Button or CSS or XPath '//*[@id="mails"]/tbody/tr/td[2]/a' was not found.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('47', this)">[+] Login to muzza.life (loginCept) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer47">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5614bbbf503ec', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5614bbbf503ec">
+          <tr>
+       <td class="stepName failedStep">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        invalid cookie domain: invalid domain:"muzza.life"<br />
+  (Session info: chrome=45.0.2454.101)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 11 milliseconds<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.QwjGXK}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.101, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: 3de292285a8c81b0ef77e8f338cd0742
+    </td>
+</tr>
 
      </table>
     </td>
@@ -243,11 +2301,11 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>1</strong></td>
+        <td class="scenarioSuccessValue"><strong>23</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>0</strong></td>
+        <td class="scenarioFailedValue"><strong>24</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>
