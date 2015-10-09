@@ -1,8 +1,8 @@
 <?php
+/**
+ * @group login
+ */
 use \WebGuy;
-use \Page\MuzzaWeb\LoginPopUp;
-use \Page\MuzzaWeb\MainPage;
-use \Page\MuzzaWeb\FavoritePage;
 class favoritePageCest
 {
 //    public function _before(WebGuy $I)
@@ -17,13 +17,20 @@ class favoritePageCest
 //    public function tryToTest(WebGuy $I)
 //    {
 //    }
+   /* public function logout(\Step\MuzzaWeb\Logout $I)
+    {
+        $I->logout();
+    }*/
     public function login(WebGuy $I)
     {
         $I->loginW();
     }
     public function favoritePage(\Step\MuzzaWeb\CheckFavoritePage $I)
     {
-            $I->favoritePage();
+        $I->reloadPage();
+
+        $I->favoritePage();
+//        $I->reloadPage();
 
     }
 

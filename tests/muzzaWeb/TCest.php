@@ -10,14 +10,14 @@ class TCest
 //
 //
 //    }
-    public function before(\Helper\ApiHelper $I)
+    /*public function before(\Helper\ApiHelper $I)
     {
 ////        $I->checkTempMailActivateUser();
 //        $I->login();
 //        $I->getFavoriteStations(1);
 //            $I->searchFavoriteTrackByName(1);
 
-    }
+    }*/
 //    public function registr(\Step\MuzzaWeb\Login $I)
 //    {
 ////        $I->forgotPassword();
@@ -32,20 +32,20 @@ class TCest
 //    {
 ////        $I->checkSliders();
 //    }
-    public function favoritePage(\Step\MuzzaWeb\SearchFavoriteTrack $I)
+   /* public function favoritePage(\Step\MuzzaWeb\SearchFavoriteTrack $I)
     {
 //        $I->searchFavoriteTrack();
 //        $I->favoritePage();
 
 //        $I->removeTrack(1);
-    }
-    public function socialLogin(\Step\MuzzaWeb\SocialLogin $I)
+    }*/
+    /*public function socialLogin(\Step\MuzzaWeb\SocialLogin $I)
     {
 //        $I->twLogin();
 //        $I->vkLogin();
 //        $I->gpLogin();
 //        $I->fbLogin();
-    }
+    }*/
 //    public function checkMailPage(WebGuy $I)
 //    {
 ////        $I->checkMainPage();
@@ -92,15 +92,38 @@ class TCest
 //    {
 //        $I->uniqueUserName();
 //    }
-    public function shareStation(\Step\MuzzaWeb\ShareStation $I)
+    /*public function shareStation(\Step\MuzzaWeb\CheckMainPage $I)
     {
 //        $I->shareVk();
-    }
-    public function switchGenre(\Step\MuzzaWeb\Genres $I)
+    }*/
+    /*public function switchGenre(\Step\MuzzaWeb\Genres $I)
+
     {
-//        $I->alternativeGenre();
-//        $I->bluesGenre();
-//        $I->classicGenre();
-//        $I->countryGenre();
-    }
+        $I->alternativeGenre();
+        $I->bluesGenre();
+        $I->classicGenre();
+        $I->countryGenre();
+        $I->decadesGenre();
+        $I->easyListeningGenre();
+        $I->electronicGenre();
+        $I->folkGenre();
+        $I->inspirationalGenre();
+        $I->internationalGenre();
+        $I->jazzGenre();
+        $I->latinGenre();
+        $I->metalGenre();
+        $I->miscGenre();
+        $I->newAgeGenre();
+        $I->popGenre();
+        $I->publicGenre();
+        $I->rNbUrbanGenre();
+        $I->rapGenre();
+        $I->reggaeGenre();
+        $I->rockGenre();
+        $I->seasonalGenre();
+        $I->talkGenre();
+        $I->soundtracksGenre();
+        $I->themesGenre();
+
+    }*/
 }

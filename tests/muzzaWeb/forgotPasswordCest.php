@@ -1,13 +1,16 @@
 <?php
 use \WebGuy;
-use \Page\MuzzaWeb\ForgotPasswordPopUp;
-use \Page\MuzzaWeb\UserData;
-use \Page\MuzzaWeb\LoginPopUp;
+
+/**
+ * @group login
+ */
+
 class ForgotPasswordCest
 {
 
-    public function forgotPassword(\Step\MuzzaWeb\ForgotPassword $I)
+    public function forgotPassword(\Step\MuzzaWeb\ForgotPassword $I, \Step\MuzzaWeb\Logout $U)
     {
+        $U->logout();
         $I->forgotPassword();
     }
 
@@ -24,5 +27,7 @@ class ForgotPasswordCest
     public function deleteLastMail (\Helper\ApiHelper $I)
     {
         $I->removeLastEmail1();
+
     }
+
 }

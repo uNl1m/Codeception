@@ -6,7 +6,7 @@ use \WebGuy;
 
 class changePasswordCest
 {
-    public function _before(WebGuy $I)
+    /*public function _before(WebGuy $I)
     {
     }
 
@@ -17,7 +17,7 @@ class changePasswordCest
     // tests
     public function tryToTest(WebGuy $I)
     {
-    }
+    }*/
     public function login(WebGuy $I)
     {
         $I->loginW();
@@ -26,18 +26,15 @@ class changePasswordCest
     {
         $I->checkProfilePopUp();
     }
-    public function changePassword1(\Step\MuzzaWeb\ChangePassword $I)
+    public function changePassword1(\Step\MuzzaWeb\Profile $I)
     {
 
         $I->changePassword1();
     }
-//    public function checkProfileElements1(\Step\MuzzaWeb\Profile $I)
-//    {
-//        $I->checkProfilePopUp();
-//    }
-    public function changePassword2(\Step\MuzzaWeb\ChangePassword $I)
+    public function changePassword2(\Step\MuzzaWeb\Profile $I)
     {
         $I->changePassword2();
+//        $I->reloadPage();
     }
 
 }

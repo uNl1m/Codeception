@@ -1,6 +1,8 @@
 <?php
 use \WebGuy;
-
+/**
+ * @group login
+ */
 class checkPlayerCest
 {
 //    public function _before(WebGuy $I)
@@ -15,8 +17,9 @@ class checkPlayerCest
 //    public function tryToTest(WebGuy $I)
 //    {
 //    }
-    public function checkPlayer(\Step\MuzzaWeb\CheckPlayer $I)
+    public function checkPlayer(\Step\MuzzaWeb\CheckMainPage $I)
     {
         $I->checkPlayer();
     }
+
 }

@@ -1,15 +1,17 @@
 <?php
 use \WebGuy;
-
+/**
+ * @group login
+ */
 class changeUserNameAndAvatarCest
 {
-    public function _before(WebGuy $I)
+    /*public function _before(WebGuy $I)
     {
     }
 
     public function _after(WebGuy $I)
     {
-    }
+    }*/
 
     // tests
     public function login(WebGuy $I)
@@ -24,8 +26,9 @@ class changeUserNameAndAvatarCest
     {
         $I->uniqueUserName();
     }
-    public function changeProfileElements(\Step\MuzzaWeb\ChangeUserNameAndAvatar $I)
+    public function changeProfileElements(\Step\MuzzaWeb\Profile $I)
     {
         $I->changeUserNameAndAvatar();
+//        $I->reloadPage();
     }
 }

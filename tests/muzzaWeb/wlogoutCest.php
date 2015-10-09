@@ -1,6 +1,8 @@
 <?php
 use \WebGuy;
-
+/**
+ * @group login
+ */
 class logoutCest
 {
     public function login (WebGuy $I)
@@ -12,10 +14,11 @@ class logoutCest
     {
         $I->logout();
     }
-
-    // tests
-    public function tryToTest(WebGuy $I)
+   /* public function reloadPage(WebGuy $I)
     {
-    }
+//        $I->reloadPage();
+    }*/
+
+
 }
 

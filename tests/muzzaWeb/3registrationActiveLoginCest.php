@@ -1,7 +1,6 @@
 <?php
 use \WebGuy;
-use \Page\MuzzaWeb\LoginPopUp;
-use \Page\MuzzaWeb\UserData;
+
 
 class registrationActiveLoginCest
 {
@@ -26,6 +25,11 @@ class registrationActiveLoginCest
     public function loginAfterActivateUSer(\Step\MuzzaWeb\Registration $I)
     {
         $I->loginAfterActivateUser();
+
+    }
+    public function logout(\Step\MuzzaWeb\Logout $I)
+    {
+        $I->logout();
     }
     public function cleanMail(\Helper\ApiHelper $I)
     {

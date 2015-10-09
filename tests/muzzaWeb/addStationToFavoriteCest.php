@@ -6,7 +6,7 @@ use \WebGuy;
 
 class addStationToFavoriteCest
 {
-    public function _before(WebGuy $I)
+ /*   public function _before(WebGuy $I)
     {
     }
 
@@ -14,14 +14,15 @@ class addStationToFavoriteCest
     {
     }
 
-    // tests
+    // tests*/
     public function login(WebGuy $I)
     {
         $I->loginW();
     }
-    public function addStationToFavorite(\Step\MuzzaWeb\AddStationToFavorite $I)
+    public function addStationToFavorite(\Step\MuzzaWeb\CheckFavoritePage $I)
     {
-        $I->addStationToFavorite(2);
+        $I->addStationToFavorite(5);
+//        $I->reloadPage();
     }
 
 }

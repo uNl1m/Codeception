@@ -6,7 +6,7 @@ use \WebGuy;
 
 class addTrackToFavoriteCest
 {
-    public function _before(WebGuy $I)
+/*    public function _before(WebGuy $I)
     {
     }
 
@@ -20,10 +20,12 @@ class addTrackToFavoriteCest
 //        $I->addFavoriteTrack(1);
 
 
-    }
-    public function checkAddedTrack(\Step\MuzzaWeb\CheckFavoritePage $I, \Step\MuzzaWeb\AddTrackToFavorite $U)
+    }*/
+    public function checkAddedTrack(\Step\MuzzaWeb\CheckFavoritePage $I)
     {
+        $I->loginW();
         $I->goOnFavoritePage();
-        $U->addTracktoFavorite(1);
+        $I->addTracktoFavorite(1);
+//        $I->reloadPage();
     }
 }
