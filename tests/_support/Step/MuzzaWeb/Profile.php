@@ -67,7 +67,7 @@ class Profile extends \WebGuy
         $I->attachFile(ProfilePopUp::$avatar, "image.jpg");
 //        $I->wait(2);
         $I->click(ProfilePopUp::$cropButton);
-        $changeName = file_get_contents(codecept_output_dir('userName.txt'));
+        $changeName = file_get_contents(codecept_data_dir('userName.txt'));
         $I->fillField(ProfilePopUp::$userNameField, $changeName);
         $I->wait(1);
         $I->click(ProfilePopUp::$confirmButton);

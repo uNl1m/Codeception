@@ -24,7 +24,7 @@ class Registration extends \WebGuy
         $I->seeElement(LoginPopUp::$fb_button);
         $I->seeElement(LoginPopUp::$gp_button);
         $I->fillField(RegistrationPopUp::$usernameField, UserData::$reg_username);
-        $reg_email = file_get_contents(codecept_output_dir('userEmail.txt'));
+        $reg_email = file_get_contents(codecept_data_dir('userEmail.txt'));
         $I->fillField(RegistrationPopUp::$emailField, $reg_email);
         $I->fillField(RegistrationPopUp::$passwordField, UserData::$reg_password);
         $I->fillField(RegistrationPopUp::$confirmPasswordField,UserData::$reg_password);
@@ -35,7 +35,7 @@ class Registration extends \WebGuy
     public function loginAfterActivateUser()
     {
         $I = $this;
-        $url = file_get_contents(codecept_output_dir('activate.json'));
+        $url = file_get_contents(codecept_data_dir('activate.json'));
         $I->amOnUrl($url);
         $I->wait(5);
         $I->waitForText('Create account');
@@ -44,7 +44,7 @@ class Registration extends \WebGuy
         $I->seeElement('#email');
         $I->seeElement('#password');
         $I->seeElement('#loginButton');
-        $email = file_get_contents(codecept_output_dir('userEmail.txt'));
+        $email = file_get_contents(codecept_data_dir('userEmail.txt'));
         $I->fillField(LoginPopUp::$emailField, $email);
         $I->fillField(LoginPopUp::$passwordField, UserData::$password);
         $I->click(LoginPopUp::$loginButton);

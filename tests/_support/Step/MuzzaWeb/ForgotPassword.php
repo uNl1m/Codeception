@@ -27,13 +27,13 @@ class ForgotPassword extends \WebGuy
     public function changeForgotPassword()
     {
         $I = $this;
-        $url = file_get_contents(codecept_output_dir('linkWeb.json'));
+        $url = file_get_contents(codecept_data_dir('linkWeb.json'));
         $I->amOnUrl($url);
         $I->see(ForgotPasswordPopUp::$title,'h2');
         $I->fillField(ForgotPasswordPopUp::$password_field, UserData::$password);
         $I->fillField(ForgotPasswordPopUp::$conf_pass_field, UserData::$password);
         $I->click(ForgotPasswordPopUp::$submit_button);
-        $I->wait(5);
+        $I->wait(2);
         $I->waitForText('Create account');
         $I->see('Create account');
         $I->see('Forgot password?');

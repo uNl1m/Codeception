@@ -12,7 +12,7 @@ class UniqueUserName extends \WebGuy
         }
         $newName = substr(str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 8);
         self::$userName = $newName;
-        file_put_contents(codecept_output_dir('userName.txt'), $newName);
+        file_put_contents(codecept_data_dir('userName.txt'), $newName);
         return $newName;
     }
 

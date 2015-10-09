@@ -125,7 +125,7 @@
                     <!--</a>-->
                     <ul class="nav navbar-nav pull-right">
                             <li class="dropdown">
-                                    <span href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="username">MRXYQBTO</span> <img class="avatar" src="http://muzza.life/images/profile/17/17_1444384678_avatar.jpeg" alt="User Avatar" /> <strong class="caret"></strong>
+                                    <span href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="username">WMOTLEIR</span> <img class="avatar" src="http://muzza.life/images/profile/17/17_1444394317_avatar.jpeg" alt="User Avatar" /> <strong class="caret"></strong>
                                     </span>
                                 <ul class="dropdown-menu">
                                     <li><a class="muzza-rout favorite" href="/user/favorite">Favorite</a></li>
@@ -1061,7 +1061,7 @@
                             <li><a class="set-sub-genre" data-href="#station/electronic/electro" data-name="Electro">Electro<span class="sub-genre-listeners">491</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/electronic/garage" data-name="Garage">Garage<span class="sub-genre-listeners">58</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/electronic/hard-house" data-name="Hard House">Hard House<span class="sub-genre-listeners">26</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/house" data-name="House">House<span class="sub-genre-listeners">475</span></a></li>
+                            <li><a class="set-sub-genre" data-href="#station/electronic/house" data-name="House">House<span class="sub-genre-listeners">476</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/electronic/idm" data-name="IDM">IDM<span class="sub-genre-listeners">3</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/electronic/jungle" data-name="Jungle">Jungle<span class="sub-genre-listeners">52</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/electronic/progressive" data-name="Progressive">Progressive<span class="sub-genre-listeners">30</span></a></li>
@@ -1146,9 +1146,9 @@
                             <li><a class="set-sub-genre" data-href="#station/international/filipino" data-name="Filipino">Filipino<span class="sub-genre-listeners">18</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/french" data-name="French">French<span class="sub-genre-listeners">8</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/german" data-name="German">German<span class="sub-genre-listeners">27</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/greek" data-name="Greek">Greek<span class="sub-genre-listeners">223</span></a></li>
+                            <li><a class="set-sub-genre" data-href="#station/international/greek" data-name="Greek">Greek<span class="sub-genre-listeners">224</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/hawaiian-and-pacific" data-name="Hawaiian and Pacific">Hawaiian and Pacific<span class="sub-genre-listeners">12</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/hebrew" data-name="Hebrew">Hebrew<span class="sub-genre-listeners">32</span></a></li>
+                            <li><a class="set-sub-genre" data-href="#station/international/hebrew" data-name="Hebrew">Hebrew<span class="sub-genre-listeners">33</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/hindi" data-name="Hindi">Hindi<span class="sub-genre-listeners">47</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/indian" data-name="Indian">Indian<span class="sub-genre-listeners">44</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/international/islamic" data-name="Islamic">Islamic<span class="sub-genre-listeners">390</span></a></li>
@@ -1311,7 +1311,7 @@
                             <li><a class="set-sub-genre" data-href="#station/pop/idols" data-name="Idols">Idols<span class="sub-genre-listeners">2</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/pop/jpop" data-name="JPOP">JPOP<span class="sub-genre-listeners">26</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/pop/kpop" data-name="KPOP">KPOP<span class="sub-genre-listeners">29</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/oldies" data-name="Oldies">Oldies<span class="sub-genre-listeners">482</span></a></li>
+                            <li><a class="set-sub-genre" data-href="#station/pop/oldies" data-name="Oldies">Oldies<span class="sub-genre-listeners">483</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/pop/soft-rock" data-name="Soft Rock">Soft Rock<span class="sub-genre-listeners">498</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/pop/teen-pop" data-name="Teen Pop">Teen Pop<span class="sub-genre-listeners">9</span></a></li>
                             <li><a class="set-sub-genre" data-href="#station/pop/top-40" data-name="Top 40">Top 40<span class="sub-genre-listeners">491</span></a></li>
@@ -1904,8 +1904,11 @@
                 window.randomFlag = true;
             },
             waiting: function () {
+                $('.jp-controls').addClass('loading');
             },
             playing: function () {
+
+                $('.jp-controls').removeClass('loading');
 
                 $('.station-info.active').find('a').addClass('playing')
 
@@ -1929,6 +1932,8 @@
 
                 $('.station-link').removeClass('playing');
 
+                $('.jp-controls').removeClass('loading');
+
                 window.stopEqualizer =
                         clearInterval(window.equalizer);
                 var bars = document.getElementsByClassName('bar');
@@ -1941,6 +1946,8 @@
             error: function (event) {
 
                 if(event.jPlayer.error.type == 'e_url') {
+
+                    $('.jp-controls').removeClass('loading');
 
                     clearInterval(window.activeStation);
 

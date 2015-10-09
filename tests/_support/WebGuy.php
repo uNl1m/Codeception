@@ -44,7 +44,7 @@ class WebGuy extends \Codeception\Actor
         $this->fillField(LoginPopUp::$emailField, UserData::$email);
         $this->fillField(LoginPopUp::$passwordField, UserData::$password);
         $this->click(LoginPopUp::$loginButton);
-        $userName = file_get_contents(codecept_output_dir('userName.txt'));
+        $userName = file_get_contents(codecept_data_dir('userName.txt'));
         $this->waitForText($userName);
         $this->seeElement(LoginPopUp::$userAvatar);
         $this->see($userName, LoginPopUp::$userNameField);
