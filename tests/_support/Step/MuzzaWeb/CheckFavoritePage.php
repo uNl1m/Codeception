@@ -4,6 +4,7 @@ namespace Step\MuzzaWeb;
 use Page\MuzzaWeb\LoginPopUp;
 use Page\MuzzaWeb\MainPage;
 use Page\MuzzaWeb\FavoritePage;
+use Page\MuzzaWeb\UserData;
 
 class CheckFavoritePage extends \WebGuy
 {
@@ -101,6 +102,19 @@ class CheckFavoritePage extends \WebGuy
         $I->click('#fav_search_button');
         $I->seeInPageSource('<span class="station-name">'.$track_name.'</span>');
     }
+
+
+    /**********************NEGATIVE*************************/
+    public function searchBadFavoriteStationAndTrack()
+    {
+        $I = $this;
+
+        $I->fillField('#search_track_input',UserData::$badSearch);
+        $I->click('#fav_search_button');
+        $I->wait(1);
+        $I->seeInPageSource('<h3 class="text-center">'.UserData::$badSearchMessage.'</h3>');
+    }
+
 
 
 

@@ -108,7 +108,7 @@
 </div>
 
 <div class="header-wrapper">
-    <header style="background-image: url(http://muzza.life/images/genre/3/background_3.jpg);">
+    <header>
 
         <div class="container">
             <a class="logo-link" href="/"><img class="logo" src="/images/front-end/beta_muzza.png" width="229" height="231" alt="Muzza.life" /></a>
@@ -243,43 +243,7 @@
 
         <div class="banners-container">
 
-        <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 150px;"><ul class="bxslider" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(-2500px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 1250px;" class="bx-clone" aria-hidden="true">
-            
-                <div class="banner">
-                    <a href="http://ljm.us/" target="_blank"> <img src="/images/banner/5602aa32312ad.jpeg" alt="LinkJam" /></a>
-                </div>
-
-
-            
-
-        </li><li style="float: left; list-style: none; position: relative; width: 1250px;" aria-hidden="true">
-            
-                <div class="banner">
-                    <a href="http://twagbox.com" target="_blank"> <img src="/images/banner/5602a9be2a54b.jpeg" alt="Twagbox.com" /></a>
-                </div>
-
-
-            
-
-        </li><li style="float: left; list-style: none; position: relative; width: 1250px;" aria-hidden="false">
-            
-                <div class="banner">
-                    <a href="http://ljm.us/" target="_blank"> <img src="/images/banner/5602aa32312ad.jpeg" alt="LinkJam" /></a>
-                </div>
-
-
-            
-
-        </li><li style="float: left; list-style: none; position: relative; width: 1250px;" class="bx-clone" aria-hidden="true">
-            
-                <div class="banner">
-                    <a href="http://twagbox.com" target="_blank"> <img src="/images/banner/5602a9be2a54b.jpeg" alt="Twagbox.com" /></a>
-                </div>
-
-
-            
-
-        </li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a></div></div></div></div></div>
+        <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><ul class="bxslider" style="width: 215%; position: relative;"></ul></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-pager"></div></div></div></div>
 
 
         <!--<div class="banner">-->
@@ -433,13 +397,13 @@
 
             {{#if name}}
                     &lt;div class="station-info"&gt;
-                        &lt;a class="station-link unactive" data-id="{{id}}" data-name="{{name}}" data-slug="{{slug}}" data-href="{{stream_url}}" href=""&gt;&lt;/a&gt;
+                        &lt;a class="station-link unactive" data-id="{{station_id}}" data-name="{{name}}" data-slug="{{slug}}" data-href="{{stream_url}}" href=""&gt;&lt;/a&gt;
                         &lt;span class="station-name"&gt;{{name}}&lt;/span&gt;
 
                         &lt;div class="station-statistic"&gt;
                             &lt;span class="headset"&gt;&lt;/span&gt;
                             &lt;span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners"&gt;{{listeners}}&lt;/span&gt;
-                            &lt;span data-station-id="{{shoutcast_station_id}}" class="favorite remove-from-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Remove from favorite"&gt;&lt;/span&gt;
+                            &lt;span data-station-id="{{station_id}}" class="favorite remove-from-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Remove from favorite"&gt;&lt;/span&gt;
                         &lt;/div&gt;
 
                     &lt;/div&gt;
@@ -832,9 +796,9 @@
                         &lt;span class="headset"&gt;&lt;/span&gt;
                         &lt;span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners"&gt;{{listeners}}&lt;/span&gt;
                         {{#if favorite}}
-                            &lt;span data-station-id="{{station_id}}" class="favorite remove-from-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Remove from favorite"&gt;&lt;/span&gt;
+                            &lt;span data-station-id="{{id}}" class="favorite remove-from-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Remove from favorite"&gt;&lt;/span&gt;
                         {{else}}
-                            &lt;span data-station-id="{{station_id}}" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"&gt;&lt;/span&gt;
+                            &lt;span data-station-id="{{id}}" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"&gt;&lt;/span&gt;
                         {{/if}}
                     &lt;/div&gt;
 
@@ -876,889 +840,222 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-side-padding">
             <div class="accordion-container">
                 <!--<div class="panel-group"  role="tablist" aria-multiselectable="true"></div>-->
-            <div role="tablist" aria-multiselectable="true" id="accordion" class="panel-group"><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-1">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Alternative" data-bg="images/genre/1/background_1.jpg" data-href="#station/alternative">Alternative<span class="genre-listeners">495</span></span>
-
-                    </a>
-                </h4>
             </div>
-            <div id="collapse-1" class="panel-collapse collapse" data-target="#station/alternative" data-href="#station/1" role="tabpanel" aria-labelledby="tab-1" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/adult-alternative" data-name="Adult Alternative">Adult Alternative<span class="sub-genre-listeners">75</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/britpop" data-name="Britpop">Britpop<span class="sub-genre-listeners">91</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/classic-alternative" data-name="Classic Alternative">Classic Alternative<span class="sub-genre-listeners">7</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/college" data-name="College">College<span class="sub-genre-listeners">147</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/dancepunk" data-name="Dancepunk">Dancepunk<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/dream-pop" data-name="Dream Pop">Dream Pop<span class="sub-genre-listeners">13</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/emo" data-name="Emo">Emo<span class="sub-genre-listeners">17</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/goth" data-name="Goth">Goth<span class="sub-genre-listeners">77</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/grunge" data-name="Grunge">Grunge<span class="sub-genre-listeners">71</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/hardcore" data-name="Hardcore">Hardcore<span class="sub-genre-listeners">120</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/indie-pop" data-name="Indie Pop">Indie Pop<span class="sub-genre-listeners">294</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/indie-rock" data-name="Indie Rock">Indie Rock<span class="sub-genre-listeners">50</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/industrial" data-name="Industrial">Industrial<span class="sub-genre-listeners">72</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/lofi" data-name="LoFi">LoFi<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/modern-rock" data-name="Modern Rock">Modern Rock<span class="sub-genre-listeners">17</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/new-wave" data-name="New Wave">New Wave<span class="sub-genre-listeners">114</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/noise-pop" data-name="Noise Pop">Noise Pop<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/post-punk" data-name="Post Punk">Post Punk<span class="sub-genre-listeners">10</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/power-pop" data-name="Power Pop">Power Pop<span class="sub-genre-listeners">49</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/punk" data-name="Punk">Punk<span class="sub-genre-listeners">169</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/ska" data-name="Ska">Ska<span class="sub-genre-listeners">68</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/alternative/xtreme" data-name="Xtreme">Xtreme<span class="sub-genre-listeners">4</span></a></li>
-                    </ul>
-                </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-2">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Blues" data-bg="images/genre/2/background_2.jpg" data-href="#station/blues">Blues<span class="genre-listeners">490</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-2" class="panel-collapse collapse" data-target="#station/blues" data-href="#station/2" role="tabpanel" aria-labelledby="tab-2" aria-expanded="false" style="height: 0px;">
-                <div class="panel-body mCustomScrollbar _mCS_2 mCS_no_scrollbar"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/blues/acoustic-blues" data-name="Acoustic Blues">Acoustic Blues<span class="sub-genre-listeners">192</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/cajun-and-zydeco" data-name="Cajun and Zydeco">Cajun and Zydeco<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/chicago-blues" data-name="Chicago Blues">Chicago Blues<span class="sub-genre-listeners">5</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/contemporary-blues" data-name="Contemporary Blues">Contemporary Blues<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/country-blues" data-name="Country Blues">Country Blues<span class="sub-genre-listeners">169</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/delta-blues" data-name="Delta Blues">Delta Blues<span class="sub-genre-listeners">115</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/blues/electric-blues" data-name="Electric Blues">Electric Blues<span class="sub-genre-listeners">186</span></a></li>
-                    </ul>
-                </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-3">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="true" aria-controls="collapseOne" class="">
-                        <span class="set-genre active" data-name="Classical" data-bg="images/genre/3/background_3.jpg" data-href="#station/classical">Classical<span class="genre-listeners">485</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-3" class="panel-collapse collapse in" data-target="#station/classical" data-href="#station/3" role="tabpanel" aria-labelledby="tab-3" aria-expanded="true">
-                <div class="panel-body mCustomScrollbar _mCS_3"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 400px;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/classical/baroque" data-name="Baroque">Baroque<span class="sub-genre-listeners">88</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/chamber" data-name="Chamber">Chamber<span class="sub-genre-listeners">83</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/choral" data-name="Choral">Choral<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/classical-period" data-name="Classical Period">Classical Period<span class="sub-genre-listeners">5</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/early-classical" data-name="Early Classical">Early Classical<span class="sub-genre-listeners">5</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/impressionist" data-name="Impressionist">Impressionist<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/modern" data-name="Modern">Modern<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/opera" data-name="Opera">Opera<span class="sub-genre-listeners">99</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/piano" data-name="Piano">Piano<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/romantic" data-name="Romantic">Romantic<span class="sub-genre-listeners">196</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/classical/symphony" data-name="Symphony">Symphony<span class="sub-genre-listeners">111</span></a></li>
-                    </ul>
-                </div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; display: block; height: 303px; max-height: 390px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-4">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Country" data-bg="images/genre/4/background_4.jpg" data-href="#station/country">Country<span class="genre-listeners">489</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-4" class="panel-collapse collapse" data-target="#station/country" data-href="#station/4" role="tabpanel" aria-labelledby="tab-4" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_4 mCS_no_scrollbar"><div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/country/alt-country" data-name="Alt Country">Alt Country<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/americana" data-name="Americana">Americana<span class="sub-genre-listeners">30</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/bluegrass" data-name="Bluegrass">Bluegrass<span class="sub-genre-listeners">61</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/classic-country" data-name="Classic Country">Classic Country<span class="sub-genre-listeners">50</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/contemporary-bluegrass" data-name="Contemporary Bluegrass">Contemporary Bluegrass<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/contemporary-country" data-name="Contemporary Country">Contemporary Country<span class="sub-genre-listeners">12</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/honky-tonk" data-name="Honky Tonk">Honky Tonk<span class="sub-genre-listeners">54</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/hot-country-hits" data-name="Hot Country Hits">Hot Country Hits<span class="sub-genre-listeners">162</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/country/western" data-name="Western">Western<span class="sub-genre-listeners">10</span></a></li>
-                    </ul>
-                </div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-5">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Decades" data-bg="images/genre/5/background_5.jpg" data-href="#station/decades">Decades<span class="genre-listeners">490</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-5" class="panel-collapse collapse" data-target="#station/decades" data-href="#station/5" role="tabpanel" aria-labelledby="tab-5" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_5 mCS_no_scrollbar"><div id="mCSB_5" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/decades/00s" data-name="00s">00s<span class="sub-genre-listeners">22</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/30s" data-name="30s">30s<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/40s" data-name="40s">40s<span class="sub-genre-listeners">26</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/50s" data-name="50s">50s<span class="sub-genre-listeners">25</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/60s" data-name="60s">60s<span class="sub-genre-listeners">53</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/70s" data-name="70s">70s<span class="sub-genre-listeners">93</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/80s" data-name="80s">80s<span class="sub-genre-listeners">360</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/decades/90s" data-name="90s">90s<span class="sub-genre-listeners">125</span></a></li>
-                    </ul>
-                </div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-6">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Easy Listening" data-bg="images/genre/6/background_6.jpg" data-href="#station/easy-listening">Easy Listening<span class="genre-listeners">486</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-6" class="panel-collapse collapse" data-target="#station/easy-listening" data-href="#station/6" role="tabpanel" aria-labelledby="tab-6" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_6 mCS_no_scrollbar"><div id="mCSB_6" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_6_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/exotica" data-name="Exotica">Exotica<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/light-rock" data-name="Light Rock">Light Rock<span class="sub-genre-listeners">52</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/lounge" data-name="Lounge">Lounge<span class="sub-genre-listeners">289</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/orchestral-pop" data-name="Orchestral Pop">Orchestral Pop<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/polka" data-name="Polka">Polka<span class="sub-genre-listeners">34</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/easy-listening/space-age-pop" data-name="Space Age Pop">Space Age Pop<span class="sub-genre-listeners">11</span></a></li>
-                    </ul>
-                </div><div id="mCSB_6_scrollbar_vertical" class="mCSB_scrollTools mCSB_6_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_6_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-7">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Electronic" data-bg="images/genre/7/background_7.jpg" data-href="#station/electronic">Electronic<span class="genre-listeners">481</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-7" class="panel-collapse collapse" data-target="#station/electronic" data-href="#station/7" role="tabpanel" aria-labelledby="tab-7" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_7 mCS_no_scrollbar"><div id="mCSB_7" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_7_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/acid-house" data-name="Acid House">Acid House<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/ambient" data-name="Ambient">Ambient<span class="sub-genre-listeners">343</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/big-beat" data-name="Big Beat">Big Beat<span class="sub-genre-listeners">9</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/breakbeat" data-name="Breakbeat">Breakbeat<span class="sub-genre-listeners">41</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/dance" data-name="Dance">Dance<span class="sub-genre-listeners">489</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/demo" data-name="Demo">Demo<span class="sub-genre-listeners">462</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/disco" data-name="Disco">Disco<span class="sub-genre-listeners">294</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/downtempo" data-name="Downtempo">Downtempo<span class="sub-genre-listeners">97</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/drum-and-bass" data-name="Drum and Bass">Drum and Bass<span class="sub-genre-listeners">70</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/dubstep" data-name="Dubstep">Dubstep<span class="sub-genre-listeners">309</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/electro" data-name="Electro">Electro<span class="sub-genre-listeners">491</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/garage" data-name="Garage">Garage<span class="sub-genre-listeners">58</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/hard-house" data-name="Hard House">Hard House<span class="sub-genre-listeners">26</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/house" data-name="House">House<span class="sub-genre-listeners">475</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/idm" data-name="IDM">IDM<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/jungle" data-name="Jungle">Jungle<span class="sub-genre-listeners">52</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/progressive" data-name="Progressive">Progressive<span class="sub-genre-listeners">30</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/techno" data-name="Techno">Techno<span class="sub-genre-listeners">452</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/trance" data-name="Trance">Trance<span class="sub-genre-listeners">326</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/tribal" data-name="Tribal">Tribal<span class="sub-genre-listeners">16</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/electronic/trip-hop" data-name="Trip Hop">Trip Hop<span class="sub-genre-listeners">65</span></a></li>
-                    </ul>
-                </div><div id="mCSB_7_scrollbar_vertical" class="mCSB_scrollTools mCSB_7_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_7_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-8">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Folk" data-bg="images/genre/8/background_8.jpg" data-href="#station/folk">Folk<span class="genre-listeners">492</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-8" class="panel-collapse collapse" data-target="#station/folk" data-href="#station/8" role="tabpanel" aria-labelledby="tab-8" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_8 mCS_no_scrollbar"><div id="mCSB_8" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_8_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/folk/alternative-folk" data-name="Alternative Folk">Alternative Folk<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/contemporary-folk" data-name="Contemporary Folk">Contemporary Folk<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/folk-rock" data-name="Folk Rock">Folk Rock<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/new-acoustic" data-name="New Acoustic">New Acoustic<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/old-time" data-name="Old Time">Old Time<span class="sub-genre-listeners">10</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/traditional-folk" data-name="Traditional Folk">Traditional Folk<span class="sub-genre-listeners">12</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/folk/world-folk" data-name="World Folk">World Folk<span class="sub-genre-listeners">14</span></a></li>
-                    </ul>
-                </div><div id="mCSB_8_scrollbar_vertical" class="mCSB_scrollTools mCSB_8_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_8_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-9">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-9" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Inspirational" data-bg="images/genre/9/background_9.jpg" data-href="#station/inspirational">Inspirational<span class="genre-listeners">495</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-9" class="panel-collapse collapse" data-target="#station/inspirational" data-href="#station/9" role="tabpanel" aria-labelledby="tab-9" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_9 mCS_no_scrollbar"><div id="mCSB_9" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_9_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/christian" data-name="Christian">Christian<span class="sub-genre-listeners">490</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/christian-metal" data-name="Christian Metal">Christian Metal<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/christian-rap" data-name="Christian Rap">Christian Rap<span class="sub-genre-listeners">10</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/christian-rock" data-name="Christian Rock">Christian Rock<span class="sub-genre-listeners">70</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/classic-christian" data-name="Classic Christian">Classic Christian<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/contemporary-gospel" data-name="Contemporary Gospel">Contemporary Gospel<span class="sub-genre-listeners">22</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/gospel" data-name="Gospel">Gospel<span class="sub-genre-listeners">478</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/praise-and-worship" data-name="Praise and Worship">Praise and Worship<span class="sub-genre-listeners">109</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/sermons-and-services" data-name="Sermons and Services">Sermons and Services<span class="sub-genre-listeners">38</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/southern-gospel" data-name="Southern Gospel">Southern Gospel<span class="sub-genre-listeners">22</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/inspirational/traditional-gospel" data-name="Traditional Gospel">Traditional Gospel<span class="sub-genre-listeners">3</span></a></li>
-                    </ul>
-                </div><div id="mCSB_9_scrollbar_vertical" class="mCSB_scrollTools mCSB_9_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_9_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-10">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-10" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="International" data-bg="images/genre/10/background_10.jpg" data-href="#station/international">International<span class="genre-listeners">491</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-10" class="panel-collapse collapse" data-target="#station/international" data-href="#station/10" role="tabpanel" aria-labelledby="tab-10" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_10 mCS_no_scrollbar"><div id="mCSB_10" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_10_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/international/african" data-name="African">African<span class="sub-genre-listeners">191</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/afrikaans" data-name="Afrikaans">Afrikaans<span class="sub-genre-listeners">12</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/arabic" data-name="Arabic">Arabic<span class="sub-genre-listeners">122</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/asian" data-name="Asian">Asian<span class="sub-genre-listeners">128</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/bollywood" data-name="Bollywood">Bollywood<span class="sub-genre-listeners">26</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/brazilian" data-name="Brazilian">Brazilian<span class="sub-genre-listeners">55</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/caribbean" data-name="Caribbean">Caribbean<span class="sub-genre-listeners">36</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/celtic" data-name="Celtic">Celtic<span class="sub-genre-listeners">42</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/chinese" data-name="Chinese">Chinese<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/creole" data-name="Creole">Creole<span class="sub-genre-listeners">36</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/european" data-name="European">European<span class="sub-genre-listeners">483</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/filipino" data-name="Filipino">Filipino<span class="sub-genre-listeners">18</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/french" data-name="French">French<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/german" data-name="German">German<span class="sub-genre-listeners">27</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/greek" data-name="Greek">Greek<span class="sub-genre-listeners">223</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/hawaiian-and-pacific" data-name="Hawaiian and Pacific">Hawaiian and Pacific<span class="sub-genre-listeners">12</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/hebrew" data-name="Hebrew">Hebrew<span class="sub-genre-listeners">32</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/hindi" data-name="Hindi">Hindi<span class="sub-genre-listeners">47</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/indian" data-name="Indian">Indian<span class="sub-genre-listeners">44</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/islamic" data-name="Islamic">Islamic<span class="sub-genre-listeners">390</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/japanese" data-name="Japanese">Japanese<span class="sub-genre-listeners">107</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/klezmer" data-name="Klezmer">Klezmer<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/korean" data-name="Korean">Korean<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/mediterranean" data-name="Mediterranean">Mediterranean<span class="sub-genre-listeners">9</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/middle-eastern" data-name="Middle Eastern">Middle Eastern<span class="sub-genre-listeners">72</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/north-american" data-name="North American">North American<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/russian" data-name="Russian">Russian<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/soca" data-name="Soca">Soca<span class="sub-genre-listeners">32</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/south-american" data-name="South American">South American<span class="sub-genre-listeners">23</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/tamil" data-name="Tamil">Tamil<span class="sub-genre-listeners">57</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/turkish" data-name="Turkish">Turkish<span class="sub-genre-listeners">92</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/worldbeat" data-name="Worldbeat">Worldbeat<span class="sub-genre-listeners">77</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/international/zouk" data-name="Zouk">Zouk<span class="sub-genre-listeners">131</span></a></li>
-                    </ul>
-                </div><div id="mCSB_10_scrollbar_vertical" class="mCSB_scrollTools mCSB_10_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_10_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-11">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-11" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Jazz" data-bg="images/genre/11/background_11.jpg" data-href="#station/jazz">Jazz<span class="genre-listeners">490</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-11" class="panel-collapse collapse" data-target="#station/jazz" data-href="#station/11" role="tabpanel" aria-labelledby="tab-11" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_11 mCS_no_scrollbar"><div id="mCSB_11" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_11_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/acid-jazz" data-name="Acid Jazz">Acid Jazz<span class="sub-genre-listeners">42</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/avant-garde" data-name="Avant Garde">Avant Garde<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/big-band" data-name="Big Band">Big Band<span class="sub-genre-listeners">7</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/bop" data-name="Bop">Bop<span class="sub-genre-listeners">23</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/classic-jazz" data-name="Classic Jazz">Classic Jazz<span class="sub-genre-listeners">99</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/cool-jazz" data-name="Cool Jazz">Cool Jazz<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/fusion" data-name="Fusion">Fusion<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/hard-bop" data-name="Hard Bop">Hard Bop<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/latin-jazz" data-name="Latin Jazz">Latin Jazz<span class="sub-genre-listeners">43</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/smooth-jazz" data-name="Smooth Jazz">Smooth Jazz<span class="sub-genre-listeners">164</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/swing" data-name="Swing">Swing<span class="sub-genre-listeners">88</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/vocal-jazz" data-name="Vocal Jazz">Vocal Jazz<span class="sub-genre-listeners">13</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/jazz/world-fusion" data-name="World Fusion">World Fusion<span class="sub-genre-listeners">0</span></a></li>
-                    </ul>
-                </div><div id="mCSB_11_scrollbar_vertical" class="mCSB_scrollTools mCSB_11_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_11_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-12">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-12" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Latin" data-bg="images/genre/12/background_12.jpg" data-href="#station/latin">Latin<span class="genre-listeners">492</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-12" class="panel-collapse collapse" data-target="#station/latin" data-href="#station/12" role="tabpanel" aria-labelledby="tab-12" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_12 mCS_no_scrollbar"><div id="mCSB_12" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_12_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/latin/bachata" data-name="Bachata">Bachata<span class="sub-genre-listeners">19</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/banda" data-name="Banda">Banda<span class="sub-genre-listeners">18</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/bossa-nova" data-name="Bossa Nova">Bossa Nova<span class="sub-genre-listeners">28</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/cumbia" data-name="Cumbia">Cumbia<span class="sub-genre-listeners">112</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/flamenco" data-name="Flamenco">Flamenco<span class="sub-genre-listeners">35</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/latin-dance" data-name="Latin Dance">Latin Dance<span class="sub-genre-listeners">140</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/latin-pop" data-name="Latin Pop">Latin Pop<span class="sub-genre-listeners">339</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/latin-rap-and-hip-hop" data-name="Latin Rap and Hip Hop">Latin Rap and Hip Hop<span class="sub-genre-listeners">9</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/latin-rock" data-name="Latin Rock">Latin Rock<span class="sub-genre-listeners">145</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/mariachi" data-name="Mariachi">Mariachi<span class="sub-genre-listeners">55</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/merengue" data-name="Merengue">Merengue<span class="sub-genre-listeners">170</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/ranchera" data-name="Ranchera">Ranchera<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/reggaeton" data-name="Reggaeton">Reggaeton<span class="sub-genre-listeners">297</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/regional-mexican" data-name="Regional Mexican">Regional Mexican<span class="sub-genre-listeners">98</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/salsa" data-name="Salsa">Salsa<span class="sub-genre-listeners">358</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/samba" data-name="Samba">Samba<span class="sub-genre-listeners">25</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/tango" data-name="Tango">Tango<span class="sub-genre-listeners">38</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/tejano" data-name="Tejano">Tejano<span class="sub-genre-listeners">32</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/latin/tropicalia" data-name="Tropicalia">Tropicalia<span class="sub-genre-listeners">50</span></a></li>
-                    </ul>
-                </div><div id="mCSB_12_scrollbar_vertical" class="mCSB_scrollTools mCSB_12_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_12_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-13">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-13" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Metal" data-bg="images/genre/13/background_13.jpg" data-href="#station/metal">Metal<span class="genre-listeners">485</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-13" class="panel-collapse collapse" data-target="#station/metal" data-href="#station/13" role="tabpanel" aria-labelledby="tab-13" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_13 mCS_no_scrollbar"><div id="mCSB_13" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_13_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/metal/black-metal" data-name="Black Metal">Black Metal<span class="sub-genre-listeners">56</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/classic-metal" data-name="Classic Metal">Classic Metal<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/death-metal" data-name="Death Metal">Death Metal<span class="sub-genre-listeners">33</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/extreme-metal" data-name="Extreme Metal">Extreme Metal<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/grindcore" data-name="Grindcore">Grindcore<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/hair-metal" data-name="Hair Metal">Hair Metal<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/heavy-metal" data-name="Heavy Metal">Heavy Metal<span class="sub-genre-listeners">195</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/metalcore" data-name="Metalcore">Metalcore<span class="sub-genre-listeners">22</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/power-metal" data-name="Power Metal">Power Metal<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/progressive-metal" data-name="Progressive Metal">Progressive Metal<span class="sub-genre-listeners">48</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/rap-metal" data-name="Rap Metal">Rap Metal<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/metal/thrash-metal" data-name="Thrash Metal">Thrash Metal<span class="sub-genre-listeners">28</span></a></li>
-                    </ul>
-                </div><div id="mCSB_13_scrollbar_vertical" class="mCSB_scrollTools mCSB_13_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_13_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-14">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-14" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Misc" data-bg="images/genre/14/background_14.jpg" data-href="#station/misc">Misc<span class="genre-listeners">497</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-14" class="panel-collapse collapse" data-target="#station/misc" data-href="#station/14" role="tabpanel" aria-labelledby="tab-14" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_14 mCS_no_scrollbar"><div id="mCSB_14" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_14_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                    </ul>
-                </div><div id="mCSB_14_scrollbar_vertical" class="mCSB_scrollTools mCSB_14_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_14_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-15">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-15" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="New Age" data-bg="images/genre/15/background_15.jpg" data-href="#station/new-age">New Age<span class="genre-listeners">493</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-15" class="panel-collapse collapse" data-target="#station/new-age" data-href="#station/15" role="tabpanel" aria-labelledby="tab-15" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_15 mCS_no_scrollbar"><div id="mCSB_15" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_15_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/new-age/environmental" data-name="Environmental">Environmental<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/new-age/ethnic-fusion" data-name="Ethnic Fusion">Ethnic Fusion<span class="sub-genre-listeners">22</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/new-age/healing" data-name="Healing">Healing<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/new-age/meditation" data-name="Meditation">Meditation<span class="sub-genre-listeners">19</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/new-age/spiritual" data-name="Spiritual">Spiritual<span class="sub-genre-listeners">298</span></a></li>
-                    </ul>
-                </div><div id="mCSB_15_scrollbar_vertical" class="mCSB_scrollTools mCSB_15_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_15_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-16">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-16" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Pop" data-bg="images/genre/16/background_16.jpg" data-href="#station/pop">Pop<span class="genre-listeners">486</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-16" class="panel-collapse collapse" data-target="#station/pop" data-href="#station/16" role="tabpanel" aria-labelledby="tab-16" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_16 mCS_no_scrollbar"><div id="mCSB_16" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_16_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/pop/adult-contemporary" data-name="Adult Contemporary">Adult Contemporary<span class="sub-genre-listeners">127</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/barbershop" data-name="Barbershop">Barbershop<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/bubblegum-pop" data-name="Bubblegum Pop">Bubblegum Pop<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/dance-pop" data-name="Dance Pop">Dance Pop<span class="sub-genre-listeners">86</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/idols" data-name="Idols">Idols<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/jpop" data-name="JPOP">JPOP<span class="sub-genre-listeners">26</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/kpop" data-name="KPOP">KPOP<span class="sub-genre-listeners">29</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/oldies" data-name="Oldies">Oldies<span class="sub-genre-listeners">482</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/soft-rock" data-name="Soft Rock">Soft Rock<span class="sub-genre-listeners">498</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/teen-pop" data-name="Teen Pop">Teen Pop<span class="sub-genre-listeners">9</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/top-40" data-name="Top 40">Top 40<span class="sub-genre-listeners">491</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/pop/world-pop" data-name="World Pop">World Pop<span class="sub-genre-listeners">85</span></a></li>
-                    </ul>
-                </div><div id="mCSB_16_scrollbar_vertical" class="mCSB_scrollTools mCSB_16_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_16_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-17">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-17" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Public Radio" data-bg="images/genre/17/background_17.jpg" data-href="#station/public-radio">Public Radio<span class="genre-listeners">493</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-17" class="panel-collapse collapse" data-target="#station/public-radio" data-href="#station/17" role="tabpanel" aria-labelledby="tab-17" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_17 mCS_no_scrollbar"><div id="mCSB_17" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_17_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/public-radio/college-1" data-name="College">College<span class="sub-genre-listeners">147</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/public-radio/news" data-name="News">News<span class="sub-genre-listeners">492</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/public-radio/sports" data-name="Sports">Sports<span class="sub-genre-listeners">208</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/public-radio/talk-1" data-name="Talk">Talk<span class="sub-genre-listeners">482</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/public-radio/weather" data-name="Weather">Weather<span class="sub-genre-listeners">19</span></a></li>
-                    </ul>
-                </div><div id="mCSB_17_scrollbar_vertical" class="mCSB_scrollTools mCSB_17_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_17_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-18">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-18" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="R&amp;B and Urban" data-bg="images/genre/18/background_18.jpg" data-href="#station/rb-and-urban">R&amp;B and Urban<span class="genre-listeners">478</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-18" class="panel-collapse collapse" data-target="#station/rb-and-urban" data-href="#station/18" role="tabpanel" aria-labelledby="tab-18" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_18 mCS_no_scrollbar"><div id="mCSB_18" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_18_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/classic-rb" data-name="Classic R&amp;B">Classic R&amp;B<span class="sub-genre-listeners">48</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/contemporary-rb" data-name="Contemporary R&amp;B">Contemporary R&amp;B<span class="sub-genre-listeners">7</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/doo-wop" data-name="Doo Wop">Doo Wop<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/funk" data-name="Funk">Funk<span class="sub-genre-listeners">265</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/motown" data-name="Motown">Motown<span class="sub-genre-listeners">62</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/neo-soul" data-name="Neo Soul">Neo Soul<span class="sub-genre-listeners">57</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/quiet-storm" data-name="Quiet Storm">Quiet Storm<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/soul" data-name="Soul">Soul<span class="sub-genre-listeners">304</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rb-and-urban/urban-contemporary" data-name="Urban Contemporary">Urban Contemporary<span class="sub-genre-listeners">14</span></a></li>
-                    </ul>
-                </div><div id="mCSB_18_scrollbar_vertical" class="mCSB_scrollTools mCSB_18_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_18_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-19">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-19" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Rap" data-bg="images/genre/19/background_19.jpg" data-href="#station/rap">Rap<span class="genre-listeners">478</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-19" class="panel-collapse collapse" data-target="#station/rap" data-href="#station/19" role="tabpanel" aria-labelledby="tab-19" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_19 mCS_no_scrollbar"><div id="mCSB_19" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_19_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/rap/alternative-rap" data-name="Alternative Rap">Alternative Rap<span class="sub-genre-listeners">13</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/dirty-south" data-name="Dirty South">Dirty South<span class="sub-genre-listeners">30</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/east-coast-rap" data-name="East Coast Rap">East Coast Rap<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/freestyle" data-name="Freestyle">Freestyle<span class="sub-genre-listeners">98</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/gangsta-rap" data-name="Gangsta Rap">Gangsta Rap<span class="sub-genre-listeners">101</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/hip-hop" data-name="Hip Hop">Hip Hop<span class="sub-genre-listeners">479</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/mixtapes" data-name="Mixtapes">Mixtapes<span class="sub-genre-listeners">157</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/old-school" data-name="Old School">Old School<span class="sub-genre-listeners">28</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/turntablism" data-name="Turntablism">Turntablism<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/underground-hip-hop" data-name="Underground Hip Hop">Underground Hip Hop<span class="sub-genre-listeners">35</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rap/west-coast-rap" data-name="West Coast Rap">West Coast Rap<span class="sub-genre-listeners">7</span></a></li>
-                    </ul>
-                </div><div id="mCSB_19_scrollbar_vertical" class="mCSB_scrollTools mCSB_19_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_19_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-20">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-20" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Reggae" data-bg="images/genre/20/background_20.jpg" data-href="#station/reggae">Reggae<span class="genre-listeners">485</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-20" class="panel-collapse collapse" data-target="#station/reggae" data-href="#station/20" role="tabpanel" aria-labelledby="tab-20" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_20 mCS_no_scrollbar"><div id="mCSB_20" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_20_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/contemporary-reggae" data-name="Contemporary Reggae">Contemporary Reggae<span class="sub-genre-listeners">14</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/dancehall" data-name="Dancehall">Dancehall<span class="sub-genre-listeners">165</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/dub" data-name="Dub">Dub<span class="sub-genre-listeners">60</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/pop-reggae" data-name="Pop Reggae">Pop Reggae<span class="sub-genre-listeners">73</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/ragga" data-name="Ragga">Ragga<span class="sub-genre-listeners">46</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/reggae-roots" data-name="Reggae Roots">Reggae Roots<span class="sub-genre-listeners">69</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/reggae/rock-steady" data-name="Rock Steady">Rock Steady<span class="sub-genre-listeners">3</span></a></li>
-                    </ul>
-                </div><div id="mCSB_20_scrollbar_vertical" class="mCSB_scrollTools mCSB_20_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_20_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-21">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-21" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Rock" data-bg="images/genre/21/background_21.jpg" data-href="#station/rock">Rock<span class="genre-listeners">487</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-21" class="panel-collapse collapse" data-target="#station/rock" data-href="#station/21" role="tabpanel" aria-labelledby="tab-21" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_21 mCS_no_scrollbar"><div id="mCSB_21" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_21_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/rock/adult-album-alternative" data-name="Adult Album Alternative">Adult Album Alternative<span class="sub-genre-listeners">15</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/british-invasion" data-name="British Invasion">British Invasion<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/celtic-rock" data-name="Celtic Rock">Celtic Rock<span class="sub-genre-listeners">9</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/classic-rock" data-name="Classic Rock">Classic Rock<span class="sub-genre-listeners">489</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/garage-rock" data-name="Garage Rock">Garage Rock<span class="sub-genre-listeners">28</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/glam" data-name="Glam">Glam<span class="sub-genre-listeners">34</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/hard-rock" data-name="Hard Rock">Hard Rock<span class="sub-genre-listeners">298</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/jam-bands" data-name="Jam Bands">Jam Bands<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/jrock" data-name="JROCK">JROCK<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/piano-rock" data-name="Piano Rock">Piano Rock<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/prog-rock" data-name="Prog Rock">Prog Rock<span class="sub-genre-listeners">145</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/psychedelic" data-name="Psychedelic">Psychedelic<span class="sub-genre-listeners">62</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/rock-roll" data-name="Rock &amp; Roll">Rock &amp; Roll<span class="sub-genre-listeners">197</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/rockabilly" data-name="Rockabilly">Rockabilly<span class="sub-genre-listeners">71</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/singer-and-songwriter" data-name="Singer and Songwriter">Singer and Songwriter<span class="sub-genre-listeners">7</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/rock/surf" data-name="Surf">Surf<span class="sub-genre-listeners">5</span></a></li>
-                    </ul>
-                </div><div id="mCSB_21_scrollbar_vertical" class="mCSB_scrollTools mCSB_21_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_21_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-22">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-22" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Seasonal and Holiday" data-bg="images/genre/22/background_22.jpg" data-href="#station/seasonal-and-holiday">Seasonal and Holiday<span class="genre-listeners">130</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-22" class="panel-collapse collapse" data-target="#station/seasonal-and-holiday" data-href="#station/22" role="tabpanel" aria-labelledby="tab-22" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_22 mCS_no_scrollbar"><div id="mCSB_22" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_22_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/anniversary" data-name="Anniversary">Anniversary<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/birthday" data-name="Birthday">Birthday<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/christmas" data-name="Christmas">Christmas<span class="sub-genre-listeners">94</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/halloween" data-name="Halloween">Halloween<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/hanukkah" data-name="Hanukkah">Hanukkah<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/honeymoon" data-name="Honeymoon">Honeymoon<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/kwanzaa" data-name="Kwanzaa">Kwanzaa<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/valentine" data-name="Valentine">Valentine<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/wedding" data-name="Wedding">Wedding<span class="sub-genre-listeners">0</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/seasonal-and-holiday/winter" data-name="Winter">Winter<span class="sub-genre-listeners">10</span></a></li>
-                    </ul>
-                </div><div id="mCSB_22_scrollbar_vertical" class="mCSB_scrollTools mCSB_22_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_22_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-23">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-23" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Soundtracks" data-bg="images/genre/23/background_23.jpg" data-href="#station/soundtracks">Soundtracks<span class="genre-listeners">393</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-23" class="panel-collapse collapse" data-target="#station/soundtracks" data-href="#station/23" role="tabpanel" aria-labelledby="tab-23" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_23 mCS_no_scrollbar"><div id="mCSB_23" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_23_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/soundtracks/anime" data-name="Anime">Anime<span class="sub-genre-listeners">40</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/soundtracks/kids" data-name="Kids">Kids<span class="sub-genre-listeners">108</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/soundtracks/original-score" data-name="Original Score">Original Score<span class="sub-genre-listeners">11</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/soundtracks/showtunes" data-name="Showtunes">Showtunes<span class="sub-genre-listeners">15</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/soundtracks/video-game-music" data-name="Video Game Music">Video Game Music<span class="sub-genre-listeners">64</span></a></li>
-                    </ul>
-                </div><div id="mCSB_23_scrollbar_vertical" class="mCSB_scrollTools mCSB_23_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_23_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-24">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-24" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Talk" data-bg="images/genre/24/background_24.jpg" data-href="#station/talk">Talk<span class="genre-listeners">486</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-24" class="panel-collapse collapse" data-target="#station/talk" data-href="#station/24" role="tabpanel" aria-labelledby="tab-24" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_24 mCS_no_scrollbar"><div id="mCSB_24" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_24_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/talk/blogtalk" data-name="BlogTalk">BlogTalk<span class="sub-genre-listeners">8</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/comedy" data-name="Comedy">Comedy<span class="sub-genre-listeners">127</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/community" data-name="Community">Community<span class="sub-genre-listeners">119</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/educational" data-name="Educational">Educational<span class="sub-genre-listeners">114</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/government" data-name="Government">Government<span class="sub-genre-listeners">7</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/news-1" data-name="News">News<span class="sub-genre-listeners">493</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/old-time-radio" data-name="Old Time Radio">Old Time Radio<span class="sub-genre-listeners">33</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/other-talk" data-name="Other Talk">Other Talk<span class="sub-genre-listeners">299</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/political" data-name="Political">Political<span class="sub-genre-listeners">62</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/scanner" data-name="Scanner">Scanner<span class="sub-genre-listeners">24</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/spoken-word" data-name="Spoken Word">Spoken Word<span class="sub-genre-listeners">31</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/sports-1" data-name="Sports">Sports<span class="sub-genre-listeners">207</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/talk/technology" data-name="Technology">Technology<span class="sub-genre-listeners">4</span></a></li>
-                    </ul>
-                </div><div id="mCSB_24_scrollbar_vertical" class="mCSB_scrollTools mCSB_24_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_24_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div><div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="tab-25">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-25" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                        <span class="set-genre" data-name="Themes" data-bg="images/genre/25/background_25.jpg" data-href="#station/themes">Themes<span class="genre-listeners">485</span></span>
-
-                    </a>
-                </h4>
-            </div>
-            <div id="collapse-25" class="panel-collapse collapse" data-target="#station/themes" data-href="#station/25" role="tabpanel" aria-labelledby="tab-25" aria-expanded="false">
-                <div class="panel-body mCustomScrollbar _mCS_25 mCS_no_scrollbar"><div id="mCSB_25" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 370px;" tabindex="0"><div id="mCSB_25_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                    <ul>
-                            <li><a class="set-sub-genre" data-href="#station/themes/adult" data-name="Adult">Adult<span class="sub-genre-listeners">60</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/best-of" data-name="Best Of">Best Of<span class="sub-genre-listeners">47</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/chill" data-name="Chill">Chill<span class="sub-genre-listeners">354</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/eclectic" data-name="Eclectic">Eclectic<span class="sub-genre-listeners">105</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/experimental" data-name="Experimental">Experimental<span class="sub-genre-listeners">38</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/female" data-name="Female">Female<span class="sub-genre-listeners">4</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/heartache" data-name="Heartache">Heartache<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/instrumental" data-name="Instrumental">Instrumental<span class="sub-genre-listeners">52</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/lgbt" data-name="LGBT">LGBT<span class="sub-genre-listeners">13</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/love-and-romance" data-name="Love and Romance">Love and Romance<span class="sub-genre-listeners">35</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/party-mix" data-name="Party Mix">Party Mix<span class="sub-genre-listeners">23</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/patriotic" data-name="Patriotic">Patriotic<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/rainy-day-mix" data-name="Rainy Day Mix">Rainy Day Mix<span class="sub-genre-listeners">3</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/reality" data-name="Reality">Reality<span class="sub-genre-listeners">5</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/sexy" data-name="Sexy">Sexy<span class="sub-genre-listeners">2</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/shuffle" data-name="Shuffle">Shuffle<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/travel-mix" data-name="Travel Mix">Travel Mix<span class="sub-genre-listeners">6</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/tribute" data-name="Tribute">Tribute<span class="sub-genre-listeners">1</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/trippy" data-name="Trippy">Trippy<span class="sub-genre-listeners">5</span></a></li>
-                            <li><a class="set-sub-genre" data-href="#station/themes/work-mix" data-name="Work Mix">Work Mix<span class="sub-genre-listeners">14</span></a></li>
-                    </ul>
-                </div><div id="mCSB_25_scrollbar_vertical" class="mCSB_scrollTools mCSB_25_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_25_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-            </div>
-        </div></div></div>
             <div class="stations-container">
 
-                <div id="breadcrumbs" style="display: block;">
-                    <a class="genre-crumbs" data-href="#station/classical" href="">Classical</a>
+                <div id="breadcrumbs" style="display: none;">
+                    <a class="genre-crumbs" data-href="" href=""></a>
 
-                    <span class="sub-genre-crumbs" data-href=""></span>
+                    <span class="sub-genre-crumbs"></span>
                 </div>
 
                 <div id="stations"><ul><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="160" data-name="radio 6o8" data-slug="radio-6o8" data-href="http://radio6o8.com:8000" href=""></a>
+                    <a class="station-link unactive" data-id="1" data-name="idobi Radio" data-slug="idobi-radio" data-href="http://72.13.93.92:80" href=""></a>
 
-                    <span class="station-name">radio 6o8</span>
+                    <span class="station-name">idobi Radio</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">20</span>
-                            <span data-station-id="312852" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">9494</span>
+                            <span data-station-id="1" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="513" data-name="Kalasam.com" data-slug="kalasamcom" data-href="http://listen.shoutcast.com:80/Kalasamcom" href=""></a>
+                    <a class="station-link unactive" data-id="2" data-name="FM4" data-slug="fm4" data-href="http://198.50.155.189:8009" href=""></a>
 
-                    <span class="station-name">Kalasam.com</span>
+                    <span class="station-name">FM4</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">99</span>
-                            <span data-station-id="240443" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">3631</span>
+                            <span data-station-id="2" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="567" data-name="RADIO FINREAL" data-slug="radio-finreal" data-href="http://listen.radionomy.com:80/RADIOFINREAL" href=""></a>
+                    <a class="station-link unactive" data-id="3" data-name="idobi Anthm" data-slug="idobi-anthm" data-href="http://69.46.75.68:80" href=""></a>
 
-                    <span class="station-name">RADIO FINREAL</span>
+                    <span class="station-name">idobi Anthm</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">23</span>
-                            <span data-station-id="461309" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">1107</span>
+                            <span data-station-id="3" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="586" data-name="Flair Radio" data-slug="flair-radio" data-href="http://listen.radionomy.com:80/FlairRadio" href=""></a>
+                    <a class="station-link unactive" data-id="4" data-name="181.FM - The Buzz (Your Alternative Station!)" data-slug="181fm-the-buzz-your-alternative-station" data-href="" href=""></a>
 
-                    <span class="station-name">Flair Radio</span>
+                    <span class="station-name">181.FM - The Buzz (Your Alternative Station!)</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">16</span>
-                            <span data-station-id="451941" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">513</span>
+                            <span data-station-id="4" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="602" data-name="Do Fa Radio" data-slug="do-fa-radio" data-href="http://listen.radionomy.com/DoFaRadio" href=""></a>
+                    <a class="station-link unactive" data-id="5" data-name="Pinguin Radio" data-slug="pinguin-radio" data-href="http://178.18.137.245:80" href=""></a>
 
-                    <span class="station-name">Do Fa Radio</span>
+                    <span class="station-name">Pinguin Radio</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">12</span>
-                            <span data-station-id="682340" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">502</span>
+                            <span data-station-id="5" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="615" data-name="Hutton Orbital Radio" data-slug="hutton-orbital-radio" data-href="http://listen.radionomy.com:80/HuttonOrbitalRadio" href=""></a>
+                    <a class="station-link unactive" data-id="6" data-name="RTFM" data-slug="rtfm" data-href="http://listen.radionomy.com/RTFM" href=""></a>
 
-                    <span class="station-name">Hutton Orbital Radio</span>
+                    <span class="station-name">RTFM</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">10</span>
-                            <span data-station-id="695585" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">462</span>
+                            <span data-station-id="6" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="617" data-name="LePostagalen la station webradio" data-slug="lepostagalen-la-station-webradio" data-href="http://listen.radionomy.com:80/LePostagalenlastationwebradio" href=""></a>
+                    <a class="station-link unactive" data-id="7" data-name="Bob Marley" data-slug="bob-marley" data-href="http://listen.radionomy.com/Bob-Marley" href=""></a>
 
-                    <span class="station-name">LePostagalen la station webradio</span>
+                    <span class="station-name">Bob Marley</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">10</span>
-                            <span data-station-id="574829" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">393</span>
+                            <span data-station-id="7" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="647" data-name="Shah Rukh Khan Online Radio" data-slug="shah-rukh-khan-online-radio" data-href="http://listen.radionomy.com:80/ShahRukhKhanOnlineRadio" href=""></a>
+                    <a class="station-link unactive" data-id="8" data-name="Pinguin Radio" data-slug="pinguin-radio-1" data-href="http://178.18.137.246:80" href=""></a>
 
-                    <span class="station-name">Shah Rukh Khan Online Radio</span>
+                    <span class="station-name">Pinguin Radio</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">6</span>
-                            <span data-station-id="759855" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">356</span>
+                            <span data-station-id="8" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="663" data-name="Audio Emotion HD Radio" data-slug="audio-emotion-hd-radio" data-href="http://listen.radionomy.com:80/AudioEmotionHDRadio" href=""></a>
+                    <a class="station-link unactive" data-id="9" data-name="Alternative Rock X Radio (1.FM TM)" data-slug="alternative-rock-x-radio-1fm-tm" data-href="http://205.164.36.9:80" href=""></a>
 
-                    <span class="station-name">Audio Emotion HD Radio</span>
+                    <span class="station-name">Alternative Rock X Radio (1.FM TM)</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">5</span>
-                            <span data-station-id="594381" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">309</span>
+                            <span data-station-id="9" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="707" data-name="Naku Radio" data-slug="naku-radio" data-href="http://listen.radionomy.com:80/NakuRadio" href=""></a>
+                    <a class="station-link unactive" data-id="10" data-name="917 XFM" data-slug="917-xfm" data-href="http://62.75.154.250:80" href=""></a>
 
-                    <span class="station-name">Naku Radio</span>
+                    <span class="station-name">917 XFM</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">3</span>
-                            <span data-station-id="634818" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">260</span>
+                            <span data-station-id="10" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="729" data-name="TOANDANCUUNUOCVIETNAM" data-slug="toandancuunuocvietnam" data-href="http://listen.radionomy.com:80/TOANDANCUUNUOCVIETNAM" href=""></a>
+                    <a class="station-link unactive" data-id="11" data-name="DiscofoxFM - Dein Webradio DiscofoxFM - Nonstop die besten Schlager" data-slug="discofoxfm-dein-webradio-discofoxfm-nonstop-die-besten-schlager" data-href="http://87.118.78.71:13000" href=""></a>
 
-                    <span class="station-name">TOANDANCUUNUOCVIETNAM</span>
+                    <span class="station-name">DiscofoxFM - Dein Webradio DiscofoxFM - Nonstop die besten Schlager</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">2</span>
-                            <span data-station-id="789850" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">222</span>
+                            <span data-station-id="11" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="738" data-name="Euro 9" data-slug="euro-9" data-href="http://listen.radionomy.com:80/Euro9" href=""></a>
+                    <a class="station-link unactive" data-id="12" data-name="SomaFM presents: Indie Pop Rocks! [SomaFM]" data-slug="somafm-presents-indie-pop-rocks-somafm" data-href="http://173.239.76.148:8090" href=""></a>
 
-                    <span class="station-name">Euro 9</span>
+                    <span class="station-name">SomaFM presents: Indie Pop Rocks! [SomaFM]</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">2</span>
-                            <span data-station-id="551815" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">184</span>
+                            <span data-station-id="12" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="741" data-name="Radio Pieds Nickel" data-slug="radio-pieds-nickel" data-href="http://listen.radionomy.com:80/RadioPiedsNickeles" href=""></a>
+                    <a class="station-link unactive" data-id="13" data-name="Soundportal" data-slug="soundportal" data-href="http://212.48.110.149:8000" href=""></a>
 
-                    <span class="station-name">Radio Pieds Nickel</span>
+                    <span class="station-name">Soundportal</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">2</span>
-                            <span data-station-id="610222" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">172</span>
+                            <span data-station-id="13" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="743" data-name="RHRadioNL" data-slug="rhradionl" data-href="http://listen.radionomy.com:80/RHRadioNL" href=""></a>
+                    <a class="station-link unactive" data-id="14" data-name="www.krawallradio.com" data-slug="wwwkrawallradiocom" data-href="http://37.187.135.140:9968" href=""></a>
 
-                    <span class="station-name">RHRadioNL</span>
+                    <span class="station-name">www.krawallradio.com</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">2</span>
-                            <span data-station-id="572343" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">169</span>
+                            <span data-station-id="14" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
         </li><li>
                 <div class="station-info">
 
-                    <a class="station-link unactive" data-id="996" data-name="Venice Classic Radio Italia" data-slug="venice-classic-radio-italia" data-href="http://109.123.116.202:8020/stream" href=""></a>
+                    <a class="station-link unactive" data-id="15" data-name="100% HARD ROCK" data-slug="100-hard-rock" data-href="http://listen.radionomy.com/100-HARD-ROCK" href=""></a>
 
-                    <span class="station-name">Venice Classic Radio Italia</span>
+                    <span class="station-name">100% HARD ROCK</span>
 
                     <div class="station-statistic">
                         <span class="headset"></span>
-                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">2433</span>
-                            <span data-station-id="22146" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
+                        <span class="listeners hidden-xs hidden-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Listeners">148</span>
+                            <span data-station-id="15" class="favorite add-to-fav" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to favorite"></span>
                     </div>
 
                 </div>
@@ -1767,24 +1064,6 @@
                 <div id="show-more-container">
 
                 <div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
-            
-        </div><div>
             <div class="show-more">
                 <a href="">Show-more</a>
             </div>
@@ -1913,8 +1192,11 @@
                 window.randomFlag = true;
             },
             waiting: function () {
+                $('.jp-controls').addClass('loading');
             },
             playing: function () {
+
+                $('.jp-controls').removeClass('loading');
 
                 $('.station-info.active').find('a').addClass('playing')
 
@@ -1938,6 +1220,8 @@
 
                 $('.station-link').removeClass('playing');
 
+                $('.jp-controls').removeClass('loading');
+
                 window.stopEqualizer =
                         clearInterval(window.equalizer);
                 var bars = document.getElementsByClassName('bar');
@@ -1950,6 +1234,8 @@
             error: function (event) {
 
                 if(event.jPlayer.error.type == 'e_url') {
+
+                    $('.jp-controls').removeClass('loading');
 
                     clearInterval(window.activeStation);
 

@@ -73,6 +73,75 @@ class Profile extends \WebGuy
         $I->click(ProfilePopUp::$confirmButton);
         $I->waitForText($changeName, 1,'span.username');
     }
+    /*****************NEGATIVE********************/
+
+    public function negativeChangeNameAndAvatar()
+    {
+        $I = $this;
+        $I->loginW();
+        $I->wait(2);
+        $I->click(LoginPopUp::$imgAvatar);
+        $I->click(MainPage::$profileLink);
+        $I->waitForElementVisible(ProfilePopUp::$userNameField);
+        $I->fillField(ProfilePopUp::$userNameField, UserData::$badUserName);
+        $I->click(ProfilePopUp::$confirmButton);
+        $I->see(UserData::$shortUserNameMessage);
+        $I->fillField(ProfilePopUp::$userNameField, UserData::$badUserName1);
+        $I->click(ProfilePopUp::$confirmButton);
+        $I->see(UserData::$longUserNameMessage);
+        $I->attachFile(ProfilePopUp::$avatar, "Japan_amo1.jpg");
+        $I->waitForElementVisible('div.modal-content');
+        $I->wait(1);
+        $I->seeInPageSource('<p class="server-error">'.UserData::$bigImageMessage.'</p>');
+
+    }
+    public function negativeChangePasswordProfile()
+    {
+        $I = $this;
+        $I->loginW();
+        $I->wait(2);
+        $I->click(LoginPopUp::$imgAvatar);
+        $I->click(MainPage::$profileLink);
+        $I->waitForElementVisible(ProfilePopUp::$userNameField);
+        $I->click(ProfilePopUp::$changeEmailLink);
+        $I->waitForElement(ProfilePopUp::$oldPasswordField);
+        $I->click(ProfilePopUp::$changePassButton);
+        $I->see(UserData::$oldPasswordMessage);
+        $I->see(UserData::$newPasswordMessage);
+
+        $I->fillField(ProfilePopUp::$oldPasswordField, UserData::$password);
+        $I->fillField(ProfilePopUp::$newPasswordField, UserData::$changePass);
+        $I->click(ProfilePopUp::$changePassButton);
+        $I->wait(1);
+        $I->seeInPageSource('<div class="error-message">'.UserData::$matchNewPasswordMessage.'</div>');
+        $I->seeInPageSource('<div class="error-message">'.UserData::$confirmNewPasswordMessage.'</div>');
+
+        $I->fillField(ProfilePopUp::$oldPasswordField, UserData::$changePass);
+        $I->fillField(ProfilePopUp::$newPasswordField, UserData::$password);
+        $I->fillField(ProfilePopUp::$confirmNewPasswordField, UserData::$password);
+        $I->click(ProfilePopUp::$changePassButton);
+        $I->wait(1);
+        $I->seeInPageSource('<div class="error-message">'.UserData::$wrongPasswordMessage.'</div>');
+
+        $I->fillField(ProfilePopUp::$oldPasswordField, UserData::$password);
+        $I->fillField(ProfilePopUp::$newPasswordField, UserData::$password);
+        $I->fillField(ProfilePopUp::$confirmNewPasswordField, UserData::$badPass1);
+        $I->click(ProfilePopUp::$changePassButton);
+        $I->wait(1);
+        $I->seeInPageSource('<div class="error-message">'.UserData::$shortConfirmNewPasswordMessage.'</div>');
+
+
+        $I->fillField(ProfilePopUp::$oldPasswordField, UserData::$badPass1);
+        $I->fillField(ProfilePopUp::$newPasswordField, UserData::$badPass1);
+        $I->fillField(ProfilePopUp::$confirmNewPasswordField, UserData::$badPass1);
+        $I->click(ProfilePopUp::$changePassButton);
+        $I->wait(1);
+        $I->see(UserData::$shortOldPasswordMessage);
+        $I->see(UserData::$shortNewPasswordMessage);
+
+
+    }
+
 
 
 }

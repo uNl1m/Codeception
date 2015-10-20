@@ -194,13 +194,13 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 29</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 48</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 2</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (118.6s)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (297s)</small></h1>
 
 
 
@@ -209,24 +209,420 @@
  <td>
      <h3>MuzzaWeb Tests</h3>
  </td>
-</tr>   <tr class="scenarioRow scenarioSuccess">
+</tr>   <tr class="scenarioRow scenarioFailed">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('1', this)">[+] Login (addStationToFavoriteCest::login) <span style="color: #34495e; font-size: 70%;">12.74s</span></p>
+     <p class="scenarioFailed" onclick="showHide('1', this)">[+] Main page (mainPageCest::mainPage) <span style="color: #34495e; font-size: 70%;">4.46s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioSuccess">
+   <tr class="scenarioRow scenarioFailed">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer1">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b770507ed', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('56262921a6a3a', this)">[+] I check main page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b770507ed">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262921a6a3a">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='Muzza.life']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"div.banners-container"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.buy"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.like"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"button.jp-play"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.rand"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#search_input"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"span.social-action-trigger.share"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"a.bx-prev"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I see element <span style="color: #732E81">"a.bx-pager-link.active"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        Failed asserting that an array is not empty.
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('2', this)">[+] Check pagination (mainPageCest::checkPagination) <span style="color: #34495e; font-size: 70%;">1.14s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262922df336', this)">[+] I pagination </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262922df336">
+          <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,600);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"header.small"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see number of elements <span style="color: #732E81">"div.station-info",30</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"span.move-top.up"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('3', this)">[+] Top20 (mainPageCest::Top20) <span style="color: #34495e; font-size: 70%;">1.16s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5626292429af5', this)">[+] I top20 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626292429af5">
+          <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,0);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.top-20"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see number of elements <span style="color: #732E81">"div.station-info",20</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('4', this)">[+] Random station (mainPageCest::randomStation) <span style="color: #34495e; font-size: 70%;">2.23s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('5626292677a60', this)">[+] I random station </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626292677a60">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.rand"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"h2.pull-left.stations-title"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I execute js <span style="color: #732E81">"window.scrollTo(0,0);"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"div.container-equalizer"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('5', this)">[+] Check sliders (mainPageCest::checkSliders) <span style="color: #34495e; font-size: 70%;">11.55s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer5">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629328b5cb', this)">[+] I check sliders </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629328b5cb">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">I wait for element <span style="color: #732E81">"//img[@alt='Twagbox.com']"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         <tr >
+    <td class="error">
+        no such element<br />
+  (Session info: chrome=46.0.2490.71)<br />
+  (Driver info: chromedriver=2.16.333243 (0bfa1d3575fc1044244f21ddb82bf870944ef961),platform=Linux 3.16.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)<br />
+Command duration or timeout: 15 milliseconds<br />
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br />
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'<br />
+System info: host: 'anton-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-50-generic', java.version: '1.8.0_60'<br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/tmp/.com.google.Chrome.mBSmLN}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.71, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br />
+Session ID: b02bf4b5c25f4a0f4f24f62d4185cdf2<br />
+*** Element info: {Using=xpath, value=//img[@alt='Twagbox.com']}
+    </td>
+</tr>
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('6', this)">[+] Check search station (mainPageCest::checkSearchStation) <span style="color: #34495e; font-size: 70%;">4.59s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629374bee1', this)">[+] I search station main page </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629374bee1">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_input","idobi Radio"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#search_button"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">3</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">idobi Radio</span>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('7', this)">[+] Share station (mainPageCest::shareStation) <span style="color: #34495e; font-size: 70%;">2.36s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer7">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262939cd6ce', this)">[+] I check share buttons </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262939cd6ce">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.social-action-trigger.share"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"li.tw"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('8', this)">[+] Login (addStationToFavoriteCest::login) <span style="color: #34495e; font-size: 70%;">7.22s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer8">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629415a3b7', this)">[+] I login w </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629415a3b7">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -292,7 +688,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I wait for text <span style="color: #732E81">"FEAHYINV"</span></td>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"MFCXPQGA"</span></td>
       </tr>
 
       <tr>
@@ -300,7 +696,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see <span style="color: #732E81">"FEAHYINV","span.username"</span></td>
+       <td class="stepName ">I see <span style="color: #732E81">"MFCXPQGA","span.username"</span></td>
       </tr>
 
       <tr>
@@ -321,24 +717,24 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('2', this)">[+] Add station to favorite (addStationToFavoriteCest::addStationToFavorite) <span style="color: #34495e; font-size: 70%;">5.82s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('9', this)">[+] Add station to favorite (addStationToFavoriteCest::addStationToFavorite) <span style="color: #34495e; font-size: 70%;">5.81s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer9">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7763d693', this)">[+] I add station to favorite </p>
+ <td class="stepName" ><p onclick="showHide('5626294742a15', this)">[+] I add station to favorite </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7763d693">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626294742a15">
           <tr>
-       <td class="stepName ">I get top stations <span style="color: #732E81">2</span></td>
+       <td class="stepName ">I get top stations <span style="color: #732E81">3</span></td>
       </tr>
 
       <tr>
@@ -350,7 +746,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[3]/div/div/span[3]"</span></td>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[4]/div/div/span[3]"</span></td>
       </tr>
 
       <tr>
@@ -370,7 +766,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">Fusin 90.1 FM - Grupo Pazos Radio</span>"</span></td>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">RADIOSCOOP HUNGARY | THE HITS OF THE FRESHEST MUSICS</span>"</span></td>
       </tr>
 
 
@@ -387,22 +783,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('3', this)">[+] Check added track (addTrackToFavoriteCest::checkAddedTrack) <span style="color: #34495e; font-size: 70%;">10.05s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('10', this)">[+] Check added track (addTrackToFavoriteCest::checkAddedTrack) <span style="color: #34495e; font-size: 70%;">9.08s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer10">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b78095bd9', this)">[+] I add trackto favorite </p>
+ <td class="stepName" ><p onclick="showHide('562629509cf30', this)">[+] I add trackto favorite </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b78095bd9">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629509cf30">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -440,7 +836,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">The Rocket Summer - Calendar Days - Cross My Heart</span>"</span></td>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">Cobra Starship - Snakes On a Plane (Bring It)</span>"</span></td>
       </tr>
 
 
@@ -457,22 +853,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('4', this)">[+] Login (changePasswordCest::login) <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('11', this)">[+] Login (changePasswordCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer11">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b780f1eee', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('56262950d8ad7', this)">[+] I login w </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b780f1eee">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262950d8ad7">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -491,22 +887,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('5', this)">[+] Check profile elements (changePasswordCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.44s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('12', this)">[+] Check profile elements (changePasswordCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.42s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer12">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7838353a', this)">[+] I check profile pop up </p>
+ <td class="stepName" ><p onclick="showHide('562629536282a', this)">[+] I check profile pop up </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7838353a">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629536282a">
           <tr>
        <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
       </tr>
@@ -553,22 +949,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('6', this)">[+] Change password1 (changePasswordCest::changePassword1) <span style="color: #34495e; font-size: 70%;">3.89s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('13', this)">[+] Change password1 (changePasswordCest::changePassword1) <span style="color: #34495e; font-size: 70%;">3.89s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer13">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7876b395', this)">[+] I change password1 </p>
+ <td class="stepName" ><p onclick="showHide('562629574ac3e', this)">[+] I change password1 </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7876b395">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629574ac3e">
           <tr>
        <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
       </tr>
@@ -627,22 +1023,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('7', this)">[+] Change password2 (changePasswordCest::changePassword2) <span style="color: #34495e; font-size: 70%;">5.02s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('14', this)">[+] Change password2 (changePasswordCest::changePassword2) <span style="color: #34495e; font-size: 70%;">4.92s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer7">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer14">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b78c92a0a', this)">[+] I change password2 </p>
+ <td class="stepName" ><p onclick="showHide('5626295c57cd4', this)">[+] I change password2 </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b78c92a0a">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626295c57cd4">
           <tr>
        <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
       </tr>
@@ -717,22 +1113,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('8', this)">[+] Login (changeUserNameAndAvatarCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('15', this)">[+] Login (changeUserNameAndAvatarCest::login) <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer8">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer15">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b78ce0099', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('5626295c9866e', this)">[+] I login w </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b78ce0099">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626295c9866e">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -751,22 +1147,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('9', this)">[+] Check profile elements (changeUserNameAndAvatarCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.18s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('16', this)">[+] Check profile elements (changeUserNameAndAvatarCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.22s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer9">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer16">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b78f41ab2', this)">[+] I check profile pop up </p>
+ <td class="stepName" ><p onclick="showHide('5626295ee51fa', this)">[+] I check profile pop up </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b78f41ab2">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626295ee51fa">
           <tr>
        <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
       </tr>
@@ -813,12 +1209,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('10', this)">[+] Unique user name (changeUserNameAndAvatarCest::uniqueUserName) <span style="color: #34495e; font-size: 70%;">0s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('17', this)">[+] Unique user name (changeUserNameAndAvatarCest::uniqueUserName) <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer10">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer17">
 
 
 
@@ -831,22 +1227,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('11', this)">[+] Change profile elements (changeUserNameAndAvatarCest::changeProfileElements) <span style="color: #34495e; font-size: 70%;">3.44s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('18', this)">[+] Change profile elements (changeUserNameAndAvatarCest::changeProfileElements) <span style="color: #34495e; font-size: 70%;">3.42s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer11">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer18">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b792cb91f', this)">[+] I change user name and avatar </p>
+ <td class="stepName" ><p onclick="showHide('5626296276fac', this)">[+] I change user name and avatar </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b792cb91f">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626296276fac">
           <tr>
        <td class="stepName ">I wait for element <span style="color: #732E81">"#inputImage"</span></td>
       </tr>
@@ -864,7 +1260,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I fill field <span style="color: #732E81">"#username","RTNEGXVB"</span></td>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","UNKODHRE"</span></td>
       </tr>
 
       <tr>
@@ -876,7 +1272,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I wait for text <span style="color: #732E81">"RTNEGXVB",1,"span.username"</span></td>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"UNKODHRE",1,"span.username"</span></td>
       </tr>
 
 
@@ -893,22 +1289,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('12', this)">[+] Check player (checkPlayerCest::checkPlayer) <span style="color: #34495e; font-size: 70%;">16.04s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('19', this)">[+] Check player (checkPlayerCest::checkPlayer) <span style="color: #34495e; font-size: 70%;">15.98s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer12">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer19">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7a315af8', this)">[+] I check player </p>
+ <td class="stepName" ><p onclick="showHide('56262972a0d2e', this)">[+] I check player </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7a315af8">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262972a0d2e">
           <tr>
        <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
       </tr>
@@ -971,22 +1367,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('13', this)">[+] Login (checkProfileCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('20', this)">[+] Login (checkProfileCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer13">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer20">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7a362f09', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('56262972de29f', this)">[+] I login w </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7a362f09">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262972de29f">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -1005,22 +1401,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('14', this)">[+] Check profile elements (checkProfileCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.57s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('21', this)">[+] Check profile elements (checkProfileCest::checkProfileElements) <span style="color: #34495e; font-size: 70%;">2.66s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer14">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer21">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7a623d5a', this)">[+] I check profile pop up </p>
+ <td class="stepName" ><p onclick="showHide('56262975ac34f', this)">[+] I check profile pop up </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7a623d5a">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262975ac34f">
           <tr>
        <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
       </tr>
@@ -1071,22 +1467,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('15', this)">[+] Login (favoritePageCest::login) <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('22', this)">[+] Login (favoritePageCest::login) <span style="color: #34495e; font-size: 70%;">0.04s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer15">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer22">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7a675cff', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('56262976156be', this)">[+] I login w </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7a675cff">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262976156be">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -1105,12 +1501,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('16', this)">[+] Favorite page (favoritePageCest::favoritePage) <span style="color: #34495e; font-size: 70%;">8.61s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('23', this)">[+] Favorite page (favoritePageCest::favoritePage) <span style="color: #34495e; font-size: 70%;">6.77s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer16">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer23">
 
 
       <tr>
@@ -1118,13 +1514,13 @@
       </tr>
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7af49be4', this)">[+] I favorite page </p>
+ <td class="stepName" ><p onclick="showHide('5626297d093d8', this)">[+] I favorite page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7af49be4">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626297d093d8">
           <tr>
        <td class="stepName ">I wait for element visible <span style="color: #732E81">"img.avatar"</span></td>
       </tr>
@@ -1183,22 +1579,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('17', this)">[+] Forgot password (ForgotPasswordCest::forgotPassword) <span style="color: #34495e; font-size: 70%;">16.55s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('24', this)">[+] Forgot password (ForgotPasswordCest::forgotPassword) <span style="color: #34495e; font-size: 70%;">9.1s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer17">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer24">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7c008a10', this)">[+] I forgot password </p>
+ <td class="stepName" ><p onclick="showHide('56262986497de', this)">[+] I forgot password </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7c008a10">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262986497de">
           <tr>
        <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
       </tr>
@@ -1281,12 +1677,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('18', this)">[+] Check temp mail (ForgotPasswordCest::checkTempMail) <span style="color: #34495e; font-size: 70%;">0.31s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('25', this)">[+] Check temp mail (ForgotPasswordCest::checkTempMail) <span style="color: #34495e; font-size: 70%;">0.44s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer18">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer25">
 
 
 
@@ -1299,24 +1695,24 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('19', this)">[+] Change forgot pass (ForgotPasswordCest::changeForgotPass) <span style="color: #34495e; font-size: 70%;">9.22s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('26', this)">[+] Change forgot pass (ForgotPasswordCest::changeForgotPass) <span style="color: #34495e; font-size: 70%;">9.32s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer19">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer26">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7c9d099c', this)">[+] I change forgot password </p>
+ <td class="stepName" ><p onclick="showHide('5626299039c70', this)">[+] I change forgot password </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7c9d099c">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299039c70">
           <tr>
-       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/reset-password/eyJpdiI6IndkSzlvOWIzdnpKM2hhZFJnRW45ekE9PSIsInZhbHVlIjoidERvQnpcL01SUUZGSTg3bWU3d1VkN1E9PSIsIm1hYyI6IjJjM2VlMzJjMzYzM2Y3NzZhNTJkMGE5MjcwZDRlODlkZTFhODI5NzE1NzJhMmRhMTgxZjhhNDRkM2U0MzczMjYifQ=="</span></td>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/reset-password/eyJpdiI6IkhzVG9jbnBQd3lWODNGUDJ2bWhocmc9PSIsInZhbHVlIjoiVlZwVVVhS2dScGZ2XC82M21wS1wvMkpBPT0iLCJtYWMiOiI4MjE1ZTg1NTAzY2Q0ZGVhODBjNmZiNzU0NTVkZmVkZjk5YTIzNTZhNjcyNGY5MjY0ZWI4ZTk4NjM5MTFhM2E0In0="</span></td>
       </tr>
 
       <tr>
@@ -1393,12 +1789,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('20', this)">[+] Delete last mail (ForgotPasswordCest::deleteLastMail) <span style="color: #34495e; font-size: 70%;">0.38s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('27', this)">[+] Delete last mail (ForgotPasswordCest::deleteLastMail) <span style="color: #34495e; font-size: 70%;">0.26s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer20">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer27">
 
 
 
@@ -1411,22 +1807,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('21', this)">[+] Login on favorite page (removeFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">1.27s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('28', this)">[+] Login on favorite page (removeFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">1.25s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer21">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer28">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7cbac225', this)">[+] I go on favorite page </p>
+ <td class="stepName" ><p onclick="showHide('56262991dd181', this)">[+] I go on favorite page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7cbac225">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262991dd181">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -1461,22 +1857,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('22', this)">[+] Remove favorite station (removeFavoriteStationCest::removeFavoriteStation) <span style="color: #34495e; font-size: 70%;">3.68s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('29', this)">[+] Remove favorite station (removeFavoriteStationCest::removeFavoriteStation) <span style="color: #34495e; font-size: 70%;">3.46s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer22">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer29">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7cf78aa2', this)">[+] I remove station </p>
+ <td class="stepName" ><p onclick="showHide('5626299570d1c', this)">[+] I remove station </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7cf78aa2">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299570d1c">
           <tr>
        <td class="stepName ">I get favorite stations <span style="color: #732E81">1</span></td>
       </tr>
@@ -1490,7 +1886,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I don't see in page source <span style="color: #732E81">"<span class="station-name">Fusin 90.1 FM - Grupo Pazos Radio</span>"</span></td>
+       <td class="stepName ">I don't see in page source <span style="color: #732E81">"<span class="station-name">RADIOSCOOP HUNGARY | THE HITS OF THE FRESHEST MUSICS</span>"</span></td>
       </tr>
 
 
@@ -1511,12 +1907,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('23', this)">[+] Login on favorite page (removeFavoriteTrackCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">4.2s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('30', this)">[+] Login on favorite page (removeFavoriteTrackCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">3.36s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer23">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer30">
 
 
       <tr>
@@ -1524,13 +1920,13 @@
       </tr>
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7d3dd477', this)">[+] I go on favorite page </p>
+ <td class="stepName" ><p onclick="showHide('5626299900d62', this)">[+] I go on favorite page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7d3dd477">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299900d62">
           <tr>
        <td class="stepName ">I wait for element visible <span style="color: #732E81">"img.avatar"</span></td>
       </tr>
@@ -1561,22 +1957,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('24', this)">[+] Remove favorite track (removeFavoriteTrackCest::removeFavoriteTrack) <span style="color: #34495e; font-size: 70%;">2.47s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('31', this)">[+] Remove favorite track (removeFavoriteTrackCest::removeFavoriteTrack) <span style="color: #34495e; font-size: 70%;">2.45s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer24">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer31">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7d67945f', this)">[+] I remove track </p>
+ <td class="stepName" ><p onclick="showHide('5626299b85777', this)">[+] I remove track </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7d67945f">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299b85777">
           <tr>
        <td class="stepName ">I get favorite tracks <span style="color: #732E81">1</span></td>
       </tr>
@@ -1590,7 +1986,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I don't see in page source <span style="color: #732E81">"<span class="station-name">Set It Off - Swan Song</span>"</span></td>
+       <td class="stepName ">I don't see in page source <span style="color: #732E81">"<span class="station-name">Cobra Starship - Snakes On a Plane (Bring It)</span>"</span></td>
       </tr>
 
 
@@ -1607,22 +2003,22 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('25', this)">[+] Login on favorite page (searchFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">1.2s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('32', this)">[+] Login on favorite page (searchFavoriteStationCest::loginOnFavoritePage) <span style="color: #34495e; font-size: 70%;">1.21s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer25">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer32">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7d7f3554', this)">[+] I go on favorite page </p>
+ <td class="stepName" ><p onclick="showHide('5626299cef9bc', this)">[+] I go on favorite page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7d7f3554">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299cef9bc">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -1657,28 +2053,28 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('26', this)">[+] Search favorite stations (searchFavoriteStationCest::searchFavoriteStations) <span style="color: #34495e; font-size: 70%;">1.89s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('33', this)">[+] Search favorite stations (searchFavoriteStationCest::searchFavoriteStations) <span style="color: #34495e; font-size: 70%;">1.73s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer26">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer33">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7d9ef588', this)">[+] I search favorite station </p>
+ <td class="stepName" ><p onclick="showHide('5626299ec481a', this)">[+] I search favorite station </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7d9ef588">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5626299ec481a">
           <tr>
        <td class="stepName ">I get favorite stations <span style="color: #732E81">1</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">I fill field <span style="color: #732E81">"#search_track_input","UT Korea Radio"</span></td>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_track_input","Radio Stafford 103"</span></td>
       </tr>
 
       <tr>
@@ -1686,7 +2082,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">UT Korea Radio</span>"</span></td>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">Radio Stafford 103</span>"</span></td>
       </tr>
 
 
@@ -1707,12 +2103,12 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('27', this)">[+] Search favorite track (searchFavoriteTrackCest::searchFavoriteTrack) <span style="color: #34495e; font-size: 70%;">3.2s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('34', this)">[+] Search favorite track (searchFavoriteTrackCest::searchFavoriteTrack) <span style="color: #34495e; font-size: 70%;">3.08s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer27">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer34">
 
 
       <tr>
@@ -1720,13 +2116,13 @@
       </tr>
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7dd77935', this)">[+] I search favorite track </p>
+ <td class="stepName" ><p onclick="showHide('562629a223719', this)">[+] I search favorite track </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7dd77935">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629a223719">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
@@ -1744,7 +2140,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I fill field <span style="color: #732E81">"#search_track_input","SITD - Asphyxiation"</span></td>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_track_input","Transit - All Your Heart (ft. Patrick Stump)"</span></td>
       </tr>
 
       <tr>
@@ -1752,7 +2148,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">SITD - Asphyxiation</span>"</span></td>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="station-name">Transit - All Your Heart (ft. Patrick Stump)</span>"</span></td>
       </tr>
 
 
@@ -1769,26 +2165,866 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('28', this)">[+] Login (logoutCest::login) <span style="color: #34495e; font-size: 70%;">0.05s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('35', this)">[+] Tw login (socialLoginCest::twLogin) <span style="color: #34495e; font-size: 70%;">12.18s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer28">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer35">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7ddcb09f', this)">[+] I login w </p>
+ <td class="stepName" ><p onclick="showHide('562629ae8b8c4', this)">[+] I logout </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7ddcb09f">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629ae8b8c4">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"ul.social-registration li.tw"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"ul.social-registration li.tw"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username_or_email","@trinitytester"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","123456qwer"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#allow"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='User Avatar']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('36', this)">[+] Vk login (socialLoginCest::vkLogin) <span style="color: #34495e; font-size: 70%;">10.8s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer36">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629b99a92b', this)">[+] I logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629b99a92b">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"ul.social-registration li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"ul.social-registration li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"email","qa.trinitytester@gmail.com"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"pass","123456qwer"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#install_allow"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='User Avatar']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('37', this)">[+] Gp login (socialLoginCest::gpLogin) <span style="color: #34495e; font-size: 70%;">11.82s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer37">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629c5b180f', this)">[+] I logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629c5b180f">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"ul.social-registration li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"ul.social-registration li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#Email","qa.trinitytester@gmail.com"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#next"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#Passwd"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#Passwd","123456qwer"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#signIn"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='User Avatar']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('38', this)">[+] Fb login (socialLoginCest::fbLogin) <span style="color: #34495e; font-size: 70%;">11.23s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer38">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629d131f59', this)">[+] I logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629d131f59">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"ul.social-registration li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"ul.social-registration li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","qa.trinitytester@gmail.com"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#pass","123456qwer"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#u_0_2"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//img[@alt='User Avatar']"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('39', this)">[+] Negative add break station (negativeCest::negativeAddBreakStation) <span style="color: #34495e; font-size: 70%;">6.2s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer39">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629d7b4da5', this)">[+] I negative add break station </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629d7b4da5">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_input","Dark-Section-Radio Gothic Darkwave EBM Metal"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#search_button"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/div/div/div/a"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"div.modal-content"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<p class="server-error">The station is on a break. Try again later.</p>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I reload page <span style="color: #732E81"></span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('40', this)">[+] Negative change name and avatar (negativeCest::negativeChangeNameAndAvatar) <span style="color: #34495e; font-size: 70%;">13.08s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer40">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629e517bce', this)">[+] I negative change name and avatar </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629e517bce">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-profile"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#username"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","ss"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsAvatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Username must be at least 3 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsAvatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Username must be at most 50 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I attach file <span style="color: #732E81">"#inputImage","Japan_amo1.jpg"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"div.modal-content"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<p class="server-error">Image is to large, max size 10Mb</p>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.close"</span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('41', this)">[+] Negative change password (negativeCest::negativeChangePassword) <span style="color: #34495e; font-size: 70%;">13.17s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer41">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629f28a1ea', this)">[+] I negative change password profile </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629f28a1ea">
           <tr>
        <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
       </tr>
 
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-profile"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#username"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingPassLink"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#old_password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Old password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"New password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","123456789"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The new password confirmation does not match.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The new password confirmation field is required.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","123456789"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password_confirm","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">Wrong password, try again.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password_confirm","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The new password confirmation must be at least 8 characters.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#old_password","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#new_password_confirm","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#profileSettingsPass"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Old password must be at least 8 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"New password must be at least 8 characters"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.close"</span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('42', this)">[+] Negative add unknown track (negativeCest::negativeAddUnknownTrack) <span style="color: #34495e; font-size: 70%;">8.37s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer42">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629fb24f20', this)">[+] I negative add unknown track </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629fb24f20">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[2]/div/a"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"span.current-track"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<span class="current-track">Unknown Artist</span>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.social-action-trigger.like"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"div.modal-content"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<p class="server-error">You cant do it now, it works only with identified track name.</p>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.close"</span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('43', this)">[+] Search bad favorite station and track (negativeCest::searchBadFavoriteStationAndTrack) <span style="color: #34495e; font-size: 70%;">2.02s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer43">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('562629fd64b75', this)">[+] I search bad favorite station and track </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer562629fd64b75">
+          <tr>
+       <td class="stepName ">I load session snapshot <span style="color: #732E81">"login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"a.muzza-rout.favorite"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_track_input","ouiyg8347yhpfuier"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#fav_search_button"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<h3 class="text-center">Nothing found.</h3>"</span></td>
+      </tr>
+
 
   </table>
  </td>
@@ -1803,22 +3039,870 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('29', this)">[+] Logout (logoutCest::logout) <span style="color: #34495e; font-size: 70%;">1.22s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('44', this)">[+] Add station by guest (negativeCest::addStationByGuest) <span style="color: #34495e; font-size: 70%;">19.26s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer29">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer44">
 
 
 <tr>
- <td class="stepName" ><p onclick="showHide('5617b7df364eb', this)">[+] I logout </p>
+ <td class="stepName" ><p onclick="showHide('56262a10d6266', this)">[+] I negative search main page </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5617b7df364eb">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a10d6266">
+          <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#logout"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[1]/div/div/span[3]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#email"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.tw"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="stations"]/ul/li[1]/div/a"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"span.social-action-trigger.like"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#email"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.tw"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.vk"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.fb"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"ul.social-registration li.gp"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#search_input","ouiyg8347yhpfuier"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#search_button"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"Nothing found."</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I reload page <span style="color: #732E81"></span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('45', this)">[+] Negative registration (negativeCest::negativeRegistration) <span style="color: #34495e; font-size: 70%;">21.79s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer45">
+
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a26ce1cd', this)">[+] I negative registration6 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a26ce1cd">
+          <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/activate/18/ImnYIzosihzyF1yV3usDPJoB3OYPGC5X"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/activate/18/ImnYIzosihzyF1yV3usDPJoB3OYPGC5X"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"/html/body/div[5]/div/div/div[2]/p"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<p class="server-error">Sorry, your code is not valid.</p>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-registration"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Username is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Email is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","ss"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Username must be at least 3 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Email is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Username must be at most 50 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Email is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","QA tester1"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","asdadasdas"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Email must be a valid email"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password is required"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","QA tester1"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password_confirmation","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"The email has already been taken."</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The email has already been taken.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","QA tester1"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password_confirmation","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password must be at least 8 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password confirmation must be the same as Password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element visible <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#username","QA tester1"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password_confirmation","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#registrationButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password confirmation must be the same as Password"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('46', this)">[+] Negative login (negativeCest::negativeLogin) <span style="color: #34495e; font-size: 70%;">9.57s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer46">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a308fed0', this)">[+] I negative login4 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a308fed0">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Email must be a valid email"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password must be at least 8 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see <span style="color: #732E81">"Password must be at least 8 characters"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","123123321132132"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">Wrong login or password. Please, try again.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","nAu@test.ua"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">User is not activated. <a href="http://muzza.life/auth/activate">Resend activation code</a></div>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('47', this)">[+] Negative forgot pass (negativeCest::negativeForgotPass) <span style="color: #34495e; font-size: 70%;">7.49s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer47">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a383cba3', this)">[+] I negative forgot password2 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a383cba3">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="forgot-password"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Forgot password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"//*[@id="email"]","@mail.com"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="resetPasswordButton"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The email must be a valid email address.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"//*[@id="email"]","nAu@test.ua"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="resetPasswordButton"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">User is not activated. <a href="http://muzza.life/auth/activate">Resend activation code</a></div>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('48', this)">[+] Negative change password1 (negativeCest::negativeChangePassword1) <span style="color: #34495e; font-size: 70%;">15.89s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer48">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a48716a2', this)">[+] I forgot password </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a48716a2">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="forgot-password"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Forgot password"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for element <span style="color: #732E81">"//*[@id="email"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//*[@id="email"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see element <span style="color: #732E81">"//*[@id="resetPasswordButton"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"//*[@id="email"]","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"//*[@id="resetPasswordButton"]"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Reset password link was sent on your e-mail address"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a487292a', this)">[+] I negative change password3 </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a487292a">
+          <tr>
+       <td class="stepName ">I am on url <span style="color: #732E81">"http://muzza.life/auth/reset-password/eyJpdiI6IjJHNlZ2ZjB0UGtcLzNZcDZhTXorN0N3PT0iLCJ2YWx1ZSI6InFZc1wvek9PcGdhZEJzaWxHSm5QdlNRPT0iLCJtYWMiOiIxYmYxOWYwNzdmODgyZmY4NTBiZTBiZDRhNDI4MDM1ODAxYzliMWNiY2I3YjNmMzI2Njg5YWVmNWQyNmRmNWJkIn0="</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#changePasswordButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The password field is required.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The password confirmation field is required.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPassword","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPasswordConfirmation","123"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#changePasswordButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The password must be at least 8 characters.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The password confirmation must be at least 8 characters.</div>"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPassword","123123321132132"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#inputPasswordConfirmation","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#changePasswordButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I see in page source <span style="color: #732E81">"<div class="error-message">The password confirmation does not match.</div>"</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I remove last email1 <span style="color: #732E81"></span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('49', this)">[+] Login (logoutCest::login) <span style="color: #34495e; font-size: 70%;">5.26s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer49">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a4deda78', this)">[+] I log </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a4deda78">
+          <tr>
+       <td class="stepName ">I am on page <span style="color: #732E81">"/"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#popup-login"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait for text <span style="color: #732E81">"Create account"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#email","b@freeletter.me"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I fill field <span style="color: #732E81">"#password","12345678"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I click <span style="color: #732E81">"#loginButton"</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+
+         
+
+     </table>
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('50', this)">[+] Logout (logoutCest::logout) <span style="color: #34495e; font-size: 70%;">1.13s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer50">
+
+
+<tr>
+ <td class="stepName" ><p onclick="showHide('56262a4f2e52c', this)">[+] I logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer56262a4f2e52c">
           <tr>
        <td class="stepName ">I click <span style="color: #732E81">"img.avatar"</span></td>
       </tr>
@@ -1859,11 +3943,11 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>29</strong></td>
+        <td class="scenarioSuccessValue"><strong>48</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>0</strong></td>
+        <td class="scenarioFailedValue"><strong>2</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>

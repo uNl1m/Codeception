@@ -2,6 +2,7 @@
 namespace Step\MuzzaWeb;
 use \Page\MuzzaWeb\MainPage;
 use Page\MuzzaWeb\UserData;
+use Page\MuzzaWeb\LoginPopUp;
 
 class CheckMainPage extends \WebGuy
 {
@@ -164,7 +165,92 @@ class CheckMainPage extends \WebGuy
 //        $I->seeCurrentUrlEquals('http://twagbox.com/');
 //
     }
+    public function checkShareButtons()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->click(MainPage::$share_button);
+        $I->wait(1);
+        $I->seeElement(MainPage::$share_vk);
+        $I->seeElement(MainPage::$share_fb);
+        $I->seeElement(MainPage::$share_gp);
+        $I->seeElement(MainPage::$share_tw);
+    }
+    /*****************NEGATIVE********************/
+    public function negativeAddBreakStation()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->fillField(MainPage::$search_field, UserData::$badStation);
+        $I->click(MainPage::$search_button);
+        $I->wait(1);
+        $I->click('//*[@id="stations"]/div/div/div/a');
+        $I->waitForElementVisible('div.modal-content');
+        $I->seeInPageSource('<p class="server-error">The station is on a break. Try again later.</p>');
 
+
+
+    }
+    public function negativeAddUnknownTrack()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->click('//*[@id="stations"]/ul/li[2]/div/a');
+//        $I->wait(5);
+        $I->waitForElementVisible('span.current-track');
+        $I->seeInPageSource('<span class="current-track">Unknown Artist</span>');
+        $I->wait(1);
+        $I->click(MainPage::$like_button);
+        $I->waitForElementVisible('div.modal-content');
+        $I->seeInPageSource('<p class="server-error">You cant do it now, it works only with identified track name.</p>');
+    }
+
+    public function negativeAddStationByGuest()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->click('//*[@id="stations"]/ul/li[1]/div/div/span[3]');
+        $I->wait(1);
+        $I->waitForText(LoginPopUp::$createAccountLink);
+        $I->see(LoginPopUp::$createAccountLink);
+        $I->see(LoginPopUp::$createAccountLink);
+        $I->seeElement(LoginPopUp::$emailField);
+        $I->seeElement(LoginPopUp::$passwordField);
+        $I->seeElement(LoginPopUp::$loginButton);
+        $I->seeElement(LoginPopUp::$tw_button);
+        $I->seeElement(LoginPopUp::$vk_button);
+        $I->seeElement(LoginPopUp::$fb_button);
+        $I->seeElement(LoginPopUp::$gp_button);
+
+    }
+    public function negativeAddTrackByGuest()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->click('//*[@id="stations"]/ul/li[1]/div/a');
+        $I->wait(5);
+        $I->click(MainPage::$like_button);
+        $I->waitForText(LoginPopUp::$createAccountLink);
+        $I->see(LoginPopUp::$createAccountLink);
+        $I->see(LoginPopUp::$createAccountLink);
+        $I->seeElement(LoginPopUp::$emailField);
+        $I->seeElement(LoginPopUp::$passwordField);
+        $I->seeElement(LoginPopUp::$loginButton);
+        $I->seeElement(LoginPopUp::$tw_button);
+        $I->seeElement(LoginPopUp::$vk_button);
+        $I->seeElement(LoginPopUp::$fb_button);
+        $I->seeElement(LoginPopUp::$gp_button);
+
+    }
+    public function negativeSearchMainPage()
+    {
+        $I = $this;
+        $I->amOnPage('/');
+        $I->fillField(MainPage::$search_field, UserData::$badSearch);
+        $I->click(MainPage::$search_button);
+        $I->seeInPageSource(UserData::$badSearchMessage);
+
+    }
 
 
 

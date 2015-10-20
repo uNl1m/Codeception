@@ -21,7 +21,7 @@ class addStationToFavoriteCest
     }
     public function addStationToFavorite(\Step\MuzzaWeb\CheckFavoritePage $I)
     {
-        $I->addStationToFavorite(2);
+        $I->addStationToFavorite(3);
 //        $I->reloadPage();
     }
 

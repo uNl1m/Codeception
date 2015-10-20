@@ -1,6 +1,8 @@
 <?php
 use \WebGuy;
-
+/**
+ * @group login
+ */
 class mainPageCest
 {
 /*    public function _before(WebGuy $I)
@@ -39,6 +41,10 @@ class mainPageCest
     public function checkSearchStation(\Step\MuzzaWeb\CheckMainPage $I)
     {
         $I->searchStationMainPage();
+    }
+    public function shareStation(\Step\MuzzaWeb\CheckMainPage $I)
+    {
+        $I->checkShareButtons();
     }
 }
 

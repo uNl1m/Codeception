@@ -39,4 +39,7 @@ class LoginPopUp
     public static $gp_nextButton = '#next';
     public static $gp_passwordField = '#Passwd';
     public static $gp_submitButton = '#signIn';
+
+    //---------------Alerts-----------//
+    public static $emptyEmailField = '';
 }

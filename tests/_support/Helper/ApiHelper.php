@@ -2,10 +2,10 @@
 namespace Helper;
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I
-use Page\MuzzaWeb\MainPage;
 use Page\MuzzaWeb\UserData;
 class ApiHelper extends \Codeception\Module
 {
+
     const username = 'QA tester';
     const email = 'a@freeletter.me';
     const password = '12345678';
@@ -24,7 +24,12 @@ class ApiHelper extends \Codeception\Module
 
     protected $token;
 
-
+//    public function _before()
+//    {
+//        $I = $this->getModule('REST');;
+//        $I->amHttpAuthenticated('muzzalife','Trinity-s');
+//    }
+//
 //   public function _before($t)
 //   {
 //       $I = $this->getModule('REST');
@@ -58,7 +63,7 @@ class ApiHelper extends \Codeception\Module
         $this->getModule('REST')->sendPOST("/auth/login", ['email' => UserData::$email, 'password' => UserData::$password]);
         $token = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..token');
         $this->debugSection('Token', $token);
-        $a = file_put_contents(codecept_data_dir('token.json'), $token);
+        file_put_contents(codecept_data_dir('token.json'), $token);
         return $token;
 
     }
@@ -89,7 +94,7 @@ class ApiHelper extends \Codeception\Module
 //        $s = serialize($sl);
 //        $slug = substr("$s",6,-2);
         $this->debugSection('Slug', $sl);
-        $s = file_put_contents(codecept_data_dir('slug.json'), $sl);
+//        file_put_contents(codecept_data_dir('slug.json'), $sl);
         return $sl;
 
     }
@@ -175,7 +180,7 @@ class ApiHelper extends \Codeception\Module
     {
 
         $this->getModule('REST')->sendGET('/station/search/' . UserData::$station_name);
-        $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id');
+        $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..id');
         $stat = serialize($st);
         $station = substr("$stat", 14, -3);
         $this->debugSection('Station', $st);
@@ -194,7 +199,7 @@ class ApiHelper extends \Codeception\Module
         $token = file_get_contents(codecept_data_dir('token.json'));
         $this->getModule('REST')->amBearerAuthenticated($token);
         $this->getModule('REST')->sendGET('/favorite/station');
-        $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..shoutcast_station_id'); #[] выбор массива
+        $st1 = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..station_id'); #[] выбор массива
 
         $ss_id = $st1[$id];
         $this->debugSection('FavoriteStation ID', $st1);
@@ -354,7 +359,9 @@ class ApiHelper extends \Codeception\Module
 
     function getStationByName()
     {
-        $this->getModule('REST')->sendGET('/station/search/' . UserData::$station_name);
+        $this->getModule('REST')->sendGET('/station/search/' . UserData::$searchStation);
+        $st = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..name');
+        $this->debugSection('Station', $st);
     }
 
     function resendActivateCode()
@@ -372,9 +379,9 @@ class ApiHelper extends \Codeception\Module
     {
         $token = file_get_contents(codecept_data_dir('token.json'));
         $this->getModule('REST')->amBearerAuthenticated($token);
-        $shoutcast_station_id = $this->getFavoriteStationId($id);
+        $station_id = $this->getFavoriteStationId($id);
 //        $shoutcast_station_id = file_get_contents(codecept_data_dir('Fstation.json'));
-        $this->getModule('REST')->sendDELETE('/favorite/station', ["station_id" => "$shoutcast_station_id"]);
+        $this->getModule('REST')->sendDELETE('/favorite/station', ["station_id" => "$station_id"]);
     }
 
     function removeFavoriteTrack($id)
@@ -423,8 +430,11 @@ class ApiHelper extends \Codeception\Module
         $this->debugSection('code', $code);
         $codeWeb = substr($link[0],9, -18);
         $this->debugSection('Web Link', $codeWeb);
+        $codeDev = substr($link[0],51, -18);
+        $this->debugSection('Web Link', $codeDev);
         file_put_contents(codecept_data_dir('link.json'), $code);
         file_put_contents(codecept_data_dir('linkWeb.json'),$codeWeb);
+        file_put_contents(codecept_data_dir('linka.json'),$codeDev);
 
         return $code;
     }
@@ -472,6 +482,7 @@ class ApiHelper extends \Codeception\Module
     {
 
         $code = $this ->checkTempMailForgotPassword();
+//        $code = file_get_contents(codecept_data_dir('linka.json'));
         $this->getModule('REST')->sendGET('/auth/reset-password/'.$code);
         $reminderCode = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..reminderCode');
         $this->debugSection('Reminder code', $reminderCode);
@@ -503,6 +514,32 @@ class ApiHelper extends \Codeception\Module
         $this->debugSection('TOP1', $topN);
         return $topN;
     }
+    function sendActUrl()
+    {
+        $this->getModule('REST')->sendPUT('/auth/activate', array('email' => 'c@freeletter.me'));
+
+    }
+    function getActUrl()
+    {
+        $email = 'c@freeletter.me';
+        $mail = md5($email);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/php/');
+        $html = $this->getModule('REST')->grabResponse();
+        preg_match('~<a(.*)href="([^"]+)"(.*?)>~',$html,$link);
+        $code = substr($link[0],9, -18);
+        return $code;
+    }
+    function delLetter()
+    {
+        $email = 'c@freeletter.me';
+        $mail = md5($email);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/mail/id/' . $mail . '/format/json/');
+        $del_letterID = $this->getModule('REST')->grabDataFromResponseByJsonPath('$..mail_id');
+        $del = $del_letterID[0];
+        $this->debugSection('Id', $del);
+        $this->getModule('REST')->sendGET('http://api.temp-mail.ru/request/delete/id/'.$del.'/');
+    }
+
 
 
 }

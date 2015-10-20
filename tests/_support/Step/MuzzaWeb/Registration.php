@@ -51,4 +51,97 @@ class Registration extends \WebGuy
         $I->wait(3);
 
     }
+    /******************************NEGATIVE*********************/
+    public function negativeRegistration1()
+    {
+        $I = $this;
+        $I->amOnPage ("/");
+        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see('Username is required');
+        $I->see('Email is required');
+        $I->see('Password is required');
+    }
+    public function negativeRegistration2()
+    {
+        $I = $this;
+//        $I->amOnPage ("/");
+//        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$badUserName);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see(UserData::$shortUserNameMessage);
+        $I->see(UserData::$emailMessage);
+        $I->see(UserData::$passwordMessage);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$badUserName1);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see(UserData::$longUserNameMessage);
+        $I->see(UserData::$emailMessage);
+        $I->see(UserData::$passwordMessage);
+    }
+    public function negativeRegistration3()
+    {
+        $I = $this;
+//        $I->amOnPage ("/");
+//        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$username);
+        $I->fillField(RegistrationPopUp::$emailField, UserData::$badEmail1);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see(UserData::$invalidEmailMessage);
+        $I->see(UserData::$passwordMessage);
+    }
+    public function negativeRegistration4()
+    {
+        $I = $this;
+//        $I->amOnPage ("/");
+//        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$username);
+        $I->fillField(RegistrationPopUp::$emailField, UserData::$email);
+        $I->fillField(RegistrationPopUp::$passwordField, UserData::$reg_password);
+        $I->fillField(RegistrationPopUp::$confirmPasswordField,UserData::$reg_password);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->waitForText(UserData::$usedEmailMessage);
+        $I->seeInPageSource('<div class="error-message">The email has already been taken.</div>');
+    }
+    public function negativeRegistration5()
+    {
+        $I = $this;
+//        $I->amOnPage ("/");
+//        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$username);
+        $I->fillField(RegistrationPopUp::$emailField, UserData::$email);
+        $I->fillField(RegistrationPopUp::$passwordField, UserData::$badPass1);
+        $I->fillField(RegistrationPopUp::$confirmPasswordField,UserData::$reg_password);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see(UserData::$shortPasswordMessage);
+        $I->see(UserData::$confirmPasswordMessage);
+    }
+    public function negativeRegistration6()
+    {
+        $I = $this;
+//        $I->amOnPage ("/");
+//        $I->click(MainPage::$registrationLink);
+        $I->waitForElementVisible(RegistrationPopUp::$registrationButton);
+        $I->fillField(RegistrationPopUp::$usernameField, UserData::$username);
+        $I->fillField(RegistrationPopUp::$emailField, UserData::$email);
+        $I->fillField(RegistrationPopUp::$passwordField, UserData::$reg_password);
+        $I->fillField(RegistrationPopUp::$confirmPasswordField,UserData::$badPass1);
+        $I->click(RegistrationPopUp::$registrationButton);
+        $I->see(UserData::$confirmPasswordMessage);
+    }
+    public function negativeRegistration7($code)
+    {
+
+        $I = $this;
+        $I->amOnUrl($code);
+        $I->amOnUrl($code);
+        $I->waitForElementVisible('/html/body/div[5]/div/div/div[2]/p');
+        $I->seeInPageSource('<p class="server-error">Sorry, your code is not valid.</p>');
+    }
+
+
 }
