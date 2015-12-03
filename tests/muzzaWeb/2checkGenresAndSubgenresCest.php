@@ -1,8 +1,8 @@
 <?php
 use \WebGuy;
-///**
-// * @group login
-// */
+/**
+ * @group login
+ */
 class checkGenresAndSubgenresCest
 {
 

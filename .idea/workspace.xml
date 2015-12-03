@@ -2,147 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4f1dba-6a93-4fa1-8e50-cf8e7fa93309" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/muzzaApi/constant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/muzzaWeb/wlogoutCest.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/muzzaApi/registationCest.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/registrationCest.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codecept-temp.phar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/failed" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.checkTempMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.checkTempMail.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.deleteLastMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.deleteLastMail.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/TCest.shareStation.fail.png" afterPath="$PROJECT_DIR$/tests/_output/TCest.shareStation.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword1.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword1.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.checkProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.checkProfileElements.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.classicGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.classicGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.decadesGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.decadesGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.electronicGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.electronicGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.newAgeGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.newAgeGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.themesGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.themesGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.checkProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.checkProfileElements.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/codeception/codeception" afterPath="$PROJECT_DIR$/vendor/codeception/codeception" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/logoutCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/logoutCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/logoutCest.logout.fail.png" afterPath="$PROJECT_DIR$/tests/_output/logoutCest.logout.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.Top20.fail.png" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.Top20.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.png" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeRegistration.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeRegistration.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.checkTempMailActivateUser.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.checkTempMailActivateUser.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.cleanMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.cleanMail.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.loginOnFavoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.loginOnFavoritePage.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.png" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/_generated/ApiGuyActions.php" afterPath="$PROJECT_DIR$/tests/_support/_generated/ApiGuyActions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php" afterPath="$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/CheckFavoritePage.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/CheckFavoritePage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/CheckMainPage.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/CheckMainPage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/ForgotPassword.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/ForgotPassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Codeception.iml" afterPath="$PROJECT_DIR$/.idea/Codeception.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.html" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.html" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/LoginPopUp.php" afterPath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/LoginPopUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/LoginW.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/LoginW.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Registration.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/TCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/TCest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/TCest.shareStation.fail.html" afterPath="$PROJECT_DIR$/tests/_output/TCest.shareStation.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" afterPath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/_generated/WebGuyActions.php" afterPath="$PROJECT_DIR$/tests/_support/_generated/WebGuyActions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/activate.json" afterPath="$PROJECT_DIR$/tests/_data/activate.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addFavoriteStationCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addFavoriteStationCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/addFavoriteStationCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/addFavoriteStationCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addFavoriteTrackCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addFavoriteTrackCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/addFavoriteTrackCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/addFavoriteTrackCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/addStationToFavoriteCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/addStationToFavoriteCest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePassCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePassCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/changePassCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/changePassCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword1.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword1.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.checkProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.checkProfileElements.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.classicGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.classicGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.decadesGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.decadesGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.electronicGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.electronicGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.newAgeGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.newAgeGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.themesGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.themesGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.checkProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.checkProfileElements.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getBannerCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getBannerCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getCurrentTrackCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getCurrentTrackCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getFavoriteStationsCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getFavoriteStationsCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/getFavoriteTracksCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/getFavoriteTracksCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getFavoriteTracksCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getFavoriteTracksCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getRandomStationCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getRandomStationCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/getStationByGenreSlugCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/getStationByGenreSlugCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getStationByGenreSlugCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getStationByGenreSlugCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/getStationByNameCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/getStationByNameCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getStationByNameCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getStationByNameCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getStationDetailsBySlugCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getStationDetailsBySlugCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/getTopStationsCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/getTopStationsCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/itunesSearchCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/itunesSearchCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/link.json" afterPath="$PROJECT_DIR$/tests/_data/link.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/linkWeb.json" afterPath="$PROJECT_DIR$/tests/_data/linkWeb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/loginCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/loginCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/logoutCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/logoutCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/logoutCest.logout.fail.html" afterPath="$PROJECT_DIR$/tests/_output/logoutCest.logout.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.Top20.fail.html" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.Top20.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/linka.json" afterPath="$PROJECT_DIR$/tests/_data/linka.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/loginCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/loginCept.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.html" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registationCest.after.fail.html" afterPath="$PROJECT_DIR$/tests/_output/registationCest.after.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.html" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.html" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/reminderCode.json" afterPath="$PROJECT_DIR$/tests/_data/reminderCode.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/removeFavoriteStationCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/removeFavoriteStationCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/removeFavoriteTrackCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/removeFavoriteTrackCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/report.html" afterPath="$PROJECT_DIR$/tests/_output/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/resetPasswordConfirmActionCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/resetPasswordConfirmActionCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/resetPasswordConfirmCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/resetPasswordConfirmCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationByNameCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationByNameCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/searchFavoriteStationByNameCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/searchFavoriteStationByNameCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.loginOnFavoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.loginOnFavoritePage.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackByNameCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackByNameCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/searchFavoriteTrackByNameCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/searchFavoriteTrackByNameCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/showProfileCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/showProfileCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/showProfileCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/showProfileCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/slug.json" afterPath="$PROJECT_DIR$/tests/_data/slug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/tCest.addNTracksToFavorite.fail.html" afterPath="$PROJECT_DIR$/tests/_output/tCest.addNTracksToFavorite.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/token.json" afterPath="$PROJECT_DIR$/tests/_data/token.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/updateProfileCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/updateProfileCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/updateProfileCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/updateProfileCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userEmail.txt" afterPath="$PROJECT_DIR$/tests/_data/userEmail.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userId.json" afterPath="$PROJECT_DIR$/tests/_data/userId.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userName.txt" afterPath="$PROJECT_DIR$/tests/_data/userName.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/wactivateUserCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/wactivateUserCept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/wlogoutCept.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/wlogoutCept.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/wremoveLastEmailCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/wremoveLastEmailCept.fail.html" />
     </list>
     <ignored path="Codeception.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -176,63 +134,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/TCest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="47" column="7" selection-start-line="41" selection-start-column="5" selection-end-line="47" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="socialLoginCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/socialLoginCest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wnegativeCest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.666666">
-              <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zlogoutCest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/zlogoutCest.php">
+      <file leaf-file-name="UserData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24742268">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="e#6#18#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebGuy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/_support/WebGuy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.777778">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginW.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/LoginW.php">
+      <file leaf-file-name="ApiHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.0">
-              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="440" column="13" selection-start-line="440" selection-start-column="13" selection-end-line="440" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UniqueEmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/UniqueEmail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userEmail.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/_data/userEmail.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tCest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/muzzaApi/tCest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.88659793">
+              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrationCest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/muzzaApi/registrationCest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="7" selection-start-line="17" selection-start-column="5" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -241,28 +207,28 @@
       <file leaf-file-name="Profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.777778">
-              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userName.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/_data/userName.txt">
+      <file leaf-file-name="2checkGenresAndSubgenresCest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1mainPageCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php">
+      <file leaf-file-name="3registrationActiveLoginCest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/3registrationActiveLoginCest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.333334">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -306,27 +272,27 @@
         <option value="$PROJECT_DIR$/tests/muzzaApi/addFavoriteTrackCept.php" />
         <option value="$PROJECT_DIR$/tests/_data/linka.json" />
         <option value="$PROJECT_DIR$/tests/muzzaApi/showProfileCept.php" />
-        <option value="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" />
-        <option value="$PROJECT_DIR$/tests/muzzaApi/tCest.php" />
-        <option value="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/forgotPasswordCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/addStationToFavoriteCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb.suite.yml" />
         <option value="$PROJECT_DIR$/tests/muzzaApi.suite.yml" />
         <option value="$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php" />
         <option value="$PROJECT_DIR$/tests/muzzaApi/getTopStationsCept.php" />
-        <option value="$PROJECT_DIR$/tests/_data/userEmail.txt" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php" />
         <option value="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/ForgotPassword.php" />
-        <option value="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" />
         <option value="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/CheckMainPage.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/negativeCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/TCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/socialLoginCest.php" />
-        <option value="$PROJECT_DIR$/tests/_data/userName.txt" />
         <option value="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/LoginW.php" />
-        <option value="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" />
         <option value="$PROJECT_DIR$/tests/muzzaWeb/zlogoutCest.php" />
+        <option value="$PROJECT_DIR$/tests/_data/userName.txt" />
+        <option value="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" />
+        <option value="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" />
+        <option value="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" />
+        <option value="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" />
+        <option value="$PROJECT_DIR$/tests/_data/userEmail.txt" />
+        <option value="$PROJECT_DIR$/tests/muzzaApi/tCest.php" />
       </list>
     </option>
   </component>
@@ -371,6 +337,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,179 +346,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="muzzaWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="muzzaApi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Step" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuzzaWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuzzaWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Codeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,12 +423,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1621" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26984128" sideWeight="0.4882353" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2926984" sideWeight="0.4882353" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26881722" sideWeight="0.50857145" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -641,6 +436,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -667,13 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/muzzaApi/searchStationByNameCept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaApi/wremoveLastEmailCept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6666667">
@@ -706,13 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaApi/registrationCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="7" selection-start-line="17" selection-start-column="5" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -776,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,19 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaApi/tCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="119" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/checkProfileCest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,35 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaApi/getTopStationsCept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3333333">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_data/userEmail.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.827586">
-          <caret line="196" column="19" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.0">
           <caret line="74" column="109" selection-start-line="74" selection-start-column="109" selection-end-line="74" selection-end-column="109" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3333333">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34364262">
           <caret line="4166" column="20" selection-start-line="4166" selection-start-column="20" selection-end-line="4166" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.793103">
           <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
-          <folding>
-            <element signature="e#32#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,15 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.333334">
           <caret line="244" column="20" selection-start-line="244" selection-start-column="20" selection-end-line="244" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/3registrationActiveLoginCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,33 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6666667">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#29#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="2" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.333334">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.777778">
-          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,31 +691,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34364262">
           <caret line="913" column="20" selection-start-line="913" selection-start-column="20" selection-end-line="913" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/TCest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="7" selection-start-line="41" selection-start-column="5" selection-end-line="47" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/socialLoginCest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_data/userName.txt">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1019,41 +712,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.082474224">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/_support/WebGuy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.777778">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/LoginW.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/zlogoutCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_data/userName.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/1mainPageCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.666666">
-          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="20" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/zlogoutCest.php">
+    <entry file="file://$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24742268">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#18#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_data/userEmail.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaApi/registrationCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="7" selection-start-line="17" selection-start-column="5" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/UniqueEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaWeb/3registrationActiveLoginCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_support/Helper/ApiHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="440" column="13" selection-start-line="440" selection-start-column="13" selection-end-line="440" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/muzzaApi/tCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88659793">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

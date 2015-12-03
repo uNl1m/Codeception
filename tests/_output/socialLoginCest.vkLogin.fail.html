@@ -103,7 +103,7 @@
 
 </style>
 
-<div class="pre-loader">
+<div class="pre-loader active">
     <div class="load"></div>
 </div>
 
@@ -113,7 +113,7 @@
         <div class="container">
             <a class="logo-link" href="/"><img class="logo" src="/images/front-end/beta_muzza.png" width="229" height="231" alt="Muzza.life" /></a>
 
-            <div class="nav-wrapper" style="display: none;">
+            <div class="nav-wrapper">
 
             <div>
             <div class="navbar navbar-default nav-links">
@@ -131,7 +131,7 @@
             </div>
         </div></div>
 
-            <div class="muzza-player" style="display: none;">
+            <div class="muzza-player">
                 <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;" /><audio id="jp_audio_0" preload="metadata"></audio></div>
                 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
                     <div class="equalizer">
@@ -233,7 +233,7 @@
 
 <div class="content-wrapper">
 
-    <span class="move-top hide" data-toggle="tooltip" data-placement="left" title="" data-original-title="Move top">
+    <span class="move-top" data-toggle="tooltip" data-placement="left" title="" data-original-title="Move top">
 
     </span>
 
@@ -243,7 +243,7 @@
 
         <div class="banners-container">
 
-        <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><ul class="bxslider" style="width: 215%; position: relative;"></ul></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-pager"></div></div></div></div>
+        </div>
 
 
         <!--<div class="banner">-->
@@ -275,7 +275,20 @@
     <div class="search-container">
 
         <div class="container search-block">
-            <div class="station-search col-xs-12 col-sm-12 col-md-9 col-md-9" id="search_container"></div>
+            <div class="station-search col-xs-12 col-sm-12 col-md-9 col-md-9" id="search_container">
+            <h2 class="pull-left genre-title">Genre</h2>
+            <h2 class="pull-left stations-title">Stations</h2>
+            <div class="random-stations">
+                <span class="rand" data-toggle="tooltip" data-placement="right" title="" data-original-title="Play random station"></span>
+            </div>
+            <div class="top-stations">
+                <span class="top-20" data-toggle="tooltip" data-placement="right" title="" data-original-title="Top 20 radio stations">Top 20</span>
+            </div>
+            <div class="pull-right main-station-search">
+                <input class="search_input" type="text" placeholder="Search..." id="search_input" />
+                <input class="search_button" type="button" id="search_button" />
+            </div>
+        </div>
             <div class="station-fav-station col-xs-6 col-sm-6 col-md-6 col-md-6" id="search_fav_container" style="display: none;"></div>
             <div class="station-fav-track col-xs-6 col-sm-6 col-md-6 col-lg-6" id="search_track_container" style="display: none;"></div>
             <div class="genre-search col-xs-12 col-sm-12 col-md-3 col-md-3 hidden-xs hidden-sm hidden-md hidden-lg" id="search_genres_container">
@@ -340,19 +353,7 @@
 
         </div>
 
-        <div id="status_code_container">
-
-        <div>
-        <div class="server-error-code">
-            <span class="code">500</span>
-            <p class="status-message">Oops! Unexpected server error!</p>
-        </div>
-
-        <div class="go-home-bar">
-            <p>You can go to <a href="#" class="link-home">home</a></p>
-        </div>
-
-    </div></div>
+        
 
         <script type="text/template" id="activation_template">
 
@@ -842,7 +843,7 @@
             </div>
             <div class="stations-container">
 
-                <div id="breadcrumbs">
+                <div id="breadcrumbs" style="display: none;">
                     <a class="genre-crumbs" data-href="" href=""></a>
 
                     <span class="sub-genre-crumbs"></span>
@@ -852,7 +853,11 @@
 
                 <div id="show-more-container">
 
-                </div>
+                <div>
+            <div class="show-more">
+                <a href="">Show-more</a>
+            </div>
+        </div></div>
 
             </div>
         </div>

@@ -78,7 +78,7 @@ class Profile extends \WebGuy
     public function negativeChangeNameAndAvatar()
     {
         $I = $this;
-        $I->loginW();
+//        $I->loginW();
         $I->wait(2);
         $I->click(LoginPopUp::$imgAvatar);
         $I->click(MainPage::$profileLink);
@@ -98,7 +98,7 @@ class Profile extends \WebGuy
     public function negativeChangePasswordProfile()
     {
         $I = $this;
-        $I->loginW();
+//        $I->loginW();
         $I->wait(2);
         $I->click(LoginPopUp::$imgAvatar);
         $I->click(MainPage::$profileLink);

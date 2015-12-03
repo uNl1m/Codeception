@@ -30,7 +30,7 @@ class negativeCest
     }
     public function searchBadFavoriteStationAndTrack(Step\MuzzaWeb\CheckFavoritePage $I)
     {
-        $I->loginW();
+//        $I->loginW();
         $I->goOnFavoritePage();
         $I->searchBadFavoriteStationAndTrack();
     }

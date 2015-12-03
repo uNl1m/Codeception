@@ -4,7 +4,7 @@ namespace Page\MuzzaWeb;
 class UserData
 {
     public static $username = 'QA tester1';
-    public static $email = 'b@freeletter.me';
+    public static $email = 'b@mailzi.ru';
     public static $password = '12345678';
     public static $pass_conf = '12345678';
     ///--------------registration----------------//
@@ -22,7 +22,6 @@ class UserData
     public static $vk_pass = '123456qwer';
     public static $gp_email = 'qa.trinitytester@gmail.com';
     public static $gp_pass = '123456qwer';
-
 
 
     //----------------Search Data--------------//
