@@ -2,105 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4f1dba-6a93-4fa1-8e50-cf8e7fa93309" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codecept-temp.phar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/failed" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.checkTempMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.checkTempMail.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.deleteLastMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.deleteLastMail.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.png" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/codeception/codeception" afterPath="$PROJECT_DIR$/vendor/codeception/codeception" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.png" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.png" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeRegistration.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeRegistration.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.checkTempMailActivateUser.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.checkTempMailActivateUser.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.cleanMail.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.cleanMail.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.png" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.png" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.png" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.png" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/2checkGenresAndSubgenresCest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Codeception.iml" afterPath="$PROJECT_DIR$/.idea/Codeception.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.html" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.changeForgotPass.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.html" afterPath="$PROJECT_DIR$/tests/_output/ForgotPasswordCest.forgotPassword.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" afterPath="$PROJECT_DIR$/tests/_support/Step/MuzzaWeb/Profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" afterPath="$PROJECT_DIR$/tests/_support/Page/MuzzaWeb/UserData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/activate.json" afterPath="$PROJECT_DIR$/tests/_data/activate.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.addStationToFavorite.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addStationToFavoriteCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/addTrackToFavoriteCest.checkAddedTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.changePassword2.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changePasswordCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.changeProfileElements.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.checkProfileElements.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/changeUserNameAndAvatarCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.alternativeGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.countryGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkGenresAndSubgenresCest.easyListeningGenre.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkPlayerCest.checkPlayer.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/checkProfileCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.favoritePage.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.html" afterPath="$PROJECT_DIR$/tests/_output/favoritePageCest.login.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/link.json" afterPath="$PROJECT_DIR$/tests/_data/link.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/linkWeb.json" afterPath="$PROJECT_DIR$/tests/_data/linkWeb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/linka.json" afterPath="$PROJECT_DIR$/tests/_data/linka.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/loginCept.fail.html" afterPath="$PROJECT_DIR$/tests/_output/loginCept.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.html" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.checkSliders.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/mainPageCest.mainPage.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.addStationByGuest.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeAddUnknownTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangeNameAndAvatar.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeChangePassword1.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeForgotPass.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.negativeLogin.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/negativeCest.searchBadFavoriteStationAndTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.html" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.loginAfterActivateUSer.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.html" afterPath="$PROJECT_DIR$/tests/_output/registrationActiveLoginCest.logout.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/reminderCode.json" afterPath="$PROJECT_DIR$/tests/_data/reminderCode.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.loginOnFavoritePage.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteStationCest.removeFavoriteStation.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.loginOnFavoritePage.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/removeFavoriteTrackCest.removeFavoriteTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/report.html" afterPath="$PROJECT_DIR$/tests/_output/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteStationCest.searchFavoriteStations.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.html" afterPath="$PROJECT_DIR$/tests/_output/searchFavoriteTrackCest.searchFavoriteTrack.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.gpLogin.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.html" afterPath="$PROJECT_DIR$/tests/_output/socialLoginCest.vkLogin.fail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/token.json" afterPath="$PROJECT_DIR$/tests/_data/token.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userEmail.txt" afterPath="$PROJECT_DIR$/tests/_data/userEmail.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userId.json" afterPath="$PROJECT_DIR$/tests/_data/userId.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_data/userName.txt" afterPath="$PROJECT_DIR$/tests/_data/userName.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" afterPath="$PROJECT_DIR$/tests/muzzaWeb/wnegativeCest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/muzzaApi/tCest.php" afterPath="$PROJECT_DIR$/tests/muzzaApi/tCest.php" />
     </list>
     <ignored path="Codeception.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,8 +89,8 @@
       <file leaf-file-name="tCest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/muzzaApi/tCest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88659793">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.4226804">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -337,7 +239,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,8 +247,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Codeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Muzza" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Codeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Muzza" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,9 +351,10 @@
     <frame x="59" y="24" width="1621" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2926984" sideWeight="0.4882353" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29650792" sideWeight="0.4882353" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26881722" sideWeight="0.50857145" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -436,7 +363,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -824,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/muzzaApi/tCest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88659793">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.4226804">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding />
         </state>
       </provider>
